@@ -1,0 +1,21 @@
+{
+  "name": "fvtt-daggerheart-es",
+  "version": "1.0.0",
+  "description": "Unofficial spanish translation of the Foundryborne Daggerheart system for FoundryVTT",
+  "homepage": "https://github.com/erizocosmico/fvtt-daggerheart-es#readme",
+  "bugs": {
+    "url": "https://github.com/erizocosmico/fvtt-daggerheart-es/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erizocosmico/fvtt-daggerheart-es.git"
+  },
+  "license": "MIT",
+  "author": "Miguel Molina <miguel@erizocosmi.co>",
+  "type": "commonjs",
+  "main": "module.js",
+  "scripts": {
+    "download": "node ./tools/download.mjs",
+    "sync": "node ./tools/sync.mjs"
+  }
+}

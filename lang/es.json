@@ -1,0 +1,2551 @@
+{
+    "TYPES": {
+        "Item": {
+            "ancestry": "Linaje",
+            "community": "Comunidad",
+            "class": "Clase",
+            "subclass": "Subclase",
+            "feature": "Rasgo",
+            "domainCard": "Carta de dominio",
+            "consumable": "Consumible",
+            "loot": "Botín",
+            "weapon": "Arma",
+            "armor": "Armadura",
+            "beastform": "Forma animal"
+        },
+        "ActiveEffect": {
+            "beastform": "Forma animal"
+        },
+        "Actor": {
+            "character": "Personaje",
+            "companion": "Compañero",
+            "adversary": "Adversario",
+            "environment": "Entorno"
+        }
+    },
+    "CONTROLS": {
+        "inFront": "En frente"
+    },
+    "DAGGERHEART": {
+        "ACTIONS": {
+            "TYPES": {
+                "attack": {
+                    "name": "Atacar",
+                    "tooltip": "Acción ofensiva como atacar con un arma, lanzar un conjuro, etc."
+                },
+                "beastform": {
+                    "name": "Forma animal",
+                    "tooltip": "Transformar al usuario en otra forma."
+                },
+                "damage": {
+                    "name": "Daño",
+                    "tooltip": "Daño directo sin una tirada."
+                },
+                "effect": {
+                    "name": "Genérico",
+                    "tooltip": "Acción genérica que solo muestra un mensaje en el chat si no se configura nada."
+                },
+                "healing": {
+                    "name": "Curar",
+                    "tooltip": "Restaurar recursos del objetivo. Puede tener una tirada configurada."
+                },
+                "macro": {
+                    "name": "Macro",
+                    "tooltip": "Ejecuta una macro por UUID."
+                },
+                "summon": {
+                    "name": "Invocar",
+                    "tooltip": "Crear tokens en la escena."
+                }
+            },
+            "Config": {
+                "beastform": {
+                    "_exact": "Rango máximo de la forma animal",
+                    "_exactHint": "Se usa el rango del personaje si está vacío",
+                    "label": "Forma animal"
+                },
+                "displayInChat": "Mostrar en el chat"
+            },
+            "RollField": {
+                "diceRolling": {
+                    "compare": "Debe ser",
+                    "dice": "Tipo de dado",
+                    "flatMultiplier": "Multiplicador",
+                    "multiplier": "Número de dados",
+                    "threshold": "Límite"
+                }
+            },
+            "Settings": {
+                "attackBonus": "Bonificador del ataque",
+                "attackName": "Nombre del ataque",
+                "includeBase": {
+                    "label": "Incluir daño del objeto"
+                },
+                "multiplier": "Multiplicador",
+                "resultBased": {
+                    "label": "Fórmula basada en el resultado Experanza/Miedo."
+                },
+                "applyTo": {
+                    "label": "Recurso seleccionado"
+                },
+                "consumeOnSuccess": {
+                    "label": "Consumir solo con Éxito",
+                    "short": "(solo con Éxito)"
+                },
+                "cost": {
+                    "_stepTooltip": "+{step} per step"
+                }
+            }
+        },
+        "ACTIVEEFFECT": {
+            "Config": {
+                "rangeDependence": {
+                    "title": "Dependencia de distancia"
+                }
+            },
+            "RangeDependance": {
+                "hint": "Configuración de una distancia opcional a la que este efecto debería activarse",
+                "title": "Dependiente de distancia"
+            }
+        },
+        "ACTORS": {
+            "Adversary": {
+                "FIELDS": {
+                    "attack": {
+                        "name": {
+                            "label": "Nombre"
+                        },
+                        "modifier": {
+                            "label": "Modificador"
+                        },
+                        "range": {
+                            "label": "Alcance"
+                        },
+                        "damage": {
+                            "value": {
+                                "label": "Daño"
+                            },
+                            "type": {
+                                "label": "Tipo de daño"
+                            }
+                        }
+                    },
+                    "damageThresholds": {
+                        "major": {
+                            "label": "Mayor"
+                        },
+                        "severe": {
+                            "label": "Severo"
+                        }
+                    },
+                    "description": {
+                        "label": "Descripción"
+                    },
+                    "difficulty": {
+                        "label": "Dificultad"
+                    },
+                    "experiences": {
+                        "element": {
+                            "name": {
+                                "label": "Nombre"
+                            },
+                            "value": {
+                                "label": "Modificador"
+                            }
+                        }
+                    },
+                    "motivesAndTactics": {
+                        "label": "Motivaciones y tácticas"
+                    },
+                    "resources": {
+                        "hitPoints": {
+                            "value": {
+                                "label": "Actual"
+                            },
+                            "max": {
+                                "label": "Máx"
+                            }
+                        },
+                        "stress": {
+                            "value": {
+                                "label": "Actual"
+                            },
+                            "max": {
+                                "label": "Máx"
+                            }
+                        }
+                    },
+                    "tier": {
+                        "label": "Rango"
+                    },
+                    "type": {
+                        "label": "Tipo"
+                    }
+                },
+                "hordeDamage": "Daño de horda",
+                "horderHp": "Horda/PG"
+            },
+            "Character": {
+                "advantageSources": {
+                    "label": "Fuentes de ventaja",
+                    "hint": "Añade palabras o un texto corto como recordatorios de en qué tiene el personaje ventaja."
+                },
+                "age": "Edad",
+                "companionFeatures": "Rasgos de compañero",
+                "contextMenu": {
+                    "consume": "Consumir objeto",
+                    "equip": "Equipar",
+                    "sendToChat": "Enviar al chat",
+                    "toLoadout": "Enviar a la mano",
+                    "toVault": "Enviar al depósito",
+                    "unequip": "Quitar",
+                    "useItem": "Usar objeto"
+                },
+                "disadvantageSources": {
+                    "label": "Fuentes de desventaja",
+                    "hint": "Añade palabras o un texto corto como recordatorios de en qué tiene el personaje desventaja."
+                },
+                "faith": "Fé",
+                "levelUp": "Puedes subir de nivel",
+                "maxEvasionBonus": "Máximo incremento de evasión",
+                "maxHPBonus": "Máximo incremento de PG",
+                "pronouns": "Pronombres",
+                "story": {
+                    "backgroundTitle": "Trasfondo",
+                    "characteristics": "Características",
+                    "connectionsTitle": "Conexiones"
+                },
+                "experienceDataRemoveConfirmation": {
+                    "title": "Eliminar datos de experiencia",
+                    "text": "La experiencia que vas a eliminar tiene datos de subida de nivel enlazados (probablemente porque has subido de nivel con la configuración de automatización 'levelupAuto' activada). Borrarla hará que se quite esta automatización. ¿Quieres continuar?"
+                },
+                "manualMulticlass": {
+                    "title": "Multiclase",
+                    "text": "¿Quieres añadir esta clase como tu multiclase?"
+                },
+                "manualMulticlassSubclass": {
+                    "title": "Subclase de multiclase",
+                    "text": "¿Quieres añadir esta subclase como la subclase de tu multiclase?"
+                },
+                "cannotRemoveCoreExperience": "Estás usando Auto subida de nivel. No puedes borrar una experiencia otorgada por la progresión.",
+                "companionLevelup": {
+                    "confirmTitle": "Subida de nivel de compañero",
+                    "confirmText": "¿Quieres subir de nivel a tu compañero {name} {levelChange} niveles ahora? (Puedes hacerlo manualmente después)"
+                }
+            },
+            "Companion": {
+                "FIELDS": {
+                    "attack": {
+                        "name": {
+                            "label": "Nombre del ataque"
+                        }
+                    },
+                    "evasion": {
+                        "value": {
+                            "label": "Evasión"
+                        }
+                    },
+                    "partner": {
+                        "label": "Compañero"
+                    },
+                    "resources": {
+                        "stress": {
+                            "value": {
+                                "label": "Estrés"
+                            },
+                            "currentStress": {
+                                "label": "Estrés actual"
+                            },
+                            "maxStress": {
+                                "label": "Estrés máx"
+                            }
+                        }
+                    }
+                },
+                "noPartner": "Ningún compañero seleccionado"
+            },
+            "Environment": {
+                "FIELDS": {
+                    "description": {
+                        "label": "Descripción"
+                    },
+                    "difficulty": {
+                        "label": "Dificultad"
+                    },
+                    "impulses": {
+                        "label": "Impulsos"
+                    },
+                    "tier": {
+                        "label": "Rango"
+                    },
+                    "type": {
+                        "label": "Tipo"
+                    }
+                },
+                "newAdversary": "Nuevo adversario"
+            }
+        },
+        "APPLICATIONS": {
+            "CharacterCreation": {
+                "tabs": {
+                    "ancestry": "Linaje",
+                    "community": "Comunidad",
+                    "class": "Clase",
+                    "experience": "Experiencia",
+                    "traits": "Rasgos",
+                    "domainCards": "Cartas de dominio",
+                    "equipment": "Equipo"
+                },
+                "ancestryNamePlaceholder": "El nombre de tu linaje",
+                "buttonTitle": "Configuración del personaje",
+                "choice": "Elección",
+                "finishCreation": "Finalizar configuración del personaje",
+                "heritage": "Legado",
+                "initialExperiences": "Experiencias iniciales",
+                "mixedAncestry": "Linaje mixto",
+                "newExperience": "Nueva experiencia...",
+                "selectAncestry": "Seleccionar Linaje",
+                "selectPrimaryAncestry": "Seleccionar Linaje primario",
+                "selectSecondaryAncestry": "Seleccionar Linaje secundario",
+                "selectArmor": "Seleccionar Armadura",
+                "selectClass": "Seleccionar Clase",
+                "selectCommunity": "Seleccionar Comunidad",
+                "selectPrimaryWeapon": "Seleccionar Arma Principal",
+                "selectSecondaryWeapon": "Seleccionar Arma Secundaria",
+                "selectSubclass": "Seleccionar Subclase",
+                "startingItems": "Objetos iniciales",
+                "story": "Historia",
+                "suggestedArmor": "Armarura sugerida",
+                "suggestedPrimaryWeapon": "Arma principal sugerida",
+                "suggestedSecondaryWeapon": "Arma secundaria sugerida",
+                "suggestedTraits": "Rasgos sugeridos",
+                "suggestedWeapons": "Arma sugerida",
+                "title": "{actor} - Configurar personaje",
+                "traitIncreases": "Incrementos de rasgos"
+            },
+            "CombatTracker": {
+                "combatStarted": "Activo",
+                "giveSpotlight": "Dar el Foco",
+                "requestingSpotlight": "Pidiendo el Foco",
+                "requestSpotlight": "Pedir el foco",
+                "openCountdowns": "Contadores"
+            },
+            "ContextMenu": {
+                "disableEffect": "Deshabilitar Efecto",
+                "enableEffect": "Habilitar Efecto",
+                "equip": "Equipar",
+                "sendToChat": "Mandar al chat",
+                "toLoadout": "Mandar a la mano",
+                "toVault": "Mandar al depósito",
+                "unequip": "Desequipar",
+                "useItem": "Usar Objeto"
+            },
+            "Countdown": {
+                "addCountdown": "Añadir contador",
+                "FIELDS": {
+                    "countdowns": {
+                        "element": {
+                            "name": {
+                                "label": "Nombre"
+                            },
+                            "progress": {
+                                "current": {
+                                    "label": "Actual"
+                                },
+                                "max": {
+                                    "label": "Máx"
+                                },
+                                "type": {
+                                    "label": {
+                                        "label": "Etiqueta",
+                                        "hint": "Usado para personalizado"
+                                    },
+                                    "value": {
+                                        "label": "Valor"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "newCountdown": "Nuevo contador",
+                "openOwnership": "Editar acceso de jugadores",
+                "removeCountdownText": "¿Seguro que quieres borrar el contador: {name}?",
+                "removeCountdownTitle": "Eliminar contador",
+                "title": "Contadores de {type}",
+                "toggleSimple": "Alternar Vista Simple",
+                "types": {
+                    "narrative": "Narrativa",
+                    "encounter": "Encuentro"
+                }
+            },
+            "DeleteConfirmation": {
+                "title": "Borrar {type} - {name}",
+                "text": "¿Seguro que quieres borrar {name}?"
+            },
+            "DamageReduction": {
+                "armorMarks": "Marcas de armadura",
+                "armorWithStress": "Gasta 1 Estrés para usar una marca extra",
+                "thresholdImmunities": "Inmunidades de Límite",
+                "stress": "Estrés",
+                "stressReduction": "Reducir con Estrés",
+                "title": "Reducción del daño",
+                "unncessaryStress": "No necesitas gastar Estrés",
+                "usedMarks": "Marcas usadas"
+            },
+            "DeathMove": {
+                "selectMove": "Seleccionar movimiento",
+                "takeMove": "Hacer Movimiento de Muerte",
+                "title": "{actor} - Movimiento de Muerte"
+            },
+            "Downtime": {
+                "longRest": {
+                    "title": "Descanso largo",
+                    "moves": "Movimientos de descanso largo ({current}/{max})",
+                    "clearStress": {
+                        "_description": "Describe how you blow off steam or pull yourself together, and clear all marked Stress.",
+                        "_name": "Clear Stress"
+                    },
+                    "prepare": {
+                        "_description": "Describe how you are preparing for the next day's adventure, then gain a Hope. If you choose to Prepare with one or more members of your party, you may each take two Hope.",
+                        "_name": "Prepare"
+                    },
+                    "repairArmor": {
+                        "_description": "Describe how you spend time repairing your armor and clear all of its Armor Slots. You may also do this to an ally's armor instead.",
+                        "_name": "Repair Armor"
+                    },
+                    "tendToWounds": {
+                        "_description": "Describe how you patch yourself up and remove all marked Hit Points. You may also do this on an ally instead.",
+                        "_name": "Tend to Wounds"
+                    },
+                    "workOnAProject": {
+                        "_description": "Establish or continue work on a project.",
+                        "_name": "Work on a Project"
+                    }
+                },
+                "shortRest": {
+                    "_title": "Short Rest",
+                    "_moves": "Short Rest Moves ({current}/{max})",
+                    "tendToWounds": {
+                        "_name": "Tend to Wounds",
+                        "_description": "Describe how you hastily patch yourself up, then clear a number of Hit Points equal to 1d4 + your tier. You can do this to an ally instead."
+                    },
+                    "clearStress": {
+                        "_name": "Clear Stress",
+                        "_description": "Describe how you blow off steam or pull yourself together, then clear a number of Stress equal to 1d4 + your tier."
+                    },
+                    "repairArmor": {
+                        "_name": "Repair Armor",
+                        "_description": "Describe how you quickly repair your armor, then clear a number of Armor Slots equal to 1d4 + your tier. You can do this to an ally's armor instead."
+                    },
+                    "prepare": {
+                        "_name": "Prepare",
+                        "_description": "Describe how you prepare yourself for the path ahead, then gain a Hope. If you choose to Prepare with one or more members of your party, you each gain 2 Hope."
+                    }
+                },
+                "refreshable": {
+                    "_title": "Refreshing Resources"
+                },
+                "_takeDowntime": "Take Downtime"
+            },
+            "HUD": {
+                "tokenHUD": {
+                    "_genericEffects": "Foundry Effects"
+                }
+            },
+            "Levelup": {
+                "actions": {
+                    "creatureComfort": {
+                        "_name": "Creature Comfort",
+                        "_description": "Once per rest, when you take time during a quiet moment to give your companion love and attention, you can gain a Hope or you can both clear a Stress."
+                    },
+                    "armored": {
+                        "_name": "Armored",
+                        "_description": "When your companion takes damage, you can mark one of your Armor Slots instead of marking one of their Stress."
+                    },
+                    "bonded": {
+                        "_name": "Bonded",
+                        "_description": "When you mark your last Hit Point, your companion rushes to your side to comfort you. Roll a number of d6s equal to the unmarked Stress slots they have and mark them. If any roll a 6, your companion helps you up. Clear your last Hit Point and return to the scene."
+                    }
+                },
+                "choiceDescriptions": {
+                    "_attributes": "Gain a +1 bonus to two unmarked character traits and mark them.",
+                    "_hitPointSlots": "Permanently gain one Hit Point slot.",
+                    "_stressSlots": "Permanently gain one Stress slot.",
+                    "_experiences": "Permanently gain a +1 bonus to two experiences.",
+                    "_domainCard": "Choose an additional domain card of your level or lower from a domain you have access to (up to level {maxLevel})",
+                    "_evasion": "Permanently gain a +1 bonus to your Evasion.",
+                    "_proficiency": "Increase your Proficiency by +1.",
+                    "_subclass": "Take an upgraded subclass card. Then cross out the multiclass option for this tier.",
+                    "_multiclass": "Multiclass: Choose an additional class for your character, then cross out an unused “Take an upgraded subclass card” and the other multiclass option on this sheet."
+                },
+                "delevel": {
+                    "_content": "Returning to the previous level selection will remove all selections made for this level. Do you want to proceed?",
+                    "_title": "Go back to previous level"
+                },
+                "_navigateLevel": "To Level {level}",
+                "_navigateToLevelup": "Return To Levelup",
+                "_navigateToSummary": "To Summary",
+                "options": {
+                    "_trait": "Gain a +1 bonus to two unmarked character traits and mark them.",
+                    "_hitPoint": "Permanently gain one Hit Point slot.",
+                    "_stress": "Permanently gain one Stress slot.",
+                    "_experience": "Permanently gain a +1 bonus to two experiences.",
+                    "_domainCard": "Choose an additional domain card of your level or lower from a domain you have access to (up to level {maxLevel})",
+                    "_evasion": "Permanently gain a +1 bonus to your Evasion.",
+                    "_subclass": "Take an upgraded subclass card. Then cross out the multiclass option for this tier.",
+                    "_proficiency": "Increase your Proficiency by +1.",
+                    "_multiclass": "Multiclass: Choose an additional class for your character, then cross out an unused “Take an upgraded subclass card” and the other multiclass option on this sheet.",
+                    "_intelligent": "Your companion gains a permanent +1 bonus to a Companion Experience of your choice.",
+                    "_lightInTheDark": "Gain an additional Hope slot for your character.",
+                    "_creatureComfort": "Once per rest, when you take time during a quiet moment to give your companion love and attention, you can gain a Hope or you can both clear a Stress.",
+                    "_armored": "When your companion takes damage, you can mark one of your Armor Slots instead of marking one of their Stress.",
+                    "_vicious": "Increase your companion's damage dice or range by one step (d6 to d8, Close to Far, etc.)",
+                    "_resilient": "Your companion gains an additional Stress slot.",
+                    "_bonded": "When you mark your last Hit Point, your companion rushes to your side to comfort you. Roll a number of d6s equal to the unmarked Stress slots they have and mark them. If any roll a 6, your companion helps you up. Clear your last Hit Point and return to the scene.",
+                    "_aware": "Your companion gains a permanent +2 bonus to their Evasion."
+                },
+                "selections": {
+                    "_emptyDomainCardHint": "{domain} level {level} or below",
+                    "_viciousDamage": "Damage",
+                    "_viciousRange": "Range"
+                },
+                "summary": {
+                    "_levelAchievements": "Level Achievements",
+                    "_levelAdvancements": "Level Advancements",
+                    "_proficiencyIncrease": "Proficiency Increased: {proficiency}",
+                    "_hpIncrease": "Hit Points Increased: {hitPoints}",
+                    "_stressIncrease": "Stress Increased: {stress}",
+                    "_evasionIncrease": "Evasion Increased: {evasion}",
+                    "_damageThresholdMajorIncrease": "Major: {threshold}",
+                    "_damageThresholdSevereIncrease": "Severe: {threshold}",
+                    "_newExperiences": "New Experiences",
+                    "_experiencePlaceholder": "A new experience..",
+                    "_domainCards": "Domain Cards",
+                    "_subclass": "Subclass",
+                    "_multiclass": "Multiclass",
+                    "_traits": "Increased Traits",
+                    "_experienceIncreases": "Experience Increases",
+                    "_damageThresholds": "Damage Thresholds",
+                    "_vicious": "Vicious",
+                    "_damageIncreased": "Damage Increased: {damage}",
+                    "_rangeIncreased": "Range Increased: {range}",
+                    "_simpleFeature": "Feature: {feature}"
+                },
+                "_takeLevelUp": "Finish Level Up",
+                "tier2": {
+                    "_label": "Levels 2-4",
+                    "_infoLabel": "At Level 2, gain an additional Experience at +2 and gain a +1 bonus to your Proficiency.",
+                    "_pretext": "Choose two options from the list below",
+                    "_posttext": "Take an additional domain card of your level or lower from a domain you have access to."
+                },
+                "tier3": {
+                    "_label": "Levels 5-7",
+                    "_infoLabel": "At Level 5, take an additional Experience and clear all marks on Character Traits.",
+                    "_pretext": "When you level up, record it on your character sheet, then choose two from the list below or any unmarked from the previous tier.",
+                    "_posttext": "Take an additional domain card of your level or lower from a domain you have access to."
+                },
+                "tier4": {
+                    "_label": "Levels 8-10",
+                    "_infoLabel": "At Level 8, take an additional Experience and clear all marks on Character Traits.",
+                    "_pretext": "When you level up, record it on your character sheet, then choose two from the list below or any unmarked from the previous tier.",
+                    "_posttext": "Take an additional domain card of your level or lower from a domain you have access to."
+                },
+                "_title": "{actor} Level Up"
+            },
+            "MulticlassChoice": {
+                "_title": "Multiclassing - {actor}",
+                "_explanation": "You are adding {class} as your multiclass",
+                "_selectDomainPrompt": "Select your new domain"
+            },
+            "OwnershipSelection": {
+                "_title": "Ownership Selection - {name}",
+                "_default": "Default Ownership"
+            },
+            "ReactionRoll": {
+                "_title": "Reaction Roll: {trait}"
+            },
+            "RerollDialog": {
+                "_title": "Reroll",
+                "_deselectDiceNotification": "Deselect one of the selected dice first",
+                "_acceptCurrentRolls": "Accept Current Rolls"
+            },
+            "ResourceDice": {
+                "_title": "{name} Resource",
+                "_rerollDice": "Reroll Dice"
+            }
+        },
+        "CLASS": {
+            "Feature": {
+                "_rallyDice": "Bardic Rally Dice",
+                "_short": "Rally"
+            }
+        },
+        "CONFIG": {
+            "ActionType": {
+                "_passive": "Passive",
+                "_action": "Action",
+                "_reaction": "Reaction"
+            },
+            "AdversaryTrait": {
+                "relentless": {
+                    "_name": "Relentless",
+                    "_description": "A foe with Relentless can activate up to X times during a GM move so long as there are enough action tokens.",
+                    "_tip": "The Relentless move is useful if you want an adversary you can activate more than once during a single GM move. This is often best for exceedingly fast or dangerous foes, or for adversaries who are likely to be battling the party on their own."
+                },
+                "slow": {
+                    "_name": "Slow",
+                    "_description": "A foe with Slow costs X action tokens to activate.",
+                    "_tip": "The Slow move is useful if you want an adversary who narratively takes longer to act than others, like a slug creature or a massive ogre. This is usually most effective when that creature is very powerful when it does act, but eats up lots of action tokens to do it."
+                },
+                "minion": {
+                    "_name": "Minion",
+                    "_description": "For every X damage a PC deals to this adversary, they also deal 1 HP to an additional minion within their attack’s range.",
+                    "_tip": "The Minion move is useful when you want to drop lots of small enemies into the battlefield, knowing the party can swing through them very easily. This move means that if a PC hits one minion and they do enough damage, they also hit a number of others that are in range for them. Because of this, it’s often best to have minions crowd a PC–it will feel overwhelming and dangerous until they’re able to make an attack against them. If you want that cinematic feeling of the PCs taking out waves of enemies with a single attack roll, minions are a great tool to make that happen."
+                }
+            },
+            "AdversaryType": {
+                "bruiser": {
+                    "_label": "Bruiser",
+                    "_description": "Tough adversaries with powerful attacks."
+                },
+                "horde": {
+                    "_label": "Horde",
+                    "_description": "A Horde represents a number of foes working in a group."
+                },
+                "leader": {
+                    "_label": "Leader",
+                    "_description": "Adversaries that command and summon other adversaries."
+                },
+                "minion": {
+                    "_label": "Minion",
+                    "_description": "Basic enemies that are easily dispatched but dangerous in numbers."
+                },
+                "ranged": {
+                    "_label": "Ranged",
+                    "_description": "Adversaries that attack from a distance."
+                },
+                "skulk": {
+                    "_label": "Skulk",
+                    "_description": "Adversaries that maneuver and exploit opportunities to ambush their opponents."
+                },
+                "social": {
+                    "_label": "Social",
+                    "_description": "Adversaries that are primarily interpersonal threats or challenges."
+                },
+                "solo": {
+                    "_label": "Solo",
+                    "_description": "Designed to present a challenge to a whole party."
+                },
+                "standard": {
+                    "_label": "Standard",
+                    "_description": "Rank and File adversaries."
+                },
+                "support": {
+                    "_label": "Support",
+                    "_description": "Enemies that enhance their allies and/or disrupt their opponents."
+                }
+            },
+            "ArmorFeature": {
+                "burning": {
+                    "_name": "Burning",
+                    "_description": "When an adversary attacks you within Melee range, they mark a Stress.",
+                    "actions": {
+                        "burn": {
+                            "_name": "Burn",
+                            "_description": "When an adversary attacks you within Melee range, they mark a Stress."
+                        }
+                    }
+                },
+                "channeling": {
+                    "_name": "Channeling",
+                    "_description": "+1 to Spellcast Rolls",
+                    "effects": {
+                        "channeling": {
+                            "_name": "Channeling",
+                            "_description": "+1 to Spellcast Rolls"
+                        }
+                    }
+                },
+                "difficult": {
+                    "_name": "Difficult",
+                    "_description": "-1 to all character traits and Evasion",
+                    "effects": {
+                        "difficult": {
+                            "_name": "Difficult",
+                            "_description": "-1 to all character traits and Evasion"
+                        }
+                    }
+                },
+                "flexible": {
+                    "_name": "Flexible",
+                    "_description": "+1 to Evasion",
+                    "effects": {
+                        "flexible": {
+                            "_name": "Flexible",
+                            "_description": "+1 to Evasion"
+                        }
+                    }
+                },
+                "fortified": {
+                    "_name": "Fortified",
+                    "_description": "When you mark an Armor Slot, you reduce the severity of an attack by two thresholds instead of one.",
+                    "effects": {
+                        "fortified": {
+                            "_name": "Fortified",
+                            "_description": "When you mark an Armor Slot, you reduce the severity of an attack by two thresholds instead of one."
+                        }
+                    }
+                },
+                "gilded": {
+                    "_name": "Gilded",
+                    "_description": "+1 to Presence",
+                    "effects": {
+                        "gilded": {
+                            "_name": "Gilded",
+                            "_description": "+1 to Presence"
+                        }
+                    }
+                },
+                "heavy": {
+                    "_name": "Heavy",
+                    "_description": "-1 to Evasion",
+                    "effects": {
+                        "heavy": {
+                            "_name": "Heavy",
+                            "_description": "-1 to Evasion"
+                        }
+                    }
+                },
+                "hopeful": {
+                    "_name": "Hopeful",
+                    "_description": "When you would spend a Hope, you can mark an Armor Slot instead.",
+                    "actions": {
+                        "hope": {
+                            "_name": "Hope",
+                            "_description": "When you would spend a Hope, you can mark an Armor Slot instead."
+                        }
+                    }
+                },
+                "impenetrable": {
+                    "_name": "Impenetrable",
+                    "_description": "Once per short rest, when you would mark your last Hit Point, you can instead mark a Stress.",
+                    "actions": {
+                        "impenetrable": {
+                            "_name": "Impenetrable",
+                            "_description": "Once per short rest, when you would mark your last Hit Point, you can instead mark a Stress."
+                        }
+                    }
+                },
+                "magical": {
+                    "_name": "Magical",
+                    "_description": "You can't mark an Armor Slot to reduce physical damage.",
+                    "effects": {
+                        "magical": {
+                            "_name": "Magical",
+                            "_description": "You can't mark an Armor Slot to reduce physical damage."
+                        }
+                    }
+                },
+                "painful": {
+                    "_name": "Painful",
+                    "_description": "Each time you mark an Armor Slot, you must mark a Stress.",
+                    "actions": {
+                        "pain": {
+                            "_name": "Pain",
+                            "_description": "Each time you mark an Armor Slot, you must mark a Stress."
+                        }
+                    }
+                },
+                "physical": {
+                    "_name": "Physical",
+                    "_description": "You can't mark an Armor Slot to reduce magic damage.",
+                    "effects": {
+                        "physical": {
+                            "_name": "Physical",
+                            "_description": "You can't mark an Armor Slot to reduce magic damage."
+                        }
+                    }
+                },
+                "quiet": {
+                    "_name": "Quiet",
+                    "_description": "You gain a +2 bonus to rolls you make to move silently.",
+                    "actions": {
+                        "quiet": {
+                            "_name": "Quiet",
+                            "_description": "You gain a +2 bonus to rolls you make to move silently."
+                        }
+                    }
+                },
+                "reinforced": {
+                    "_name": "Reinforced",
+                    "_description": "When you mark your last Armor Slot, increase your damage thresholds by +2 until you clear at least 1 Armor Slot.",
+                    "actions": {
+                        "reinforce": {
+                            "_name": "Reinforce",
+                            "_description": "When you mark your last Armor Slot, increase your damage thresholds by +2 until you clear at least 1 Armor Slot."
+                        }
+                    },
+                    "effects": {
+                        "reinforced": {
+                            "_name": "Reinforced",
+                            "_description": "When you mark your last Armor Slot, increase your damage thresholds by +2 until you clear at least 1 Armor Slot."
+                        }
+                    }
+                },
+                "resilient": {
+                    "_name": "Resilient",
+                    "_description": "Before you mark your last Armor Slot, roll a d6. On a result of 6, reduce the severity by one threshold without marking an Armor Slot.",
+                    "actions": {
+                        "resilient": {
+                            "_name": "Resilient",
+                            "_description": "Before you mark your last Armor Slot, roll a d6. On a result of 6, reduce the severity by one threshold without marking an Armor Slot."
+                        }
+                    }
+                },
+                "sharp": {
+                    "_name": "Sharp",
+                    "_description": "On a successful attack against a target within Melee range, add a d4 to the damage roll.",
+                    "effects": {
+                        "sharp": {
+                            "_name": "Sharp",
+                            "_description": "On a successful attack against a target within Melee range, add a d4 to the damage roll."
+                        }
+                    }
+                },
+                "shifting": {
+                    "_name": "Shifting",
+                    "_description": "When you are targeted for an attack, you can mark an Armor Slot to give the attack roll against you disadvantage.",
+                    "actions": {
+                        "shift": {
+                            "_name": "Shift",
+                            "_description": "When you are targeted for an attack, you can mark an Armor Slot to give the attack roll against you disadvantage."
+                        }
+                    }
+                },
+                "timeslowing": {
+                    "_name": "Timeslowing",
+                    "_description": "Mark an Armor Slot to roll a d4 and add its result as a bonus to your Evasion against an incoming attack.",
+                    "actions": {
+                        "slowTime": {
+                            "_name": "Slow Time",
+                            "_description": "Mark an Armor Slot to roll a d4 and add its result as a bonus to your Evasion against an incoming attack."
+                        }
+                    }
+                },
+                "truthseeking": {
+                    "_name": "Truthseeking",
+                    "_description": "This armor glows when another creature within Close range tells a lie.",
+                    "actions": {
+                        "truthseeking": {
+                            "_name": "Truthseeking",
+                            "_description": "This armor glows when another creature within Close range tells a lie."
+                        }
+                    }
+                },
+                "veryHeavy": {
+                    "_name": "Very Heavy",
+                    "_description": "-2 to Evasion; -1 to Agility",
+                    "effects": {
+                        "veryHeavy": {
+                            "_name": "Very Heavy",
+                            "_description": "-2 to Evasion; -1 to Agility"
+                        }
+                    }
+                },
+                "warded": {
+                    "_name": "Warded",
+                    "_description": "You reduce incoming magic damage by your Armor Score before applying it to your damage thresholds.",
+                    "effects": {
+                        "warded": {
+                            "_name": "Warded",
+                            "_description": "You reduce incoming magic damage by your Armor Score before applying it to your damage thresholds."
+                        }
+                    }
+                }
+            },
+            "BeastformType": {
+                "_normal": "Normal",
+                "_evolved": "Evolved",
+                "_hybrid": "Hybrid"
+            },
+            "Burden": {
+                "_oneHanded": "One-Handed",
+                "_twoHanded": "Two-Handed"
+            },
+            "RangeInclusion": {
+                "_withinRange": "Within Range",
+                "_outsideRange": "Outside Range"
+            },
+            "Condition": {
+                "dead": {
+                    "_name": "Dead",
+                    "_description": "The character is dead"
+                },
+                "defeated": {
+                    "_name": "Defeated",
+                    "_description": "This adversary is defeated."
+                },
+                "hidden": {
+                    "_name": "Hidden",
+                    "_description": "While Hidden, attacks cannot be made directly targeting them nd any rolls against them are at disadvantage.\nWhen a Hidden creature moves or attacks, they are no longer Hidden. However, if a creature is Hidden when they begin making an attack, the roll has advantage; the Hidden condition isn’t cleared until after the attack is resolved."
+                },
+                "restrained": {
+                    "_name": "Restrained",
+                    "_description": "When an effect makes a creature Restrained, it means they cannot move until this condition is cleared.\nThey can still take actions from their current position."
+                },
+                "unconscious": {
+                    "_name": "Unconscious",
+                    "_description": "Your character can’t move or act while unconscious, they can’t be targeted by an attack."
+                },
+                "vulnerable": {
+                    "_name": "Vulnerable",
+                    "_description": "While a creature is Vulnerable, all rolls targeting them have advantage.\nA creature who is already Vulnerable can’t be made to take the condition again."
+                }
+            },
+            "CountdownType": {
+                "_spotlight": "Spotlight",
+                "_custom": "Custom",
+                "_characterAttack": "Character Attack"
+            },
+            "DamageType": {
+                "physical": {
+                    "_name": "Physical",
+                    "_abbreviation": "Phy"
+                },
+                "magical": {
+                    "_name": "Magical",
+                    "_abbreviation": "Mag"
+                }
+            },
+            "DeathMoves": {
+                "avoidDeath": {
+                    "_name": "Avoid Death",
+                    "_description": "You drop unconscious temporarily and work with the GM to describe how the situation gets much worse because of it. Then roll your Fear die; if its value is equal to or under your Level, take a Scar."
+                },
+                "riskItAll": {
+                    "_name": "Risk It All",
+                    "_description": "Roll your Duality Dice. If Hope is higher, you stay on your feet and clear an amount of Hit Points and/or Stress equal to the value of the Hope die (divide the Hope die value up between these however you’d prefer). If your Fear die is higher, you cross through the veil of death. If the Duality Dice are tied, you stay on your feet and clear all Hit Points and Stress."
+                },
+                "blazeOfGlory": {
+                    "_name": "Blaze Of Glory",
+                    "_description": "With Blaze of Glory, the player is accepting death for the character. Take one action (at GM discretion), which becomes an automatic critical success, then cross through the veil of death."
+                }
+            },
+            "DomainCardTypes": {
+                "_ability": "Ability",
+                "_spell": "Spell",
+                "_grimoire": "Grimoire"
+            },
+            "EnvironmentType": {
+                "exploration": {
+                    "_label": "Exploration",
+                    "_description": ""
+                },
+                "social": {
+                    "_label": "Social",
+                    "_description": ""
+                },
+                "traversal": {
+                    "_label": "Traversal",
+                    "_description": ""
+                },
+                "event": {
+                    "_label": "Event",
+                    "_description": ""
+                }
+            },
+            "Gold": {
+                "_title": "Gold",
+                "_coins": "Coins",
+                "_handfuls": "Handfuls",
+                "_bags": "Bags",
+                "_chests": "Chests"
+            },
+            "HealingType": {
+                "hitPoints": {
+                    "_name": "Hit Points",
+                    "_abbreviation": "HP"
+                },
+                "stress": {
+                    "_name": "Stress",
+                    "_abbreviation": "STR"
+                },
+                "hope": {
+                    "_name": "Hope",
+                    "_abbreviation": "HO"
+                },
+                "armor": {
+                    "_name": "Armor Slot",
+                    "_abbreviation": "AS"
+                },
+                "fear": {
+                    "_name": "Fear",
+                    "_abbreviation": "FR"
+                }
+            },
+            "ItemResourceProgression": {
+                "_increasing": "Increasing",
+                "_decreasing": "Decreasing"
+            },
+            "ItemResourceType": {
+                "_simple": "Simple",
+                "_diceValue": "Dice Value"
+            },
+            "Range": {
+                "self": {
+                    "_name": "Self",
+                    "_description": "means yourself.",
+                    "_short": "Self"
+                },
+                "melee": {
+                    "_name": "Melee",
+                    "_description": "means a character is within touching distance of the target. PCs can generally touch targets up to a few feet away from them, but melee range may be greater for especially large NPCs.",
+                    "_short": "Melee"
+                },
+                "veryClose": {
+                    "_name": "Very Close",
+                    "_description": "means a distance where one can see fine details of a target- within moments of reaching, if need be. This is usually anywhere from about 5-10 feet away. While in danger, a PC can usually get to anything that’s very close as part of any other action they take. Anything on a battle map that is within the shortest length of a game card (~2-3 inches) can usually be considered very close.",
+                    "_short": "V. Close"
+                },
+                "close": {
+                    "_name": "Close",
+                    "_description": "means a distance where one can see prominent details of a target-- across a room or to a neighboring market stall, generally about 10-30 feet away. While in danger, a PC can usually get to anything that’s close as part of any other action they take. Anything on a battle map that is within the length of a standard pen or pencil (~5-6 inches) can usually be considered close.",
+                    "_short": "Close"
+                },
+                "far": {
+                    "_name": "Far",
+                    "_description": "means a distance where one can see the appearance of a person or object, but probably not in great detail-- across a small battlefield or down a large corridor. This is usually about 30-100 feet away. While under danger, a PC will likely have to make an Agility check to get here safely. Anything on a battle map that is within the length of a standard piece of paper (~10-11 inches) can usually be considered far.",
+                    "_short": "Far"
+                },
+                "veryFar": {
+                    "_name": "Very Far",
+                    "_description": "means a distance where you can see the shape of a person or object, but probably not make outany details-- across a large battlefield or down a long street, generally about 100-300 feet away. While under danger, a PC likely has to make an Agility check to get here safely. Anything on a battle map that is beyond far distance, but still within sight of the characters can usually be considered very far.",
+                    "_short": "V. Far"
+                }
+            },
+            "RollTypes": {
+                "trait": {
+                    "_name": "Trait"
+                },
+                "attack": {
+                    "_name": "Attack"
+                },
+                "spellcast": {
+                    "_name": "SpellCast"
+                },
+                "diceSet": {
+                    "_name": "Dice Set"
+                }
+            },
+            "RuleChoice": {
+                "_off": "Off",
+                "_offWithToggle": "Off With Toggle",
+                "_on": "On",
+                "_onWithToggle": "On With Toggle"
+            },
+            "SelectAction": {
+                "_selectType": "Select Action Type",
+                "_selectAction": "Action Selection"
+            },
+            "TemplateTypes": {
+                "_circle": "Circle",
+                "_cone": "Cone",
+                "_emanation": "Emanation",
+                "_inFront": "In Front",
+                "_rect": "Rectangle",
+                "_ray": "Ray"
+            },
+            "Traits": {
+                "agility": {
+                    "name": "Agilidad",
+                    "short": "AGI",
+                    "verb": {
+                        "sprint": "Esprintar",
+                        "leap": "Saltar",
+                        "maneuver": "Maniobrar"
+                    }
+                },
+                "strength": {
+                    "name": "Fuerza",
+                    "short": "FUE",
+                    "verb": {
+                        "lift": "Levantar",
+                        "smash": "Golpear",
+                        "grapple": "Agarrar"
+                    }
+                },
+                "finesse": {
+                    "name": "Destreza",
+                    "short": "DES",
+                    "verb": {
+                        "control": "Controlar",
+                        "hide": "Esconderse",
+                        "tinker": "Trastear"
+                    }
+                },
+                "instinct": {
+                    "name": "Instinto",
+                    "short": "INS",
+                    "verb": {
+                        "perceive": "Percibir",
+                        "sense": "Sentir",
+                        "navigate": "Orientarse"
+                    }
+                },
+                "presence": {
+                    "name": "Presencia",
+                    "short": "PRE",
+                    "verb": {
+                        "charm": "Engatusar",
+                        "perform": "Interpretar",
+                        "deceive": "Engañar"
+                    }
+                },
+                "knowledge": {
+                    "name": "Conocimiento",
+                    "short": "CON",
+                    "verb": {
+                        "recall": "Recordar",
+                        "analyze": "Analizar",
+                        "comprehend": "Comprender"
+                    }
+                }
+            },
+            "WeaponFeature": {
+                "barrier": {
+                    "_name": "Barrier",
+                    "_description": "Gain Weapon Tier + 1 to Armor Score; -1 to Evasion",
+                    "effects": {
+                        "barrier": {
+                            "_name": "Barrier",
+                            "_description": "Gain Weapon Tier + 1 to Armor Score; -1 to Evasion"
+                        }
+                    }
+                },
+                "bonded": {
+                    "_name": "Bonded",
+                    "_description": "Gain a bonus to your damage rolls equal to your level.",
+                    "effects": {
+                        "damage": {
+                            "_name": "Weapon Bond",
+                            "_description": "Gain a bonus to your damage rolls equal to your level."
+                        }
+                    }
+                },
+                "bouncing": {
+                    "_name": "Bouncing",
+                    "_description": "Mark 1 or more Stress to hit that many targets in range of the attack.",
+                    "actions": {
+                        "bounce": {
+                            "_name": "Bounce",
+                            "_description": "Mark 1 or more Stress to hit that many targets in range of the attack."
+                        }
+                    }
+                },
+                "brave": {
+                    "_name": "Brave",
+                    "_description": "-1 to Evasion; + Weapon Tier to Severe damage threshold",
+                    "effects": {
+                        "brave": {
+                            "_name": "Brave",
+                            "_description": "-1 to Evasion; + Weapon Tier to Severe damage threshold"
+                        }
+                    }
+                },
+                "brutal": {
+                    "_name": "Brutal",
+                    "_description": "When you roll the maximum value on a damage die, roll an additional damage die.",
+                    "actions": {
+                        "addDamage": {
+                            "_name": "Brutal",
+                            "_description": "When you roll the maximum value on a damage die, roll an additional damage die."
+                        }
+                    }
+                },
+                "burning": {
+                    "_name": "Burning",
+                    "_description": "When you roll the maximum value on a damage die, roll an additional damage die.",
+                    "actions": {
+                        "burn": {
+                            "_name": "Burn",
+                            "_description": "When you roll a 6 on a damage die, the target must mark a Stress."
+                        }
+                    }
+                },
+                "charged": {
+                    "_name": "Charged",
+                    "_description": "Mark a Stress to gain a +1 bonus to your Proficiency on a primary weapon attack.",
+                    "actions": {
+                        "markStress": {
+                            "_name": "Charge",
+                            "_description": "Mark a Stress to gain a +1 bonus to your Proficiency on a primary weapon attack."
+                        }
+                    },
+                    "effects": {
+                        "charged": {
+                            "_name": "Charged",
+                            "_description": "Gain a +1 bonus to your Proficiency on a primary weapon attack."
+                        }
+                    }
+                },
+                "concussive": {
+                    "_name": "Concussive",
+                    "_description": "On a successful attack, you can spend a Hope to knock the target back to Far range.",
+                    "actions": {
+                        "attack": {
+                            "_name": "Concuss",
+                            "_description": "On a successful attack, you can spend a Hope to knock the target back to Far range."
+                        }
+                    }
+                },
+                "cumbersome": {
+                    "_name": "Cumbersome",
+                    "_description": "-1 to Finesse",
+                    "effects": {
+                        "cumbersome": {
+                            "_name": "Cumbersome",
+                            "_description": "-1 to Finesse"
+                        }
+                    }
+                },
+                "deadly": {
+                    "_name": "Deadly",
+                    "_description": "When you deal Severe damage, the target must mark an additional HP.",
+                    "actions": {
+                        "extraDamage": {
+                            "_name": "Deadly",
+                            "_description": "When you deal Severe damage, the target must mark an additional HP."
+                        }
+                    }
+                },
+                "deflecting": {
+                    "_name": "Deflecting",
+                    "_description": "When you are attacked, you can mark an Armor Slot to gain a bonus to your Evasion equal to your Armor Score against the attack.",
+                    "actions": {
+                        "deflect": {
+                            "_name": "Deflect",
+                            "_description": "When you are attacked, you can mark an Armor Slot to gain a bonus to your Evasion equal to your Armor Score against the attack."
+                        }
+                    },
+                    "effects": {
+                        "deflecting": {
+                            "_name": "Deflecting",
+                            "_description": "Gain a bonus to your Evasion equal to your Armor Score against the attack"
+                        }
+                    }
+                },
+                "destructive": {
+                    "_name": "Destructive",
+                    "_description": "-1 to Agility; on a successful attack, all adversaries within Very Close range must mark a Stress.",
+                    "actions": {
+                        "attack": {
+                            "_name": "Destruction",
+                            "_description": "On a successful attack, all adversaries within Very Close range must mark a Stress."
+                        }
+                    },
+                    "effects": {
+                        "agility": {
+                            "_name": "Destructive",
+                            "_description": "-1 to Agility"
+                        }
+                    }
+                },
+                "devastating": {
+                    "_name": "Devastating",
+                    "_description": "Before you make an attack roll, you can mark a Stress to use a d20 as your damage die.",
+                    "actions": {
+                        "devastate": {
+                            "_name": "Devastate",
+                            "_description": "Before you make an attack roll, you can mark a Stress to use a d20 as your damage die."
+                        }
+                    }
+                },
+                "doubleDuty": {
+                    "_name": "Double Duty",
+                    "_description": "+1 to Armor Score; +1 to primary weapon damage within Melee range",
+                    "effects": {
+                        "doubleDuty": {
+                            "_name": "Double Duty",
+                            "_description": "+1 to Armor Score; +1 to primary weapon damage within Melee range"
+                        }
+                    }
+                },
+                "doubledUp": {
+                    "_name": "Doubled Up",
+                    "_description": "When you make an attack with your primary weapon, you can deal damage to another target within Melee range.",
+                    "actions": {
+                        "doubleUp": {
+                            "_name": "Double Up",
+                            "_description": "When you make an attack with your primary weapon, you can deal damage to another target within Melee range."
+                        }
+                    }
+                },
+                "dueling": {
+                    "_name": "Dueling",
+                    "_description": "When there are no other creatures within Close range of the target, gain advantage on your attack roll against them.",
+                    "actions": {
+                        "duel": {
+                            "_name": "Duel",
+                            "_description": "When there are no other creatures within Close range of the target, gain advantage on your attack roll against them."
+                        }
+                    }
+                },
+                "eruptive": {
+                    "_name": "Eruptive",
+                    "_description": "On a successful attack against a target within Melee range, all other adversaries within Very Close range must succeed on a reaction roll (14) or take half damage.",
+                    "actions": {
+                        "erupt": {
+                            "_name": "Erupt",
+                            "_description": "On a successful attack against a target within Melee range, all other adversaries within Very Close range must succeed on a reaction roll (14) or take half damage."
+                        }
+                    }
+                },
+                "grappling": {
+                    "_name": "Grappling",
+                    "_description": "On a successful attack, you can spend a Hope to Restrain the target or pull them into Melee range with you.",
+                    "actions": {
+                        "grapple": {
+                            "_name": "Grapple",
+                            "_description": "On a successful attack, you can spend a Hope to Restrain the target or pull them into Melee range with you."
+                        }
+                    }
+                },
+                "greedy": {
+                    "_name": "Greedy",
+                    "_description": "Spend a handful of gold to gain a +1 bonus to your Proficiency on a damage roll.",
+                    "actions": {
+                        "greed": {
+                            "_name": "Greed",
+                            "_description": "Spend a handful of gold to gain a +1 bonus to your Proficiency on a damage roll."
+                        }
+                    }
+                },
+                "healing": {
+                    "_name": "Healing",
+                    "_description": "During downtime, automatically clear a Hit Point.",
+                    "actions": {
+                        "heal": {
+                            "_name": "Heal",
+                            "_description": "During downtime, automatically clear a Hit Point."
+                        }
+                    }
+                },
+                "heavy": {
+                    "_name": "Heavy",
+                    "_description": "-1 to Evasion",
+                    "effects": {
+                        "heavy": {
+                            "_name": "Heavy",
+                            "_description": "-1 to Evasion"
+                        }
+                    }
+                },
+                "hooked": {
+                    "_name": "Hooked",
+                    "_description": "On a successful attack, you can pull the target into Melee range.",
+                    "actions": {
+                        "hook": {
+                            "_name": "Hook",
+                            "_description": "On a successful attack, you can pull the target into Melee range."
+                        }
+                    }
+                },
+                "hot": {
+                    "_name": "Hot",
+                    "_description": "This weapon cuts through solid material.",
+                    "actions": {
+                        "hot": {
+                            "_name": "Hot",
+                            "_description": "This weapon cuts through solid material."
+                        }
+                    }
+                },
+                "invigorating": {
+                    "_name": "Invigorating",
+                    "_description": "On a successful attack, roll a d4. On a result of 4, clear a Stress.",
+                    "actions": {
+                        "invigorate": {
+                            "_name": "Invigorate",
+                            "_description": "On a successful attack, roll a d4. On a result of 4, clear a Stress."
+                        }
+                    }
+                },
+                "lifestealing": {
+                    "_name": "Lifestealing",
+                    "_description": "On a successful attack, roll a d6. On a result of 6, clear a Hit Point or clear a Stress.",
+                    "actions": {
+                        "lifesteal": {
+                            "_name": "Lifesteal",
+                            "_description": "On a successful attack, roll a d6. On a result of 6, clear a Hit Point or clear a Stress."
+                        }
+                    }
+                },
+                "lockedOn": {
+                    "_name": "Locked On",
+                    "_description": "On a successful attack, your next attack against the same target with your primary weapon automatically succeeds.",
+                    "actions": {
+                        "lockOn": {
+                            "_name": "Lock On",
+                            "_description": "On a successful attack, your next attack against the same target with your primary weapon automatically succeeds."
+                        }
+                    }
+                },
+                "long": {
+                    "_name": "Long",
+                    "_description": "This weapon's attack targets all adversaries in a line within range.",
+                    "actions": {
+                        "long": {
+                            "_name": "Long",
+                            "_description": "This weapon's attack targets all adversaries in a line within range."
+                        }
+                    }
+                },
+                "lucky": {
+                    "_name": "Lucky",
+                    "_description": "On a failed attack, you can mark a Stress to reroll your attack.",
+                    "actions": {
+                        "luck": {
+                            "_name": "Luck",
+                            "_description": "On a failed attack, you can mark a Stress to reroll your attack."
+                        }
+                    }
+                },
+                "massive": {
+                    "_name": "Massive",
+                    "_description": "-1 to Evasion; on a successful attack, roll an additional damage die and discard the lowest result.",
+                    "effects": {
+                        "massive": {
+                            "_name": "Massive",
+                            "_description": "-1 to Evasion; on a successful attack, roll an additional damage die and discard the lowest result."
+                        }
+                    }
+                },
+                "painful": {
+                    "_name": "Painful",
+                    "_description": "Each time you make a successful attack, you must mark a Stress.",
+                    "actions": {
+                        "pain": {
+                            "_name": "Pain",
+                            "_description": "Each time you make a successful attack, you must mark a Stress."
+                        }
+                    }
+                },
+                "paired": {
+                    "_name": "Paired",
+                    "_description": "Add this Secondary Weapon's tier + 1 to your primary weapon damage against targets within Melee range",
+                    "actions": {
+                        "paired": {
+                            "_name": "Paired",
+                            "_description": "Add this Secondary Weapon's tier + 1 to your primary weapon against targets within Melee range"
+                        }
+                    },
+                    "effects": {
+                        "paired": {
+                            "_name": "Paired",
+                            "_description": "Add this Secondary Weapon's tier + 1 to your primary weapon against targets within Melee range"
+                        }
+                    }
+                },
+                "parry": {
+                    "_name": "Parry",
+                    "_description": "When you are attacked, roll this weapon's damage dice. If any of the attacker's damage dice rolled the same value as your dice, the matching results are discarded from the attacker's damage dice before the damage you take is totaled.",
+                    "actions": {
+                        "parry": {
+                            "_name": "Parry",
+                            "_description": "When you are attacked, roll this weapon's damage dice. If any of the attacker's damage dice rolled the same value as your dice, the matching results are discarded from the attacker's damage dice before the damage you take is totaled."
+                        }
+                    }
+                },
+                "persuasive": {
+                    "_name": "Persuasive",
+                    "_description": "Before you make a Presence Roll, you can mark a Stress to gain a +2 bonus to the result.",
+                    "actions": {
+                        "persuade": {
+                            "_name": "Persuade",
+                            "_description": "Before you make a Presence Roll, you can mark a Stress to gain a +2 bonus to the result."
+                        }
+                    },
+                    "effects": {
+                        "persuasive": {
+                            "_name": "Persuasive",
+                            "_description": "Gain a +2 bonus to the Presence roll"
+                        }
+                    }
+                },
+                "pompous": {
+                    "_name": "Pompous",
+                    "_description": "You must have a Presence of 0 or lower to use this weapon.",
+                    "actions": {
+                        "pompous": {
+                            "_name": "Pompous",
+                            "_description": "You must have a Presence of 0 or lower to use this weapon."
+                        }
+                    }
+                },
+                "powerful": {
+                    "_name": "Powerful",
+                    "_description": "On a successful attack, roll an additional damage die and discard the lowest result.",
+                    "effects": {
+                        "powerful": {
+                            "_name": "Powerful",
+                            "_description": "On a successful attack, roll an additional damage die and discard the lowest result."
+                        }
+                    }
+                },
+                "protective": {
+                    "_name": "Protective",
+                    "_description": "Add your character's Tier to your Armor Score",
+                    "effects": {
+                        "protective": {
+                            "_name": "Protective",
+                            "_description": "Add your character's Tier to your Armor Score"
+                        }
+                    }
+                },
+                "quick": {
+                    "_name": "Quick",
+                    "_description": "When you make an attack, you can mark a Stress to target another creature within range.",
+                    "actions": {
+                        "quick": {
+                            "_name": "Quick",
+                            "_description": "When you make an attack, you can mark a Stress to target another creature within range."
+                        }
+                    }
+                },
+                "reliable": {
+                    "_name": "Reliable",
+                    "_description": "+1 to attack rolls",
+                    "effects": {
+                        "reliable": {
+                            "_name": "Reliable",
+                            "_description": "+1 to attack rolls"
+                        }
+                    }
+                },
+                "reloading": {
+                    "_name": "Reloading",
+                    "_description": "After you make an attack, roll a d6. On a result of 1, you must mark a Stress to reload this weapon before you can fire it again.",
+                    "actions": {
+                        "reload": {
+                            "_name": "Reload",
+                            "_description": "After you make an attack, roll a d6. On a result of 1, you must mark a Stress to reload this weapon before you can fire it again."
+                        }
+                    }
+                },
+                "retractable": {
+                    "_name": "Retractable",
+                    "_description": "The blade can be hidden in the hilt to avoid detection.",
+                    "actions": {
+                        "retract": {
+                            "_name": "Retract",
+                            "_description": "The blade can be hidden in the hilt to avoid detection."
+                        }
+                    }
+                },
+                "returning": {
+                    "_name": "Returning",
+                    "_description": "When this weapon is thrown within its range, it appears in your hand immediately after the attack.",
+                    "actions": {
+                        "return": {
+                            "_name": "Return",
+                            "_description": "When this weapon is thrown within its range, it appears in your hand immediately after the attack."
+                        }
+                    }
+                },
+                "scary": {
+                    "_name": "Scary",
+                    "_description": "On a successful attack, the target must mark a Stress.",
+                    "actions": {
+                        "scare": {
+                            "_name": "Scare",
+                            "_description": "On a successful attack, the target must mark a Stress."
+                        }
+                    }
+                },
+                "selfCorrecting": {
+                    "_name": "Self Correcting",
+                    "_description": "When you roll a 1 on a damage die, it deals 6 damage instead.",
+                    "effects": {
+                        "selfCorrecting": {
+                            "_name": "Self Correcting",
+                            "_description": "When you roll a 1 on a damage die, it deals 6 damage instead."
+                        }
+                    }
+                },
+                "serrated": {
+                    "_name": "Serrated",
+                    "_description": "When you roll a 1 on a damage die, it deals 8 damage instead.",
+                    "effects": {
+                        "serrated": {
+                            "_name": "Serrated",
+                            "_description": "When you roll a 1 on a damage die, it deals 8 damage instead."
+                        }
+                    }
+                },
+                "sharpwing": {
+                    "_name": "Sharpwing",
+                    "_description": "Gain a bonus to your damage rolls equal to your Agility.",
+                    "effects": {
+                        "sharpwing": {
+                            "_name": "Sharpwing",
+                            "_description": "Gain a bonus to your damage rolls equal to your Agility."
+                        }
+                    }
+                },
+                "sheltering": {
+                    "_name": "Sheltering",
+                    "_description": "When you mark an Armor Slot, it reduces damage for you and all allies within Melee range of you who took the same damage.",
+                    "actions": {
+                        "shelter": {
+                            "_name": "Shelter",
+                            "_description": "When you mark an Armor Slot, it reduces damage for you and all allies within Melee range of you who took the same damage."
+                        }
+                    }
+                },
+                "startling": {
+                    "_name": "Startling",
+                    "_description": "Mark a Stress to crack the whip and force all adversaries within Melee range back to Close range.",
+                    "actions": {
+                        "startle": {
+                            "_name": "Startle",
+                            "_description": "Mark a Stress to crack the whip and force all adversaries within Melee range back to Close range."
+                        }
+                    }
+                },
+                "timebending": {
+                    "_name": "Timebending",
+                    "_description": "You can choose the target of your attack after making your attack roll.",
+                    "actions": {
+                        "bendTime": {
+                            "_name": "Bend Time",
+                            "_description": "You can choose the target of your attack after making your attack roll."
+                        }
+                    }
+                }
+            }
+        },
+        "EFFECTS": {
+            "ApplyLocations": {
+                "attackRoll": {
+                    "_name": "Attack Roll"
+                },
+                "damageRoll": {
+                    "_name": "Damage Roll"
+                },
+                "healingRoll": {
+                    "_name": "Healing Roll"
+                }
+            },
+            "Duration": {
+                "_passive": "Passive",
+                "_temporary": "Temporary"
+            },
+            "Types": {
+                "damage": {
+                    "_name": "Damage"
+                },
+                "hitPoints": {
+                    "_name": "Hit Points"
+                },
+                "reach": {
+                    "_name": "Reach"
+                },
+                "stress": {
+                    "_name": "Stress"
+                }
+            },
+            "Attachments": {
+                "_attachHint": "Drop items here to attach them",
+                "_transferHint": "If checked, this effect will be applied to any actor that owns this Effect's parent Item. The effect is always applied if this Item is attached to another one."
+            }
+        },
+        "GENERAL": {
+            "Action": {
+                "single": "Acción",
+                "plural": "Acciones"
+            },
+            "Advantage": {
+                "full": "Ventaja",
+                "plural": "Ventajas",
+                "short": "Ven"
+            },
+            "Adversary": {
+                "singular": "Adversario",
+                "plural": "Adversarios"
+            },
+            "Bonuses": {
+                "rest": {
+                    "_downtimeAction": "Downtime Action",
+                    "shortRest": {
+                        "shortRestMoves": {
+                            "_label": "Short Rest: Bonus Short Rest Moves",
+                            "_hint": "The number of extra Short Rest Moves the character can take during a Short Rest."
+                        },
+                        "longRestMoves": {
+                            "_label": "Short Rest: Bonus Long Rest Moves",
+                            "_hint": "The number of extra Long Rest Moves the character can take during a Short Rest."
+                        }
+                    },
+                    "longRest": {
+                        "shortRestMoves": {
+                            "_label": "Long Rest: Bonus Short Rest Moves",
+                            "_hint": "The number of extra Short Rest Moves the character can take during a Long Rest."
+                        },
+                        "longRestMoves": {
+                            "_label": "Long Rest: Bonus Long Rest Moves",
+                            "_hint": "The number of extra Long Rest Moves the character can take during a Long Rest."
+                        }
+                    }
+                },
+                "maxLoadout": {
+                    "label": "Bonificador de cartas máximas en la mano"
+                }
+            },
+            "Character": {
+                "singular": "Personaje",
+                "plural": "Personaje"
+            },
+            "Cost": {
+                "single": "Coste",
+                "plural": "Costes"
+            },
+            "Damage": {
+                "severe": "Severo",
+                "major": "Mayor",
+                "minor": "Menor",
+                "none": "Ninguno",
+                "allDamage": "Todo el daño",
+                "physicalDamage": "Daño Físico",
+                "magicalDamage": "Daño Mágico",
+                "primaryWeapon": "Daño del arma principal",
+                "secondaryWeapon": "Daño del arma secundaria"
+            },
+            "DamageResistance": {
+                "none": "Ninguna",
+                "physicalResistance": {
+                    "_label": "Damage Resistance: Physical",
+                    "_hint": "Physical Damage is halved if this is set to 1"
+                },
+                "magicalResistance": {
+                    "_label": "Damage Resistance: Magical",
+                    "_hint": "Magical Damage is halved if this is set to 1"
+                },
+                "physicalImmunity": {
+                    "_label": "Damage Immunity: Physical",
+                    "_hint": "Immune to Physical Damage if this is set to 1"
+                },
+                "magicalImmunity": {
+                    "_label": "Damage Immunity: Magical",
+                    "_hint": "Immune to Magical Damage if this is set to 1"
+                },
+                "physicalReduction": {
+                    "_label": "Damage Reduction: Physical",
+                    "_hint": "Physical Damage is reduced by the amount set here"
+                },
+                "magicalReduction": {
+                    "_label": "Damage Reduction: Magical",
+                    "_hint": "Magical Damage is reduced by the amount set here"
+                }
+            },
+            "DamageThresholds": {
+                "title": "Límites de Daño",
+                "minor": "Menor",
+                "major": "Mayor",
+                "severe": "Severo",
+                "majorThreshold": "Límite de daño mayor",
+                "severeThreshold": "Límite de daño severo",
+                "with": "Límite de daño {threshold}"
+            },
+            "Dice": {
+                "single": "Dado",
+                "plural": "Dados"
+            },
+            "Difficulty": {
+                "all": "Dificultad: todos",
+                "reaction": "Dificultad: reacción"
+            },
+            "Disadvantage": {
+                "full": "Desventaja",
+                "short": "Des"
+            },
+            "Domain": {
+                "single": "Dominio",
+                "plural": "Dominios",
+                "arcana": {
+                    "label": "Arcano",
+                    "_description": "This is the domain of the innate or instinctual use of magic. Those who walk this path tap into the raw, enigmatic forces of the realms to manipulate both the elements and their own energy. Arcana offers wielders a volatile power, but it is incredibly potent when correctly channeled."
+                },
+                "blade": {
+                    "label": "Filo",
+                    "_description": "This is the domain of those who dedicate their lives to the mastery of weapons. Whether by blade, bow, or perhaps a more specialized arm, those who follow this path have the skill to cut short the lives of others. Blade requires study and dedication from its followers, in exchange for inexorable power over death."
+                },
+                "bone": {
+                    "label": "Hueso",
+                    "_description": "This is the domain of mastery of swiftness and tactical mastery. Practitioners of this domain have an uncanny control over their own physical abilities, and an eye for predicting the behaviors of others in combat. Bone grants its adherents unparalleled understanding of bodies and their movements in exchange for diligent training."
+                },
+                "codex": {
+                    "label": "Códex",
+                    "_description": "This is the domain of intensive magical study. Those who seek magical knowledge turn to the recipes of power recorded in books, on scrolls, etched into walls, or tattooed on bodies. Codex offers a commanding and versatile understanding of magic to those devotees who are willing to seek beyond the common knowledge."
+                },
+                "grace": {
+                    "label": "Gracia",
+                    "_description": "This is the domain of charisma. Through rapturous storytelling, clever charm, or a shroud of lies, those who channel this power define the realities of their adversaries, bending perception to their will. Grace offers its wielders raw magnetism and mastery over language."
+                },
+                "midnight": {
+                    "label": "Medianoche",
+                    "_description": "This is the domain of shadows and secrecy. Whether by clever tricks, or cloak of night those who channel these forces are practiced in that art of obscurity and there is nothing hidden they cannot reach. Midnight offers practitioners the incredible power to control and create enigmas."
+                },
+                "sage": {
+                    "label": "Sabio",
+                    "_description": "This is the domain of the natural world. Those who walk this path tap into the unfettered power of the earth and its creatures to unleash raw magic. Sage grants its adherents the vitality of a blooming flower and ferocity of a hungry predator."
+                },
+                "splendor": {
+                    "label": "Esplendor",
+                    "_description": "This is the domain of life. Through this magic, followers gain the ability to heal, though such power also grants the wielder some control over death. Splendor offers its disciples the magnificent ability to both give and end life."
+                },
+                "valor": {
+                    "label": "Valor",
+                    "_description": "This is the domain of protection. Whether through attack or defense, those who choose this discipline channel formidable strength to protect their allies in battle. Valor offers great power to those who raise their shield in defense of others."
+                }
+            },
+            "Effect": {
+                "single": "Efecto",
+                "plural": "Efectos"
+            },
+            "Experience": {
+                "single": "Experiencia",
+                "plural": "Experiencias"
+            },
+            "Healing": {
+                "healingAmount": "Cantidad de sanación"
+            },
+            "Modifier": {
+                "single": "Modificador",
+                "plural": "Modificadores"
+            },
+            "Neutral": {
+                "full": "Ninguno",
+                "short": "no"
+            },
+            "Range": {
+                "other": "Incremento de alcance: Otro",
+                "spell": "Incremento de alcance: Conjuro",
+                "weapon": "Incremento de alcance: Arma"
+            },
+            "RefreshType": {
+                "scene": "Escena",
+                "session": "Sesión",
+                "shortrest": "Descanso corto",
+                "longrest": "Descanso largo"
+            },
+            "Resource": {
+                "single": "Recurso",
+                "plural": "Recursos"
+            },
+            "Roll": {
+                "_attack": "Attack Roll",
+                "_basic": "Roll",
+                "_difficulty": "Roll (Difficulty {difficulty})",
+                "_primaryWeaponAttack": "Primary Weapon Attack Roll",
+                "_secondaryWeaponAttack": "Secondary Weapon Attack Roll",
+                "_spellcast": "Spellcast Roll",
+                "_trait": "Trait Roll",
+                "_action": "Action Roll",
+                "_reaction": "Reaction Roll"
+            },
+            "Rules": {
+                "damageReduction": {
+                    "increasePerArmorMark": {
+                        "_label": "Damage Reduction per Armor Slot",
+                        "_hint": "A used armor slot normally reduces damage by one step. This value increases the number of steps damage is reduced by."
+                    },
+                    "_maxArmorMarkedBonus": "Max Armor Used",
+                    "maxArmorMarkedStress": {
+                        "_label": "Max Armor Used With Stress",
+                        "_hint": "If this value is set you can use up to that much stress to spend additional Armor Marks beyond your normal maximum."
+                    },
+                    "stress": {
+                        "any": {
+                            "_label": "Stress Damage Reduction: Any",
+                            "_hint": "The cost in stress you can pay to reduce incoming damage down one threshold"
+                        },
+                        "severe": {
+                            "_label": "Stress Damage Reduction: Severe",
+                            "_hint": "The cost in stress you can pay to reduce severe damage down to major."
+                        },
+                        "major": {
+                            "_label": "Stress Damage Reduction: Major",
+                            "_hint": "The cost in stress you can pay to reduce major damage down to minor."
+                        },
+                        "minor": {
+                            "_label": "Stress Damage Reduction: Minor",
+                            "_hint": "The cost in stress you can pay to reduce minor damage to none."
+                        }
+                    }
+                },
+                "attack": {
+                    "damage": {
+                        "dice": {
+                            "_label": "Base Attack: Damage Dice Index",
+                            "_hint": "Index for the damage dice used on the basic attack. 0=d4, 1=d6, 2=d8, 3=d10, 4=d12, 5=d20"
+                        },
+                        "bonus": {
+                            "_label": "Base Attack: Damage Bonus"
+                        }
+                    },
+                    "roll": {
+                        "trait": {
+                            "_label": "Base Attack: Trait"
+                        }
+                    }
+                }
+            },
+            "Tabs": {
+                "details": "Detalles",
+                "attack": "Ataque",
+                "experiences": "Experiencias",
+                "features": "Rasgos",
+                "actions": "Acciones",
+                "potentialAdversaries": "Adversarios potenciales",
+                "adversaries": "Adversarios",
+                "advancement": "Subida de nivel",
+                "selections": "Opciones de avance",
+                "summary": "Resumen",
+                "effects": "Efectos",
+                "settings": "Ajustes",
+                "description": "Descripción",
+                "main": "Datos",
+                "information": "Información",
+                "notes": "Notas",
+                "inventory": "Inventario",
+                "loadout": "Mano",
+                "vault": "Almacén",
+                "heritage": "Legado",
+                "story": "Historia",
+                "biography": "Biografía",
+                "general": "General",
+                "foundation": "Base",
+                "specialization": "Especialización",
+                "mastery": "Maestría",
+                "optional": "Opcional",
+                "recovery": "Recuperación",
+                "setup": "Configuración",
+                "equipment": "Equipo",
+                "attachments": "Adjuntos",
+                "advanced": "Avanzado",
+                "tier1": "Rango 1",
+                "tier2": "Rango 2",
+                "tier3": "Rango 3",
+                "tier4": "Rango 4",
+                "domains": "Dominios",
+                "downtime": "Tiempo de inactividad",
+                "rules": "Reglas"
+            },
+            "Tiers": {
+                "1": "Rango 1",
+                "2": "Rango 2",
+                "3": "Rango 3",
+                "4": "Rango 4",
+                "singular": "Rango"
+            },
+            "Trait": {
+                "single": "Rasgo",
+                "plural": "Rasgos"
+            },
+            "actorName": "Nombre del actor",
+            "amount": "Cantidad",
+            "any": "Cualquiera",
+            "armor": "Armadura",
+            "armorScore": "Valor de armadura",
+            "activeEffects": "Efectos activos",
+            "armorSlots": "Armadura",
+            "attack": "Ataque",
+            "basics": "Básicos",
+            "bonus": "Bonificador",
+            "burden": "Carga",
+            "continue": "Continuar",
+            "criticalSuccess": "Éxito crítico",
+            "criticalShort": "Crítico",
+            "d20Roll": "Tirada de D20",
+            "damage": "Daño",
+            "damageRoll": "Tirada de daño",
+            "damageType": "Tipo de daño",
+            "description": "Descripción",
+            "difficulty": "Dificultad",
+            "downtime": "Tiempo de inactividad",
+            "dropActorsHere": "Arrastra Actores aquí",
+            "dropFeaturesHere": "Arrastra Rasgos aquí",
+            "duality": "Dualidad",
+            "dualityRoll": "Tirada dual",
+            "enabled": "Habilitado",
+            "evasion": "Evasión",
+            "equipment": "Equipo",
+            "experience": {
+                "single": "Experiencia",
+                "plural": "Experiencias"
+            },
+            "failure": "Fallo",
+            "fear": "Miedo",
+            "features": "Rasgos",
+            "formula": "Fórmula",
+            "healing": "Curación",
+            "healingRoll": "Tirada de curación",
+            "hit": {
+                "single": "Golpe",
+                "plural": "Golpes"
+            },
+            "HitPoints": {
+                "single": "Punto de golpe",
+                "plural": "Puntos de golpe",
+                "short": "PG"
+            },
+            "hope": "Esperanza",
+            "hordeHp": "PG de horda",
+            "identify": "Identidad",
+            "imagePath": "Ruta de imagen",
+            "inactiveEffects": "Efectos inactivos",
+            "inventory": "Inventario",
+            "itemResource": "Recurso del objeto",
+            "label": "Etiqueta",
+            "level": "Nivel",
+            "levelShort": "Nv",
+            "levelUp": "Subida de nivel",
+            "loadout": "Mano",
+            "max": "Máx",
+            "miss": {
+                "single": "Fallo",
+                "plural": "Fallos"
+            },
+            "maxWithThing": "Máximo {thing}",
+            "multiclass": "Multiclase",
+            "newCategory": "Nueva categoría",
+            "none": "Ninguno",
+            "noTarget": "Ningún objetivo",
+            "partner": "Compañero",
+            "proficiency": "Competencia",
+            "quantity": "Cantidad",
+            "range": "Alcance",
+            "reactionRoll": "Tirada de Reacción",
+            "recovery": "Recuperación",
+            "reroll": "Volver a tirar",
+            "rerollThing": "Volver a tirar {thing}",
+            "resource": "Recurso",
+            "roll": "Tirar",
+            "rollAll": "Tirar todo",
+            "rollDamage": "Tirar daño",
+            "rollWith": "Tirada de {roll}",
+            "save": "Guardar",
+            "scalable": "Escalable",
+            "situationalBonus": "Bonificador situacional",
+            "stress": "Estrés",
+            "success": "Éxito",
+            "take": "Coger",
+            "Target": {
+                "single": "Objetivo",
+                "plural": "Objetivos"
+            },
+            "title": "Título",
+            "total": "Total",
+            "true": "Cierto",
+            "type": "Tipo",
+            "unarmed": "Desarmado",
+            "unarmedStrike": "Ataque desarmado",
+            "unarmored": "Sin armadura",
+            "use": "Uso",
+            "used": "Usado",
+            "uses": "Usos",
+            "value": "Valor",
+            "withThing": "Con {thing}"
+        },
+        "ITEMS": {
+            "FIELDS": {
+                "resource": {
+                    "amount": {
+                        "_label": "Amount"
+                    },
+                    "dieFaces": {
+                        "_label": "Die Faces"
+                    },
+                    "icon": {
+                        "_label": "Icon"
+                    },
+                    "max": {
+                        "_label": "Max"
+                    },
+                    "progression": {
+                        "_label": "Progression"
+                    },
+                    "recovery": {
+                        "_label": "Recovery"
+                    },
+                    "type": {
+                        "_label": "Type"
+                    },
+                    "value": {
+                        "_label": "Value"
+                    }
+                }
+            },
+            "Ancestry": {
+                "_primaryFeature": "Primary Feature",
+                "_secondaryFeature": "Secondary Feature"
+            },
+            "Armor": {
+                "_baseScore": "Base Score",
+                "baseThresholds": {
+                    "_base": "Base Thresholds",
+                    "_major": "Major Threshold",
+                    "_severe": "Severe Threshold"
+                }
+            },
+            "Beastform": {
+                "FIELDS": {
+                    "beastformType": {
+                        "_label": "Beastform Type"
+                    },
+                    "tier": {
+                        "_label": "Tier"
+                    },
+                    "mainTrait": {
+                        "_label": "Main Trait"
+                    },
+                    "examples": {
+                        "_label": "Examples"
+                    },
+                    "advantageOn": {
+                        "_label": "Gain Advantage On"
+                    },
+                    "tokenImg": {
+                        "_label": "Token Image"
+                    },
+                    "tokenRingImg": {
+                        "_label": "Subject Texture"
+                    },
+                    "tokenSize": {
+                        "_placeholder": "Using character dimensions",
+                        "height": {
+                            "_label": "Height"
+                        },
+                        "width": {
+                            "_label": "Width"
+                        }
+                    },
+                    "evolved": {
+                        "maximumTier": {
+                            "_label": "Maximum Tier"
+                        },
+                        "mainTraitBonus": {
+                            "_label": "Main Trait Bonus"
+                        }
+                    },
+                    "hybrid": {
+                        "beastformOptions": {
+                            "_label": "Nr Beastforms"
+                        },
+                        "advantages": {
+                            "_label": "Nr Advantages"
+                        },
+                        "features": {
+                            "_label": "Nr Features"
+                        }
+                    }
+                },
+                "_attackName": "Beast Attack",
+                "_beastformEffect": "Beastform Transformation",
+                "_dialogTitle": "Beastform Selection",
+                "_tokenTitle": "Beastform Token",
+                "_transform": "Transform",
+                "_evolve": "Evolve",
+                "_evolvedFeatureTitle": "Evolved",
+                "_evolvedDrag": "Drag a form here to evolve it.",
+                "_hybridize": "Hybridize",
+                "_hybridizeFeatureTitle": "Hybrid Features",
+                "_hybridizeDrag": "Drag a form here to hybridize it."
+            },
+            "Class": {
+                "_hopeFeatures": "Hope Features",
+                "_classFeatures": "Class Features",
+                "guide": {
+                    "_suggestedEquipment": "Suggested Equipments",
+                    "_suggestedPrimaryWeaponTitle": "Primary Weapon",
+                    "_suggestedSecondaryWeaponTitle": "Secondary Weapon",
+                    "_suggestedArmorTitle": "Armor",
+                    "inventory": {
+                        "_thenChoose": "Then Choose Between",
+                        "_andEither": "And Either"
+                    }
+                }
+            },
+            "Consumable": {
+                "_consumeOnUse": "Consume On Use"
+            },
+            "DomainCard": {
+                "_type": "Type",
+                "_recallCost": "Recall Cost",
+                "_foundationTitle": "Foundation",
+                "_specializationTitle": "Specialization",
+                "_masteryTitle": "Mastery"
+            },
+            "Subclass": {
+                "_spellcastingTrait": "Spellcasting Trait"
+            },
+            "Weapon": {
+                "_weaponType": "Weapon Type",
+                "_primaryWeapon": "Primary Weapon",
+                "_secondaryWeapon": "Secondary Weapon"
+            }
+        },
+        "SETTINGS": {
+            "Appearance": {
+                "FIELDS": {
+                    "displayFear": {
+                        "_label": "Fear Display"
+                    },
+                    "dualityColorScheme": {
+                        "_label": "Chat Style"
+                    },
+                    "showGenericStatusEffects": {
+                        "_label": "Show Foundry Status Effects"
+                    },
+                    "_expandedTitle": "Auto-expand Descriptions",
+                    "extendCharacterDescriptions": {
+                        "_label": "Characters"
+                    },
+                    "extendAdversaryDescriptions": {
+                        "_label": "Adversaries"
+                    },
+                    "extendEnvironmentDescriptions": {
+                        "_label": "Environments"
+                    },
+                    "extendItemDescriptions": {
+                        "_label": "Items"
+                    }
+                },
+                "fearDisplay": {
+                    "_token": "Tokens",
+                    "_bar": "Bar",
+                    "_hide": "Hide"
+                }
+            },
+            "Automation": {
+                "fear": {
+                    "_name": "Fear",
+                    "_hint": "Automatically increase the GM's fear pool on a fear duality roll result."
+                },
+                "FIELDS": {
+                    "damageReductionRulesDefault": {
+                        "_label": "Damage Reduction Rules Default",
+                        "_hint": "Wether using armor and reductions has rules on by default"
+                    },
+                    "defeated": {
+                        "enabled": {
+                            "_label": "Enabled"
+                        },
+                        "overlay": {
+                            "_label": "Overlay Effect"
+                        },
+                        "characterDefault": {
+                            "_label": "Character Default Defeated Status"
+                        },
+                        "adversaryDefault": {
+                            "_label": "Adversary Default Defeated Status"
+                        },
+                        "companionDefault": {
+                            "_label": "Companion Default Defeated Status"
+                        }
+                    },
+                    "hopeFear": {
+                        "_label": "Hope & Fear",
+                        "gm": {
+                            "_label": "GM"
+                        },
+                        "players": {
+                            "_label": "Players"
+                        }
+                    },
+                    "levelupAuto": {
+                        "_label": "Levelup Automation",
+                        "_hint": "When you've made your choices and finish levelup, the numerical changes are automatically applied to your character."
+                    },
+                    "actionPoints": {
+                        "_label": "Action Points",
+                        "_hint": "Automatically give and take Action Points as combatants take their turns."
+                    },
+                    "hordeDamage": {
+                        "_label": "Automatic Horde Damage",
+                        "_hint": "Automatically active horde effect to lower damage when reaching half or lower HP."
+                    },
+                    "effects": {
+                        "rangeDependent": {
+                            "_label": "Effect Range Dependent",
+                            "_hint": "Effects with defined range dependency will automatically turn on/off depending on range"
+                        }
+                    },
+                    "resourceScrollTexts": {
+                        "_label": "Show Resource Change Scrolltexts",
+                        "_hint": "When a character is damaged, uses armor etc, a scrolling text will briefly appear by the token to signify this."
+                    },
+                    "playerCanEditSheet": {
+                        "_label": "Players Can Manually Edit Character Settings",
+                        "_hint": "Players are allowed to access the manual Character Settings and change their statistics beyond the rules."
+                    }
+                },
+                "defeated": {
+                    "_title": "Defeated Handling"
+                }
+            },
+            "Homebrew": {
+                "_newDowntimeMove": "Downtime Move",
+                "_downtimeMoves": "Downtime Moves",
+                "_nrChoices": "# Moves Per Rest",
+                "_resetMovesTitle": "Reset {type} Downtime Moves",
+                "_resetMovesText": "Are you sure you want to reset?",
+                "FIELDS": {
+                    "maxFear": {
+                        "_label": "Max Fear"
+                    },
+                    "traitArray": {
+                        "_label": "Initial Trait Modifiers"
+                    },
+                    "maxLoadout": {
+                        "_label": "Max Cards in Loadout",
+                        "_hint": "Set to blank or 0 for unlimited maximum"
+                    },
+                    "maxDomains": {
+                        "_label": "Max Class Domains",
+                        "_hint": "Max domains you can set on a class"
+                    }
+                },
+                "currency": {
+                    "_enabled": "Enable Overrides",
+                    "_title": "Currency Overrides",
+                    "_currencyName": "Currency Name",
+                    "_coinName": "Coin Name",
+                    "_handfulName": "Handful Name",
+                    "_bagName": "Bag Name",
+                    "_chestName": "Chest Name"
+                },
+                "domains": {
+                    "_domainsTitle": "Base Domains",
+                    "_homebrewDomains": "Homebrew Domains",
+                    "_newDomain": "New Domain",
+                    "_newDomainInputTitle": "Create Homebrew Domain",
+                    "_newDomainInputLabel": "New Domain Name",
+                    "_newDomainInputHint": "This cannot be altered later",
+                    "_editDomain": "Active Domain",
+                    "_deleteDomain": "Delete Domain",
+                    "_deleteDomainText": "Are you sure you want to delete the {name} domain? It will be immediately removed from all Actors in this world where it's currently used. Compendiums are not cleared.",
+                    "_duplicateDomain": "There is already a domain with this identification."
+                }
+            },
+            "Menu": {
+                "_title": "Daggerheart Game Settings",
+                "automation": {
+                    "_name": "Automation Settings",
+                    "_label": "Configure Automation",
+                    "_hint": "Various settings automating resource management and more"
+                },
+                "homebrew": {
+                    "_name": "Homebrew Settings",
+                    "_label": "Configure Homebrew",
+                    "_hint": "Various settings allowing extensions to types or altered game rules"
+                },
+                "range": {
+                    "_name": "Range Settings",
+                    "_label": "Configure Range Handling",
+                    "_hint": "System ruler setup for displaying ranges in Daggerheart"
+                },
+                "appearance": {
+                    "_title": "Appearance Settings",
+                    "_label": "Appearance Settings",
+                    "_hint": "Modify the look of various parts of the system",
+                    "_name": "Appearance Settings",
+                    "_duality": "Duality Rolls",
+                    "diceSoNice": {
+                        "_title": "Dice So Nice",
+                        "_hint": "Coloration of Duality dice if the Dice So Nice module is used.",
+                        "_foreground": "Foreground",
+                        "_background": "Background",
+                        "_outline": "Outline",
+                        "_edge": "Edge",
+                        "_texture": "Texture",
+                        "_colorset": "Theme",
+                        "_material": "Material",
+                        "_system": "Dice Preset"
+                    }
+                },
+                "variantRules": {
+                    "_title": "Variant Rules",
+                    "_label": "Variant Rules",
+                    "_hint": "Apply variant rules from the Daggerheart system",
+                    "_name": "Variant Rules",
+                    "_actionTokens": "Action Tokens"
+                }
+            },
+            "Resources": {
+                "fear": {
+                    "_name": "Fear",
+                    "_hint": "The Fear pool of the GM."
+                }
+            },
+            "VariantRules": {
+                "FIELDS": {
+                    "actionTokens": {
+                        "enabled": {
+                            "_label": "Enabled"
+                        },
+                        "tokens": {
+                            "_label": "Tokens"
+                        }
+                    }
+                }
+            },
+            "ResetSettings": {
+                "_resetConfirmationTitle": "Reset Settings",
+                "_resetConfirmationText": "Are you sure you want to reset the {settings}?"
+            }
+        },
+        "UI": {
+            "Chat": {
+                "action": {
+                    "_title": "Action"
+                },
+                "applyEffect": {
+                    "_title": "Apply Effects - {name}"
+                },
+                "attackRoll": {
+                    "_title": "Attack - {attack}",
+                    "_rollDamage": "Roll Damage",
+                    "_rollHealing": "Roll Healing",
+                    "_applyEffect": "Apply Effects"
+                },
+                "damageRoll": {
+                    "_title": "Damage - {damage}",
+                    "_dealDamageToTargets": "Damage Hit Targets",
+                    "_dealDamage": "Deal Damage",
+                    "_rollDamage": "Roll Damage",
+                    "_hitTarget": "Hit",
+                    "_selectedTarget": "Selected",
+                    "_currentTarget": "Current"
+                },
+                "deathMove": {
+                    "_title": "Death Move"
+                },
+                "dicePool": {
+                    "_title": "Dice Pool"
+                },
+                "domainCard": {
+                    "_title": "Domain Card"
+                },
+                "dualityRoll": {
+                    "_abilityCheckTitle": "{ability} Check"
+                },
+                "_featureTitle": "Class Feature",
+                "healingRoll": {
+                    "_title": "Heal - {damage}",
+                    "_heal": "Heal",
+                    "_applyHealing": "Apply Healing"
+                },
+                "reroll": {
+                    "_confirmTitle": "Reroll Dice",
+                    "_confirmText": "Are you sure you want to reroll?"
+                },
+                "resourceRoll": {
+                    "_playerMessage": "{user} rerolled their {name}"
+                }
+            },
+            "Notifications": {
+                "_adversaryMissing": "The linked adversary doesn't exist in the world.",
+                "_beastformInapplicable": "A beastform can only be applied to a Character.",
+                "_beastformAlreadyApplied": "The character already has a beastform applied!",
+                "_noTargetsSelected": "No targets are selected.",
+                "_attackTargetDoesNotExist": "The target token no longer exists",
+                "_insufficentAdvancements": "You don't have enough advancements left.",
+                "_noAssignedPlayerCharacter": "You have no assigned character.",
+                "_noSelectedToken": "You have no selected token",
+                "_onlyUseableByPC": "This can only be used with a PC token",
+                "_dualityParsing": "Duality roll not properly formated",
+                "_attributeFaulty": "The supplied Attribute doesn't exist",
+                "_domainCardWrongDomain": "You don't have access to that Domain",
+                "_domainCardToHighLevel": "The Domain Card is too high level to be selected",
+                "_domainCardDuplicate": "You already have that domain card!",
+                "_noSelectionsLeft": "Nothing more to select!",
+                "_alreadySelectedClass": "You already have that class!",
+                "_classAlreadySelected": "The character already has a class",
+                "_subclassAlreadySelected": "The character already has a subclass for that class.",
+                "_noClassSelected": "Your character has no class selected!",
+                "_lacksDomain": "Your character doesn't have the domain of the card!",
+                "_duplicateDomainCard": "You already have a domain card with that name!",
+                "_missingClassOrSubclass": "The character doesn't have a class and subclass",
+                "_tooHighLevel": "You cannot raise the character level past the maximum",
+                "_tooLowLevel": "You cannot lower the character level below starting level",
+                "_subclassNotInClass": "This subclass does not belong to your selected class.",
+                "_subclassNotInMulticlass": "This subclass does not belong to your selected multiclass.",
+                "_missingClass": "You don't have a class selected yet.",
+                "_missingMulticlass": "Missing multiclass",
+                "_wrongDomain": "The card isn't from one of your class domains.",
+                "_cardTooHighLevel": "The card is too high level!",
+                "_duplicateCard": "You cannot select the same card more than once.",
+                "_notPrimary": "The weapon is not a primary weapon!",
+                "_notSecondary": "The weapon is not a secondary weapon!",
+                "_itemTooHighTier": "The item must be from Tier1",
+                "_primaryIsTwoHanded": "Cannot select a secondary weapon with a two-handed primary!",
+                "_noMoreMoves": "You cannot select any more downtime moves",
+                "_damageAlreadyNone": "The damage has already been reduced to none",
+                "_noAvailableArmorMarks": "You have no more available armor marks",
+                "_notEnoughStress": "You don't have enough stress",
+                "_damageIgnore": "{character} did not take damage",
+                "_featureIsMissing": "Feature is missing",
+                "_actionIsMissing": "Action is missing",
+                "_attackIsMissing": "Attack is missing",
+                "_unownedActionMacro": "Cannot make a Use macro for an Action not on your character",
+                "_unownedAttackMacro": "Cannot make a Use macro for an Attack that doesn't belong to one of your characters",
+                "_featureNotHope": "This feature is used as something else than a Hope feature and cannot be used here.",
+                "_featureNotClass": "This feature is used as something else than a Class feature and cannot be used here.",
+                "_featureNotPrimary": "This feature is used as something else than a Primary feature and cannot be used here.",
+                "_featureNotSecondary": "This feature is used as something else than a Secondary feature and cannot be used here.",
+                "_featureNotFoundation": "This feature is used as something else than a Foundation feature and cannot be used here.",
+                "_featureNotSpecialization": "This feature is used as something else than a Specialization feature and cannot be used here.",
+                "_featureNotMastery": "This feature is used as something else than a Mastery feature and cannot be used here.",
+                "_beastformMissingEffect": "The Beastform is missing a Beastform Effect. Cannot be used.",
+                "_beastformToManyAdvantages": "You cannot select any more advantages.",
+                "_beastformToManyFeatures": "You cannot select any more features.",
+                "_beastformEquipWeapon": "You cannot use weapons while in a Beastform.",
+                "_loadoutMaxReached": "You've reached maximum loadout. Move atleast one domain card to the vault, or increase the limit in homebrew settings if desired.",
+                "_domainMaxReached": "You've reached the maximum domains for the class. Increase the limit in homebrew settings if desired.",
+                "_insufficientResources": "You have insufficient resources",
+                "_multiclassAlreadyPresent": "You already have a class and multiclass",
+                "_subclassesAlreadyPresent": "You already have a class and multiclass subclass",
+                "_noDiceSystem": "Your selected dice {system} does not have a {faces} dice"
+            },
+            "Tooltip": {
+                "_disableEffect": "Disable Effect",
+                "_enableEffect": "Enable Effect",
+                "_openItemWorld": "Open Item World",
+                "_openActorWorld": "Open Actor World",
+                "_sendToChat": "Send to Chat",
+                "_maxEvasionClassBound": "Your Evasion base is set on your class. This is the increase ontop of that.",
+                "_maxHPClassBound": "Your max HP base is set on your class. This is the increase ontop of that.",
+                "_moreOptions": "More Options",
+                "_equip": "Equipar",
+                "_unequip": "Unequip",
+                "_sendToVault": "Send to Vault",
+                "_sendToLoadout": "Send to Loadout",
+                "_makeDeathMove": "Make a Death Move",
+                "_rangeAndTarget": "Range & Target",
+                "_dragApplyEffect": "Drag effect to apply it to an actor",
+                "_appliedEvenIfSuccessful": "Applied even if save succeeded",
+                "_diceIsRerolled": "The dice has been rerolled (x{times})",
+                "_pendingSaves": "Pending Reaction Rolls",
+                "_openSheetSettings": "Open Settings",
+                "_compendiumBrowser": "Compendium Browser",
+                "_rulesOn": "Rules On",
+                "_rulesOff": "Rules Off",
+                "_remainingUses": "Uses refresh on {type}",
+                "_rightClickExtand": "Right-Click to extand",
+                "_companionPartnerLevelBlock": "The companion needs an assigned partner to level up."
+            }
+        }
+    }
+}
