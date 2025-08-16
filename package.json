@@ -15,7 +15,7 @@
   "type": "commonjs",
   "main": "module.js",
   "scripts": {
-    "download": "node ./tools/download.mjs",
+    "update": "node ./tools/update.mjs",
     "sync": "node ./tools/sync.mjs"
   }
 }

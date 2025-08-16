@@ -60,8 +60,8 @@
             },
             "Config": {
                 "beastform": {
-                    "_exact": "Rango máximo de la forma animal",
-                    "_exactHint": "Se usa el rango del personaje si está vacío",
+                    "exact": "Máximo rango de forma animal",
+                    "exactHint": "Se usará el rango del personaje si está vacío",
                     "label": "Forma animal"
                 },
                 "displayInChat": "Mostrar en el chat"
@@ -93,7 +93,7 @@
                     "short": "(solo con Éxito)"
                 },
                 "cost": {
-                    "_stepTooltip": "+{step} per step"
+                    "stepTooltip": "+{step} por avance"
                 }
             }
         },
@@ -292,7 +292,7 @@
                     "community": "Comunidad",
                     "class": "Clase",
                     "experience": "Experiencia",
-                    "traits": "Rasgos",
+                    "traits": "Atributos",
                     "domainCards": "Cartas de dominio",
                     "equipment": "Equipo"
                 },
@@ -318,10 +318,10 @@
                 "suggestedArmor": "Armarura sugerida",
                 "suggestedPrimaryWeapon": "Arma principal sugerida",
                 "suggestedSecondaryWeapon": "Arma secundaria sugerida",
-                "suggestedTraits": "Rasgos sugeridos",
+                "suggestedTraits": "Atributos sugeridos",
                 "suggestedWeapons": "Arma sugerida",
                 "title": "{actor} - Configurar personaje",
-                "traitIncreases": "Incrementos de rasgos"
+                "traitIncreases": "Incrementos de atributos"
             },
             "CombatTracker": {
                 "combatStarted": "Activo",
@@ -403,189 +403,189 @@
                     "title": "Descanso largo",
                     "moves": "Movimientos de descanso largo ({current}/{max})",
                     "clearStress": {
-                        "_description": "Describe how you blow off steam or pull yourself together, and clear all marked Stress.",
-                        "_name": "Clear Stress"
+                        "description": "Describe cómo te desahogas o te calmas y elimina todo el estrés marcado.",
+                        "name": "Eliminar estrés"
                     },
                     "prepare": {
-                        "_description": "Describe how you are preparing for the next day's adventure, then gain a Hope. If you choose to Prepare with one or more members of your party, you may each take two Hope.",
-                        "_name": "Prepare"
+                        "description": "Describe cómo te preparas para la aventura del día siguiente y gana un punto de Esperanza. Si eliges prepararte con uno o más compañeros del grupo cada uno recibís dos puntos de esperanza.",
+                        "name": "Preparar"
                     },
                     "repairArmor": {
-                        "_description": "Describe how you spend time repairing your armor and clear all of its Armor Slots. You may also do this to an ally's armor instead.",
-                        "_name": "Repair Armor"
+                        "description": "Describe cómo pasas tiempo reparando tu armadura y elimina todos los espacios de armadura gastados. Puedes elegir hacer esto para la armadura de un aliado.",
+                        "name": "Reparar armadura"
                     },
                     "tendToWounds": {
-                        "_description": "Describe how you patch yourself up and remove all marked Hit Points. You may also do this on an ally instead.",
-                        "_name": "Tend to Wounds"
+                        "description": "Describe cómo tratas tus heridas y elimina todos los Puntos de Golpe marcados. Puedes elegir hacer esto para un aliado.",
+                        "name": "Atender heridas"
                     },
                     "workOnAProject": {
-                        "_description": "Establish or continue work on a project.",
-                        "_name": "Work on a Project"
+                        "description": "Establece o continua el trabajando en un proyecto.",
+                        "name": "Trabajar en un proyecto"
                     }
                 },
                 "shortRest": {
-                    "_title": "Short Rest",
-                    "_moves": "Short Rest Moves ({current}/{max})",
+                    "title": "Descanso corto",
+                    "moves": "Movimientos de descanso corto ({current}/{max})",
                     "tendToWounds": {
-                        "_name": "Tend to Wounds",
-                        "_description": "Describe how you hastily patch yourself up, then clear a number of Hit Points equal to 1d4 + your tier. You can do this to an ally instead."
+                        "name": "Atender heridas",
+                        "description": "Describe how you hastily patch yourself up, then clear a number of Hit Points equal to 1d4 + your tier. You can do this to an ally instead."
                     },
                     "clearStress": {
-                        "_name": "Clear Stress",
-                        "_description": "Describe how you blow off steam or pull yourself together, then clear a number of Stress equal to 1d4 + your tier."
+                        "name": "Eliminar estrés",
+                        "description": "Describe cómo te desahogas o te calmas, luego elimina Estrés igual a 1d4 + tu rango."
                     },
                     "repairArmor": {
-                        "_name": "Repair Armor",
-                        "_description": "Describe how you quickly repair your armor, then clear a number of Armor Slots equal to 1d4 + your tier. You can do this to an ally's armor instead."
+                        "name": "Reparar armadura",
+                        "description": "Describe cómo reparas rápidamente tu armadura, luego elimina un número de espacios de armadura igual a 1d4 + tu rango. Puedes elegir hacer esto sobre la armadura de un aliado."
                     },
                     "prepare": {
-                        "_name": "Prepare",
-                        "_description": "Describe how you prepare yourself for the path ahead, then gain a Hope. If you choose to Prepare with one or more members of your party, you each gain 2 Hope."
+                        "name": "Preparar",
+                        "description": "Describe cómo te preparas para el camino que tienes delante, luego gana 1 punto de Esperanza. Si eliges prepararte con uno o más miembros del grupo cada personaje gana 2 puntos de Esperanza."
                     }
                 },
                 "refreshable": {
-                    "_title": "Refreshing Resources"
+                    "title": "Recursos refrescables"
                 },
-                "_takeDowntime": "Take Downtime"
+                "takeDowntime": "Realizar descanso"
             },
             "HUD": {
                 "tokenHUD": {
-                    "_genericEffects": "Foundry Effects"
+                    "genericEffects": "Efectos de Foundry"
                 }
             },
             "Levelup": {
                 "actions": {
                     "creatureComfort": {
-                        "_name": "Creature Comfort",
-                        "_description": "Once per rest, when you take time during a quiet moment to give your companion love and attention, you can gain a Hope or you can both clear a Stress."
+                        "name": "Reconfortante",
+                        "description": "Una vez por descanso, cuando te tomas tiempo en un momento tranquilo para dedicar atención a tu compañero, puedes ganar 1 punto de Esperanza o ambos eliminar un Estrés."
                     },
                     "armored": {
-                        "_name": "Armored",
-                        "_description": "When your companion takes damage, you can mark one of your Armor Slots instead of marking one of their Stress."
+                        "name": "Acorazado",
+                        "description": "Cuando tu compañero recibe daño puedes marcar uno de tus espacios de armadura en lugar de marcar uno de sus espacios de estrés."
                     },
                     "bonded": {
-                        "_name": "Bonded",
-                        "_description": "When you mark your last Hit Point, your companion rushes to your side to comfort you. Roll a number of d6s equal to the unmarked Stress slots they have and mark them. If any roll a 6, your companion helps you up. Clear your last Hit Point and return to the scene."
+                        "name": "Unido",
+                        "description": "Cuando marcas tu último Punto de Golpe tu compañero corre a tu lado a reconfortarte. Tira un número de d6 igual a los espacios de estrés no marcados de tu compañero y márcalos. Si algún dado es un 6 tu compañero te ayuda a levantarte. Elimina tu último punto de golpe y vuelve a la escena."
                     }
                 },
                 "choiceDescriptions": {
-                    "_attributes": "Gain a +1 bonus to two unmarked character traits and mark them.",
-                    "_hitPointSlots": "Permanently gain one Hit Point slot.",
-                    "_stressSlots": "Permanently gain one Stress slot.",
-                    "_experiences": "Permanently gain a +1 bonus to two experiences.",
-                    "_domainCard": "Choose an additional domain card of your level or lower from a domain you have access to (up to level {maxLevel})",
-                    "_evasion": "Permanently gain a +1 bonus to your Evasion.",
-                    "_proficiency": "Increase your Proficiency by +1.",
-                    "_subclass": "Take an upgraded subclass card. Then cross out the multiclass option for this tier.",
-                    "_multiclass": "Multiclass: Choose an additional class for your character, then cross out an unused “Take an upgraded subclass card” and the other multiclass option on this sheet."
+                    "attributes": "Gana un +1 a dos atributos del personaje no marcados y márcalos.",
+                    "hitPointSlots": "Gana un espacio de Punto de Golpe permanentemente.",
+                    "stressSlots": "Gana un espacio de Punto de Estrés permanentemente.",
+                    "experiences": "Gana un +1 a dos experiencias permanentemente.",
+                    "domainCard": "Elige un una carta de dominio adicional de tu nivel o menor de un dominio al que tengas acceso (hasta nivel {maxLevel})",
+                    "evasion": "Gana un +1 a tu Evasión permanentemente.",
+                    "proficiency": "Incrementa tu Competencia en 1.",
+                    "subclass": "Obtén una carta mejorada de subclase. Entonces tacha la opción de multiclase para este rango.",
+                    "multiclass": "Multiclase: Elige una clase adicional para tu personaje, entonces tacha un “Obtén una carta mejorada de subclase” sin usar y la otra opción de multiclase de esta ficha."
                 },
                 "delevel": {
-                    "_content": "Returning to the previous level selection will remove all selections made for this level. Do you want to proceed?",
-                    "_title": "Go back to previous level"
+                    "content": "Volver al nivel anterior eliminará todas las elecciones hechas para este nivel. ¿Quieres seguir adelante?",
+                    "title": "Volver al nivel anterior"
                 },
-                "_navigateLevel": "To Level {level}",
-                "_navigateToLevelup": "Return To Levelup",
-                "_navigateToSummary": "To Summary",
+                "navigateLevel": "A nivel {level}",
+                "navigateToLevelup": "Volver a subida de nivel",
+                "navigateToSummary": "A resumen",
                 "options": {
-                    "_trait": "Gain a +1 bonus to two unmarked character traits and mark them.",
-                    "_hitPoint": "Permanently gain one Hit Point slot.",
-                    "_stress": "Permanently gain one Stress slot.",
-                    "_experience": "Permanently gain a +1 bonus to two experiences.",
-                    "_domainCard": "Choose an additional domain card of your level or lower from a domain you have access to (up to level {maxLevel})",
-                    "_evasion": "Permanently gain a +1 bonus to your Evasion.",
-                    "_subclass": "Take an upgraded subclass card. Then cross out the multiclass option for this tier.",
-                    "_proficiency": "Increase your Proficiency by +1.",
-                    "_multiclass": "Multiclass: Choose an additional class for your character, then cross out an unused “Take an upgraded subclass card” and the other multiclass option on this sheet.",
-                    "_intelligent": "Your companion gains a permanent +1 bonus to a Companion Experience of your choice.",
-                    "_lightInTheDark": "Gain an additional Hope slot for your character.",
-                    "_creatureComfort": "Once per rest, when you take time during a quiet moment to give your companion love and attention, you can gain a Hope or you can both clear a Stress.",
-                    "_armored": "When your companion takes damage, you can mark one of your Armor Slots instead of marking one of their Stress.",
-                    "_vicious": "Increase your companion's damage dice or range by one step (d6 to d8, Close to Far, etc.)",
-                    "_resilient": "Your companion gains an additional Stress slot.",
-                    "_bonded": "When you mark your last Hit Point, your companion rushes to your side to comfort you. Roll a number of d6s equal to the unmarked Stress slots they have and mark them. If any roll a 6, your companion helps you up. Clear your last Hit Point and return to the scene.",
-                    "_aware": "Your companion gains a permanent +2 bonus to their Evasion."
+                    "trait": "Gana un +1 a dos atributos del personaje no marcados y márcalos.",
+                    "hitPoint": "Gana un espacio de Punto de Golpe permanentemente.",
+                    "stress": "Gana un espacio de Punto de Estrés permanentemente.",
+                    "experience": "Gana un +1 a dos experiencias permanentemente.",
+                    "domainCard": "Elige un una carta de dominio adicional de tu nivel o menor de un dominio al que tengas acceso (hasta nivel {maxLevel})",
+                    "evasion": "Gana un +1 a tu Evasión permanentemente.",
+                    "subclass": "Obtén una carta mejorada de subclase. Entonces tacha la opción de multiclase para este rango.",
+                    "proficiency": "Incrementa tu Competencia en 1.",
+                    "multiclass": "Multiclase: Elige una clase adicional para tu personaje, entonces tacha un “Obtén una carta mejorada de subclase” sin usar y la otra opción de multiclase de esta ficha.",
+                    "intelligent": "Tu compañero gana un +1 permanentemente a una Experiencia de Compañero de tu elección.",
+                    "lightInTheDark": "Gana un espacio adicional de Esperanza para tu personaje.",
+                    "creatureComfort": "Una vez por descanso, cuando te tomas tiempo en un momento tranquilo para dedicar atención a tu compañero, puedes ganar 1 punto de Esperanza o ambos eliminar un Estrés.",
+                    "armored": "Cuando tu compañero recibe daño puedes marcar uno de tus espacios de armadura en lugar de marcar uno de sus espacios de estrés.",
+                    "vicious": "Incrementa los dados de daño de tu compañero o alcance en uno (d6 a d8, Cercano a Lejano, etc.)",
+                    "resilient": "Tu compañero gana un espacio de Estrés adicional.",
+                    "bonded": "Cuando marcas tu último Punto de Golpe tu compañero corre a tu lado a reconfortarte. Tira un número de d6 igual a los espacios de estrés no marcados de tu compañero y márcalos. Si algún dado es un 6 tu compañero te ayuda a levantarte. Elimina tu último punto de golpe y vuelve a la escena.",
+                    "aware": "Tu compañero gana un +2 permanente a su Evasión."
                 },
                 "selections": {
-                    "_emptyDomainCardHint": "{domain} level {level} or below",
-                    "_viciousDamage": "Damage",
-                    "_viciousRange": "Range"
+                    "emptyDomainCardHint": "{domain} de nivel {level} o inferior",
+                    "viciousDamage": "Daño",
+                    "viciousRange": "Alcance"
                 },
                 "summary": {
-                    "_levelAchievements": "Level Achievements",
-                    "_levelAdvancements": "Level Advancements",
-                    "_proficiencyIncrease": "Proficiency Increased: {proficiency}",
-                    "_hpIncrease": "Hit Points Increased: {hitPoints}",
-                    "_stressIncrease": "Stress Increased: {stress}",
-                    "_evasionIncrease": "Evasion Increased: {evasion}",
-                    "_damageThresholdMajorIncrease": "Major: {threshold}",
-                    "_damageThresholdSevereIncrease": "Severe: {threshold}",
-                    "_newExperiences": "New Experiences",
-                    "_experiencePlaceholder": "A new experience..",
-                    "_domainCards": "Domain Cards",
-                    "_subclass": "Subclass",
-                    "_multiclass": "Multiclass",
-                    "_traits": "Increased Traits",
-                    "_experienceIncreases": "Experience Increases",
-                    "_damageThresholds": "Damage Thresholds",
-                    "_vicious": "Vicious",
-                    "_damageIncreased": "Damage Increased: {damage}",
-                    "_rangeIncreased": "Range Increased: {range}",
-                    "_simpleFeature": "Feature: {feature}"
+                    "levelAchievements": "Logros del nivel",
+                    "levelAdvancements": "Avances del nivel",
+                    "proficiencyIncrease": "Competencia incrementada: {proficiency}",
+                    "hpIncrease": "Puntos de golpe incrementados: {hitPoints}",
+                    "stressIncrease": "Estrés incrementado: {stress}",
+                    "evasionIncrease": "Evasión incrementada: {evasion}",
+                    "damageThresholdMajorIncrease": "Mayor: {threshold}",
+                    "damageThresholdSevereIncrease": "Severo: {threshold}",
+                    "newExperiences": "Nuevas experiencias",
+                    "experiencePlaceholder": "Una nueva experiencia.",
+                    "domainCards": "Cartas de dominio",
+                    "subclass": "Subclase",
+                    "multiclass": "Multiclase",
+                    "traits": "Atributos incrementados",
+                    "experienceIncreases": "Experiencia incrementada",
+                    "damageThresholds": "Límites de daño",
+                    "vicious": "Feroz",
+                    "damageIncreased": "Daño incrementado: {damage}",
+                    "rangeIncreased": "Alcance incrementado: {range}",
+                    "simpleFeature": "Rasgo: {feature}"
                 },
-                "_takeLevelUp": "Finish Level Up",
+                "takeLevelUp": "Finalizar subida de nivel",
                 "tier2": {
-                    "_label": "Levels 2-4",
-                    "_infoLabel": "At Level 2, gain an additional Experience at +2 and gain a +1 bonus to your Proficiency.",
-                    "_pretext": "Choose two options from the list below",
-                    "_posttext": "Take an additional domain card of your level or lower from a domain you have access to."
+                    "label": "Niveles 2-4",
+                    "infoLabel": "Al nivel 2 ganas una Experiencia adicional a +2 y un bono de +1 a tu Competencia.",
+                    "pretext": "Elige dos opciones de la siguiente lista",
+                    "posttext": "Obtienes una carta de dominio a dicional de tu nivel o inferior de un dominio al que tengas acceso."
                 },
                 "tier3": {
-                    "_label": "Levels 5-7",
-                    "_infoLabel": "At Level 5, take an additional Experience and clear all marks on Character Traits.",
-                    "_pretext": "When you level up, record it on your character sheet, then choose two from the list below or any unmarked from the previous tier.",
-                    "_posttext": "Take an additional domain card of your level or lower from a domain you have access to."
+                    "label": "Niveles 5-7",
+                    "infoLabel": "Al nivel 5 obtienes una Experiencia adicional y elimina todas las marcas en los Atributos del personaje.",
+                    "pretext": "Cuando subes de nivel anótalo en tu ficha y elige dos de la siguiente lista o un rango previo sin marcar.",
+                    "posttext": "Obtienes una carta de dominio a dicional de tu nivel o inferior de un dominio al que tengas acceso."
                 },
                 "tier4": {
-                    "_label": "Levels 8-10",
-                    "_infoLabel": "At Level 8, take an additional Experience and clear all marks on Character Traits.",
-                    "_pretext": "When you level up, record it on your character sheet, then choose two from the list below or any unmarked from the previous tier.",
-                    "_posttext": "Take an additional domain card of your level or lower from a domain you have access to."
+                    "label": "Niveles 8-10",
+                    "infoLabel": "Al nivel 8 obtienes una Experiencia adicional y elimina todas las marcas en los Atributos del personaje.",
+                    "pretext": "Cuando subes de nivel anótalo en tu ficha y elige dos de la siguiente lista o un rango previo sin marcar.",
+                    "posttext": "Obtienes una carta de dominio a dicional de tu nivel o inferior de un dominio al que tengas acceso."
                 },
-                "_title": "{actor} Level Up"
+                "title": "Subida de nivel de {actor}"
             },
             "MulticlassChoice": {
-                "_title": "Multiclassing - {actor}",
-                "_explanation": "You are adding {class} as your multiclass",
-                "_selectDomainPrompt": "Select your new domain"
+                "title": "Multiclase - {actor}",
+                "explanation": "Estás añadiendo {class} como tu multiclase",
+                "selectDomainPrompt": "Selecciona tu nuevo dominio"
             },
             "OwnershipSelection": {
-                "_title": "Ownership Selection - {name}",
-                "_default": "Default Ownership"
+                "title": "Selección de permisos - {name}",
+                "default": "Permisos por defecto"
             },
             "ReactionRoll": {
-                "_title": "Reaction Roll: {trait}"
+                "title": "Tirada de Reacción: {trait}"
             },
             "RerollDialog": {
-                "_title": "Reroll",
-                "_deselectDiceNotification": "Deselect one of the selected dice first",
-                "_acceptCurrentRolls": "Accept Current Rolls"
+                "title": "Reroll",
+                "deselectDiceNotification": "Deselect one of the selected dice first",
+                "acceptCurrentRolls": "Accept Current Rolls"
             },
             "ResourceDice": {
-                "_title": "{name} Resource",
-                "_rerollDice": "Reroll Dice"
+                "title": "Recurso {name}",
+                "rerollDice": "Volver a tirar"
             }
         },
         "CLASS": {
             "Feature": {
-                "_rallyDice": "Bardic Rally Dice",
-                "_short": "Rally"
+                "rallyDice": "Dado de inspiración bárdica",
+                "short": "Inspirar"
             }
         },
         "CONFIG": {
             "ActionType": {
-                "_passive": "Passive",
-                "_action": "Action",
-                "_reaction": "Reaction"
+                "passive": "Pasiva",
+                "action": "Acción",
+                "reaction": "Reacción"
             },
             "AdversaryTrait": {
                 "relentless": {
@@ -606,134 +606,134 @@
             },
             "AdversaryType": {
                 "bruiser": {
-                    "_label": "Bruiser",
-                    "_description": "Tough adversaries with powerful attacks."
+                    "label": "Matón",
+                    "description": "Adversarios duros con ataques poderosos."
                 },
                 "horde": {
-                    "_label": "Horde",
-                    "_description": "A Horde represents a number of foes working in a group."
+                    "label": "Horda",
+                    "description": "Una horda representa un número de enemigos actuando como un solo grupo."
                 },
                 "leader": {
-                    "_label": "Leader",
-                    "_description": "Adversaries that command and summon other adversaries."
+                    "label": "Líder",
+                    "description": "Adversarios que comandan e invocan a otros adversarios."
                 },
                 "minion": {
-                    "_label": "Minion",
-                    "_description": "Basic enemies that are easily dispatched but dangerous in numbers."
+                    "label": "Esbirro",
+                    "description": "Enemigos básicos que son despachados fácilmente, pero peligrosos con los números suficientes."
                 },
                 "ranged": {
-                    "_label": "Ranged",
-                    "_description": "Adversaries that attack from a distance."
+                    "label": "Tirador",
+                    "description": "Adversarios que atacan a distancia."
                 },
                 "skulk": {
-                    "_label": "Skulk",
-                    "_description": "Adversaries that maneuver and exploit opportunities to ambush their opponents."
+                    "label": "Acechador",
+                    "description": "Adversarios que maniobran y aprovechan las oportunidades para emboscar a sus oponentes."
                 },
                 "social": {
-                    "_label": "Social",
-                    "_description": "Adversaries that are primarily interpersonal threats or challenges."
+                    "label": "Social",
+                    "description": "Adversarios que son principalmente amenazas interpresonales o retos."
                 },
                 "solo": {
-                    "_label": "Solo",
-                    "_description": "Designed to present a challenge to a whole party."
+                    "label": "Individual",
+                    "description": "Diseñados para presentar un desafío a un grupo entero."
                 },
                 "standard": {
-                    "_label": "Standard",
-                    "_description": "Rank and File adversaries."
+                    "label": "Estándar",
+                    "description": "Enemigos básicos, tropas de línea."
                 },
                 "support": {
-                    "_label": "Support",
-                    "_description": "Enemies that enhance their allies and/or disrupt their opponents."
+                    "label": "Soporte",
+                    "description": "Enemigos que mejoran a sus aliados y/o interfieren contra sus oponentes."
                 }
             },
             "ArmorFeature": {
                 "burning": {
-                    "_name": "Burning",
-                    "_description": "When an adversary attacks you within Melee range, they mark a Stress.",
+                    "name": "Ardiente",
+                    "description": "Cuando un adversario te ataca a distancia de melé marca un Estrés.",
                     "actions": {
                         "burn": {
-                            "_name": "Burn",
-                            "_description": "When an adversary attacks you within Melee range, they mark a Stress."
+                            "name": "Quemar",
+                            "description": "Cuando un adversario te ataca a distancia de melé marca un Estrés."
                         }
                     }
                 },
                 "channeling": {
-                    "_name": "Channeling",
-                    "_description": "+1 to Spellcast Rolls",
+                    "name": "Canalizadora",
+                    "description": "+1 a las tiradas de lanzamiento de conjuros",
                     "effects": {
                         "channeling": {
-                            "_name": "Channeling",
-                            "_description": "+1 to Spellcast Rolls"
+                            "name": "Canalizadora",
+                            "description": "+1 a las tiradas de lanzamiento de conjuros"
                         }
                     }
                 },
                 "difficult": {
-                    "_name": "Difficult",
-                    "_description": "-1 to all character traits and Evasion",
+                    "name": "Difícil",
+                    "description": "-1 a todos los atributos y Evasión",
                     "effects": {
                         "difficult": {
-                            "_name": "Difficult",
-                            "_description": "-1 to all character traits and Evasion"
+                            "name": "Difícil",
+                            "description": "-1 a todos los atributos y Evasión"
                         }
                     }
                 },
                 "flexible": {
-                    "_name": "Flexible",
-                    "_description": "+1 to Evasion",
+                    "name": "Flexible",
+                    "description": "+1 a Evasión",
                     "effects": {
                         "flexible": {
-                            "_name": "Flexible",
-                            "_description": "+1 to Evasion"
+                            "name": "Flexible",
+                            "description": "+1 a Evasión"
                         }
                     }
                 },
                 "fortified": {
-                    "_name": "Fortified",
-                    "_description": "When you mark an Armor Slot, you reduce the severity of an attack by two thresholds instead of one.",
+                    "name": "Fortificada",
+                    "description": "Cuando marcas un espacio de armadura puedes reducir la severidad del ataque en dos límites en lugar de uno.",
                     "effects": {
                         "fortified": {
-                            "_name": "Fortified",
-                            "_description": "When you mark an Armor Slot, you reduce the severity of an attack by two thresholds instead of one."
+                            "name": "Fortificada",
+                            "description": "Cuando marcas un espacio de armadura puedes reducir la severidad del ataque en dos límites en lugar de uno."
                         }
                     }
                 },
                 "gilded": {
-                    "_name": "Gilded",
-                    "_description": "+1 to Presence",
+                    "name": "Dorada",
+                    "description": "+1 a Presencia",
                     "effects": {
                         "gilded": {
-                            "_name": "Gilded",
-                            "_description": "+1 to Presence"
+                            "name": "Dorada",
+                            "description": "+1 a Presencia"
                         }
                     }
                 },
                 "heavy": {
-                    "_name": "Heavy",
-                    "_description": "-1 to Evasion",
+                    "name": "Pesada",
+                    "description": "-1 a Evasión",
                     "effects": {
                         "heavy": {
-                            "_name": "Heavy",
-                            "_description": "-1 to Evasion"
+                            "name": "Pesada",
+                            "description": "-1 a Evasión"
                         }
                     }
                 },
                 "hopeful": {
-                    "_name": "Hopeful",
-                    "_description": "When you would spend a Hope, you can mark an Armor Slot instead.",
+                    "name": "Esperanzadora",
+                    "description": "Cuando vayas a gastar Esperanza puedes marcar un espacio de armadura en su lugar.",
                     "actions": {
                         "hope": {
-                            "_name": "Hope",
-                            "_description": "When you would spend a Hope, you can mark an Armor Slot instead."
+                            "name": "Esperanza",
+                            "description": "Cuando vayas a gastar Esperanza puedes marcar un espacio de armadura en su lugar."
                         }
                     }
                 },
                 "impenetrable": {
-                    "_name": "Impenetrable",
-                    "_description": "Once per short rest, when you would mark your last Hit Point, you can instead mark a Stress.",
+                    "name": "Impenetrable",
+                    "description": "Una vez por descanso corto, cuando vayas a marcar tu último Punto de Golpe, puedes marcar un Estrés en su lugar.",
                     "actions": {
                         "impenetrable": {
-                            "_name": "Impenetrable",
-                            "_description": "Once per short rest, when you would mark your last Hit Point, you can instead mark a Stress."
+                            "name": "Impenetrable",
+                            "description": "Una vez por descanso corto, cuando vayas a marcar tu último Punto de Golpe, puedes marcar un Estrés en su lugar."
                         }
                     }
                 },
@@ -865,196 +865,196 @@
                 }
             },
             "BeastformType": {
-                "_normal": "Normal",
-                "_evolved": "Evolved",
-                "_hybrid": "Hybrid"
+                "normal": "Normal",
+                "evolved": "Evolucionado",
+                "hybrid": "Híbrido"
             },
             "Burden": {
-                "_oneHanded": "One-Handed",
-                "_twoHanded": "Two-Handed"
+                "oneHanded": "Una mano",
+                "twoHanded": "Dos manos"
             },
             "RangeInclusion": {
-                "_withinRange": "Within Range",
-                "_outsideRange": "Outside Range"
+                "withinRange": "En alcance",
+                "outsideRange": "Fuera de alcance"
             },
             "Condition": {
                 "dead": {
-                    "_name": "Dead",
-                    "_description": "The character is dead"
+                    "name": "Muerto",
+                    "description": "El personaje está muerto"
                 },
                 "defeated": {
-                    "_name": "Defeated",
-                    "_description": "This adversary is defeated."
+                    "name": "Derrotado",
+                    "description": "El adversario está derrotado."
                 },
                 "hidden": {
-                    "_name": "Hidden",
+                    "name": "Oculto",
                     "_description": "While Hidden, attacks cannot be made directly targeting them nd any rolls against them are at disadvantage.\nWhen a Hidden creature moves or attacks, they are no longer Hidden. However, if a creature is Hidden when they begin making an attack, the roll has advantage; the Hidden condition isn’t cleared until after the attack is resolved."
                 },
                 "restrained": {
-                    "_name": "Restrained",
+                    "name": "Apresado",
                     "_description": "When an effect makes a creature Restrained, it means they cannot move until this condition is cleared.\nThey can still take actions from their current position."
                 },
                 "unconscious": {
-                    "_name": "Unconscious",
+                    "name": "Inconsciente",
                     "_description": "Your character can’t move or act while unconscious, they can’t be targeted by an attack."
                 },
                 "vulnerable": {
-                    "_name": "Vulnerable",
+                    "name": "Vulnerable",
                     "_description": "While a creature is Vulnerable, all rolls targeting them have advantage.\nA creature who is already Vulnerable can’t be made to take the condition again."
                 }
             },
             "CountdownType": {
-                "_spotlight": "Spotlight",
-                "_custom": "Custom",
-                "_characterAttack": "Character Attack"
+                "spotlight": "Foco",
+                "custom": "Personalizado",
+                "characterAttack": "Ataque de personaje"
             },
             "DamageType": {
                 "physical": {
-                    "_name": "Physical",
-                    "_abbreviation": "Phy"
+                    "name": "Físico",
+                    "abbreviation": "Fís"
                 },
                 "magical": {
-                    "_name": "Magical",
-                    "_abbreviation": "Mag"
+                    "name": "Mágico",
+                    "abbreviation": "Mág"
                 }
             },
             "DeathMoves": {
                 "avoidDeath": {
-                    "_name": "Avoid Death",
-                    "_description": "You drop unconscious temporarily and work with the GM to describe how the situation gets much worse because of it. Then roll your Fear die; if its value is equal to or under your Level, take a Scar."
+                    "name": "Evitar la muerte",
+                    "description": "Caes inconsciente temporalmente y describe con la ayuda del DJ cómo la situación se vuelve más desesperada a causa de esto. Luego tira tu dado de Miedo; si su valor es igual o mejor que tu nivel recibes una Cicatriz."
                 },
                 "riskItAll": {
-                    "_name": "Risk It All",
-                    "_description": "Roll your Duality Dice. If Hope is higher, you stay on your feet and clear an amount of Hit Points and/or Stress equal to the value of the Hope die (divide the Hope die value up between these however you’d prefer). If your Fear die is higher, you cross through the veil of death. If the Duality Dice are tied, you stay on your feet and clear all Hit Points and Stress."
+                    "name": "Arriesgarlo todo",
+                    "description": "Tira tus dados de dualidad. Si el de Esperanza es más alto, te mantienes en pie y eliminas una cantidad de Puntos de Golpe y/o Estrés igual al valor del dado de Esperanza (divide el resultado entre ambos como prefieras). Si el dado de Miedo es mayor cruzas el velo de la muerte. Si ambos dados tienen el mismo resultado te mantienes en pie y eliminas todo tu estrés y puntos de golpe."
                 },
                 "blazeOfGlory": {
-                    "_name": "Blaze Of Glory",
-                    "_description": "With Blaze of Glory, the player is accepting death for the character. Take one action (at GM discretion), which becomes an automatic critical success, then cross through the veil of death."
+                    "name": "Momento de gloria",
+                    "description": "Con momento de gloria el jugador acepta la muerte del personaje. Haz una acción (a discreción del DJ), que es automáticamente un éxito crítico, y luego cruza el velo de la muerte."
                 }
             },
             "DomainCardTypes": {
-                "_ability": "Ability",
-                "_spell": "Spell",
-                "_grimoire": "Grimoire"
+                "ability": "Habilidad",
+                "spell": "Conjuro",
+                "grimoire": "Grimorio"
             },
             "EnvironmentType": {
                 "exploration": {
-                    "_label": "Exploration",
+                    "label": "Exploración",
                     "_description": ""
                 },
                 "social": {
-                    "_label": "Social",
+                    "label": "Social",
                     "_description": ""
                 },
                 "traversal": {
-                    "_label": "Traversal",
+                    "label": "Travesía",
                     "_description": ""
                 },
                 "event": {
-                    "_label": "Event",
+                    "label": "Evento",
                     "_description": ""
                 }
             },
             "Gold": {
-                "_title": "Gold",
-                "_coins": "Coins",
-                "_handfuls": "Handfuls",
-                "_bags": "Bags",
-                "_chests": "Chests"
+                "title": "Oro",
+                "coins": "Monedas",
+                "handfuls": "Puñados",
+                "bags": "Bolsas",
+                "chests": "Cofres"
             },
             "HealingType": {
                 "hitPoints": {
-                    "_name": "Hit Points",
-                    "_abbreviation": "HP"
+                    "name": "Puntos de Golpe",
+                    "abbreviation": "PG"
                 },
                 "stress": {
-                    "_name": "Stress",
-                    "_abbreviation": "STR"
+                    "name": "Estrés",
+                    "abbreviation": "STR"
                 },
                 "hope": {
-                    "_name": "Hope",
-                    "_abbreviation": "HO"
+                    "name": "Esperanza",
+                    "abbreviation": "ES"
                 },
                 "armor": {
-                    "_name": "Armor Slot",
-                    "_abbreviation": "AS"
+                    "name": "Espacio de Armadura",
+                    "abbreviation": "AR"
                 },
                 "fear": {
-                    "_name": "Fear",
-                    "_abbreviation": "FR"
+                    "name": "Miedo",
+                    "abbreviation": "MI"
                 }
             },
             "ItemResourceProgression": {
-                "_increasing": "Increasing",
-                "_decreasing": "Decreasing"
+                "increasing": "Creciente",
+                "decreasing": "Decreciente"
             },
             "ItemResourceType": {
-                "_simple": "Simple",
-                "_diceValue": "Dice Value"
+                "simple": "Simple",
+                "diceValue": "Valor de dado"
             },
             "Range": {
                 "self": {
-                    "_name": "Self",
-                    "_description": "means yourself.",
-                    "_short": "Self"
+                    "name": "Personal",
+                    "description": "significa tú mismo.",
+                    "short": "Personal"
                 },
                 "melee": {
-                    "_name": "Melee",
-                    "_description": "means a character is within touching distance of the target. PCs can generally touch targets up to a few feet away from them, but melee range may be greater for especially large NPCs.",
-                    "_short": "Melee"
+                    "name": "Melé",
+                    "description": "significa un personaje que está a distancia de contacto del objetivo. Los PJs pueden entrar en contacto con objetivos a un par de pies de ellos, pero el rango de melé puede ser mayor especialmente para PNJs grandes.",
+                    "short": "Melé"
                 },
                 "veryClose": {
-                    "_name": "Very Close",
-                    "_description": "means a distance where one can see fine details of a target- within moments of reaching, if need be. This is usually anywhere from about 5-10 feet away. While in danger, a PC can usually get to anything that’s very close as part of any other action they take. Anything on a battle map that is within the shortest length of a game card (~2-3 inches) can usually be considered very close.",
-                    "_short": "V. Close"
+                    "name": "Muy cerca",
+                    "description": "significa una distancia donde uno puede ver los pequeños detalles de un objetivo, a escasos pasos, incluso. Esto es normalmente a unos 5-10 pies de distancia. Mientras esté en peligro, un PJ puede llegar a cualquier cosa que esté muy cerca como parte de otra acción que haga. Cualquier cosa en un mapa de batalla que esté dentro de la longitud más corta de una carta de juego (~2-3 pulgadas) puede considerarse muy cerca.",
+                    "short": "M. Cerca"
                 },
                 "close": {
-                    "_name": "Close",
-                    "_description": "means a distance where one can see prominent details of a target-- across a room or to a neighboring market stall, generally about 10-30 feet away. While in danger, a PC can usually get to anything that’s close as part of any other action they take. Anything on a battle map that is within the length of a standard pen or pencil (~5-6 inches) can usually be considered close.",
-                    "_short": "Close"
+                    "name": "Cerca",
+                    "description": "significa una distancia donde uno puede ver los detalles importantes de un objetivo (al otro lado de una habitación o en el siguiente puesto del mercado), generalmente a 10-30 pies de distancia. Mientras esté en peligro, un PJ puede llegar a cualquier cosa que esté muy cerca como parte de otra acción que haga. Cualquier cosa en un mapa de batalla que esté dentro de la longitud de un bolígrado o lápiz estándar (~5-6 pulgadas) puede considerarse cerca.",
+                    "short": "Cerca"
                 },
                 "far": {
-                    "_name": "Far",
-                    "_description": "means a distance where one can see the appearance of a person or object, but probably not in great detail-- across a small battlefield or down a large corridor. This is usually about 30-100 feet away. While under danger, a PC will likely have to make an Agility check to get here safely. Anything on a battle map that is within the length of a standard piece of paper (~10-11 inches) can usually be considered far.",
-                    "_short": "Far"
+                    "name": "Lejos",
+                    "description": "significa una distancia donde uno puede ver la apariencia de una persona u objeto, pero probablemente no en gran detalle (al otro lado del campo de batalla o un pasillo largo). Esto es, generalmente, a 30-100 pies de distancia. Mientras esté en peligro, un PJ tendrá que hacer una tirada de Agilidad para llegar sano y salvo. Cualquier cosa en un mapa de batalla que esté dentro de la longitud de una hoja de papel (~10-11 pulgadas) puede considerarse lejos.",
+                    "short": "Lejos"
                 },
                 "veryFar": {
-                    "_name": "Very Far",
-                    "_description": "means a distance where you can see the shape of a person or object, but probably not make outany details-- across a large battlefield or down a long street, generally about 100-300 feet away. While under danger, a PC likely has to make an Agility check to get here safely. Anything on a battle map that is beyond far distance, but still within sight of the characters can usually be considered very far.",
-                    "_short": "V. Far"
+                    "name": "Muy lejos",
+                    "description": "significa una distancia donde puedes ver la forma de una persona u objeto, pero no sus detalles (al otro lado de un enorme campo de batalla o al otro lado de una calle larga), generalmente a 100-300 pies. Mientras esté en peligro, un PJ tendrá que hacer una tirada de Agilidad para llegar sano y salvo. Cualquier cosa en un mapa de batalla más allá de distancia lejana, pero aún a la vista de los personajes se puede considerar muy lejos.",
+                    "short": "M. Lejos"
                 }
             },
             "RollTypes": {
                 "trait": {
-                    "_name": "Trait"
+                    "name": "Atributo"
                 },
                 "attack": {
-                    "_name": "Attack"
+                    "name": "Ataque"
                 },
                 "spellcast": {
-                    "_name": "SpellCast"
+                    "name": "Lanzamiento de conjuro"
                 },
                 "diceSet": {
-                    "_name": "Dice Set"
+                    "name": "Conjunto de dados"
                 }
             },
             "RuleChoice": {
-                "_off": "Off",
-                "_offWithToggle": "Off With Toggle",
-                "_on": "On",
-                "_onWithToggle": "On With Toggle"
+                "off": "Desactivado",
+                "offWithToggle": "Desactivado con interruptor",
+                "on": "Activado",
+                "onWithToggle": "Activado con interruptor"
             },
             "SelectAction": {
-                "_selectType": "Select Action Type",
-                "_selectAction": "Action Selection"
+                "selectType": "Seleccionar tipo de acción",
+                "selectAction": "Selección de acción"
             },
             "TemplateTypes": {
-                "_circle": "Circle",
-                "_cone": "Cone",
-                "_emanation": "Emanation",
-                "_inFront": "In Front",
-                "_rect": "Rectangle",
-                "_ray": "Ray"
+                "circle": "Círculo",
+                "cone": "Cono",
+                "emanation": "Emanación",
+                "inFront": "En frente",
+                "rect": "Rectángulo",
+                "ray": "Ray"
             },
             "Traits": {
                 "agility": {
@@ -1495,11 +1495,11 @@
                 },
                 "protective": {
                     "_name": "Protective",
-                    "_description": "Add your character's Tier to your Armor Score",
+                    "_description": "Add the item's Tier to your Armor Score",
                     "effects": {
                         "protective": {
                             "_name": "Protective",
-                            "_description": "Add your character's Tier to your Armor Score"
+                            "_description": "Add the item's Tier to your Armor Score"
                         }
                     }
                 },
@@ -1628,36 +1628,36 @@
         "EFFECTS": {
             "ApplyLocations": {
                 "attackRoll": {
-                    "_name": "Attack Roll"
+                    "name": "Tirada de ataque"
                 },
                 "damageRoll": {
-                    "_name": "Damage Roll"
+                    "name": "Tirada de daño"
                 },
                 "healingRoll": {
-                    "_name": "Healing Roll"
+                    "name": "Tirada de sanación"
                 }
             },
             "Duration": {
-                "_passive": "Passive",
-                "_temporary": "Temporary"
+                "passive": "Pasiva",
+                "temporary": "Temporal"
             },
             "Types": {
                 "damage": {
-                    "_name": "Damage"
+                    "name": "Daño"
                 },
                 "hitPoints": {
-                    "_name": "Hit Points"
+                    "name": "Puntos de Golpe"
                 },
                 "reach": {
-                    "_name": "Reach"
+                    "name": "Alcance"
                 },
                 "stress": {
-                    "_name": "Stress"
+                    "name": "Estrés"
                 }
             },
             "Attachments": {
-                "_attachHint": "Drop items here to attach them",
-                "_transferHint": "If checked, this effect will be applied to any actor that owns this Effect's parent Item. The effect is always applied if this Item is attached to another one."
+                "attachHint": "Arrastra objetos aquí para adjuntarlos",
+                "transferHint": "Si está marcado este efecto será aplicado a cualquier actor que tenga el Objeto al que pertenece este efecto. El efecto siempre se aplica si este Objeto está adjunto a otro."
             }
         },
         "GENERAL": {
@@ -1844,15 +1844,15 @@
                 "plural": "Recursos"
             },
             "Roll": {
-                "_attack": "Attack Roll",
-                "_basic": "Roll",
-                "_difficulty": "Roll (Difficulty {difficulty})",
-                "_primaryWeaponAttack": "Primary Weapon Attack Roll",
-                "_secondaryWeaponAttack": "Secondary Weapon Attack Roll",
-                "_spellcast": "Spellcast Roll",
-                "_trait": "Trait Roll",
-                "_action": "Action Roll",
-                "_reaction": "Reaction Roll"
+                "attack": "Tirada de ataque",
+                "basic": "Tirada",
+                "difficulty": "Tirada (Dificultad {difficulty})",
+                "primaryWeaponAttack": "Tirada de ataque de arma principal",
+                "secondaryWeaponAttack": "Tirada de ataque de arma secundaria",
+                "spellcast": "Tirada de lanzamiento de conjuro",
+                "trait": "Tirada de atributo",
+                "action": "Tirada de acción",
+                "reaction": "Tirada de reacción"
             },
             "Rules": {
                 "damageReduction": {
@@ -1887,16 +1887,16 @@
                 "attack": {
                     "damage": {
                         "dice": {
-                            "_label": "Base Attack: Damage Dice Index",
-                            "_hint": "Index for the damage dice used on the basic attack. 0=d4, 1=d6, 2=d8, 3=d10, 4=d12, 5=d20"
+                            "label": "Ataque base: Índice de dado de daño",
+                            "hint": "Índice para el dado de daño usado en un ataqe básico. 0=d4, 1=d6, 2=d8, 3=d10, 4=d12, 5=d20"
                         },
                         "bonus": {
-                            "_label": "Base Attack: Damage Bonus"
+                            "label": "Ataque base: Bonificador al daño"
                         }
                     },
                     "roll": {
                         "trait": {
-                            "_label": "Base Attack: Trait"
+                            "label": "Ataque base: Atributo"
                         }
                     }
                 }
@@ -1920,7 +1920,7 @@
                 "notes": "Notas",
                 "inventory": "Inventario",
                 "loadout": "Mano",
-                "vault": "Almacén",
+                "vault": "Mazo",
                 "heritage": "Legado",
                 "story": "Historia",
                 "biography": "Biografía",
@@ -1950,8 +1950,8 @@
                 "singular": "Rango"
             },
             "Trait": {
-                "single": "Rasgo",
-                "plural": "Rasgos"
+                "single": "Atributo",
+                "plural": "Atributos"
             },
             "actorName": "Nombre del actor",
             "amount": "Cantidad",
@@ -2062,41 +2062,41 @@
             "FIELDS": {
                 "resource": {
                     "amount": {
-                        "_label": "Amount"
+                        "label": "Cantidad"
                     },
                     "dieFaces": {
-                        "_label": "Die Faces"
+                        "label": "Caras del dado"
                     },
                     "icon": {
-                        "_label": "Icon"
+                        "label": "Icono"
                     },
                     "max": {
-                        "_label": "Max"
+                        "label": "Máx"
                     },
                     "progression": {
-                        "_label": "Progression"
+                        "label": "Progresión"
                     },
                     "recovery": {
-                        "_label": "Recovery"
+                        "label": "Recuperación"
                     },
                     "type": {
-                        "_label": "Type"
+                        "label": "Tipo"
                     },
                     "value": {
-                        "_label": "Value"
+                        "label": "Valor"
                     }
                 }
             },
             "Ancestry": {
-                "_primaryFeature": "Primary Feature",
-                "_secondaryFeature": "Secondary Feature"
+                "primaryFeature": "Rasgo principal",
+                "secondaryFeature": "Rasgo secundario"
             },
             "Armor": {
-                "_baseScore": "Base Score",
+                "baseScore": "Valor base",
                 "baseThresholds": {
-                    "_base": "Base Thresholds",
-                    "_major": "Major Threshold",
-                    "_severe": "Severe Threshold"
+                    "base": "Límites base",
+                    "major": "Límite Mayor",
+                    "severe": "Límite Severo"
                 }
             },
             "Beastform": {
@@ -2164,36 +2164,36 @@
                 "_hybridizeDrag": "Drag a form here to hybridize it."
             },
             "Class": {
-                "_hopeFeatures": "Hope Features",
-                "_classFeatures": "Class Features",
+                "hopeFeatures": "Rasgos de Esperanza",
+                "classFeatures": "Rasgos de Clase",
                 "guide": {
-                    "_suggestedEquipment": "Suggested Equipments",
-                    "_suggestedPrimaryWeaponTitle": "Primary Weapon",
-                    "_suggestedSecondaryWeaponTitle": "Secondary Weapon",
-                    "_suggestedArmorTitle": "Armor",
+                    "suggestedEquipment": "Equipo sugerido",
+                    "suggestedPrimaryWeaponTitle": "Arma principal",
+                    "suggestedSecondaryWeaponTitle": "Arma secundaria",
+                    "suggestedArmorTitle": "Armadura",
                     "inventory": {
-                        "_thenChoose": "Then Choose Between",
-                        "_andEither": "And Either"
+                        "thenChoose": "Luego escoge entre",
+                        "andEither": "y entre"
                     }
                 }
             },
             "Consumable": {
-                "_consumeOnUse": "Consume On Use"
+                "consumeOnUse": "Consumir al usar"
             },
             "DomainCard": {
-                "_type": "Type",
-                "_recallCost": "Recall Cost",
-                "_foundationTitle": "Foundation",
-                "_specializationTitle": "Specialization",
-                "_masteryTitle": "Mastery"
+                "type": "Tipo",
+                "recallCost": "Coste de Recuerdo",
+                "foundationTitle": "Base",
+                "specializationTitle": "Especialización",
+                "masteryTitle": "Maestría"
             },
             "Subclass": {
-                "_spellcastingTrait": "Spellcasting Trait"
+                "spellcastingTrait": "Atributo de lanzamiento de conjuros"
             },
             "Weapon": {
-                "_weaponType": "Weapon Type",
-                "_primaryWeapon": "Primary Weapon",
-                "_secondaryWeapon": "Secondary Weapon"
+                "weaponType": "Tipo de arma",
+                "primaryWeapon": "Arma principal",
+                "secondaryWeapon": "Arma secundaria"
             }
         },
         "SETTINGS": {
@@ -2409,50 +2409,50 @@
         "UI": {
             "Chat": {
                 "action": {
-                    "_title": "Action"
+                    "title": "Acción"
                 },
                 "applyEffect": {
-                    "_title": "Apply Effects - {name}"
+                    "title": "Aplicar efectos - {name}"
                 },
                 "attackRoll": {
-                    "_title": "Attack - {attack}",
-                    "_rollDamage": "Roll Damage",
-                    "_rollHealing": "Roll Healing",
-                    "_applyEffect": "Apply Effects"
+                    "title": "Ataque - {attack}",
+                    "rollDamage": "Tirar daño",
+                    "rollHealing": "Tirar sanación",
+                    "applyEffect": "Aplicar efectos"
                 },
                 "damageRoll": {
-                    "_title": "Damage - {damage}",
-                    "_dealDamageToTargets": "Damage Hit Targets",
-                    "_dealDamage": "Deal Damage",
-                    "_rollDamage": "Roll Damage",
-                    "_hitTarget": "Hit",
-                    "_selectedTarget": "Selected",
-                    "_currentTarget": "Current"
+                    "title": "Daño - {damage}",
+                    "dealDamageToTargets": "Objetivos del daño",
+                    "dealDamage": "Aplicar daño",
+                    "rollDamage": "Tirar daño",
+                    "hitTarget": "Golpear",
+                    "selectedTarget": "Seleccionado",
+                    "currentTarget": "Actual"
                 },
                 "deathMove": {
-                    "_title": "Death Move"
+                    "title": "Movimiento de muerte"
                 },
                 "dicePool": {
-                    "_title": "Dice Pool"
+                    "title": "Reserva de dados"
                 },
                 "domainCard": {
-                    "_title": "Domain Card"
+                    "title": "Carta de dominio"
                 },
                 "dualityRoll": {
-                    "_abilityCheckTitle": "{ability} Check"
+                    "abilityCheckTitle": "Tirada de {ability}"
                 },
-                "_featureTitle": "Class Feature",
+                "featureTitle": "Rasgo de clase",
                 "healingRoll": {
-                    "_title": "Heal - {damage}",
-                    "_heal": "Heal",
-                    "_applyHealing": "Apply Healing"
+                    "title": "Curar - {damage}",
+                    "heal": "Curar",
+                    "applyHealing": "Aplicar curación"
                 },
                 "reroll": {
-                    "_confirmTitle": "Reroll Dice",
-                    "_confirmText": "Are you sure you want to reroll?"
+                    "confirmTitle": "Volver a tirar dados",
+                    "confirmText": "¿Seguro que quieres volver a tirar?"
                 },
                 "resourceRoll": {
-                    "_playerMessage": "{user} rerolled their {name}"
+                    "playerMessage": "{user} ha vuelto a tirar su {name}"
                 }
             },
             "Notifications": {
@@ -2520,31 +2520,31 @@
                 "_noDiceSystem": "Your selected dice {system} does not have a {faces} dice"
             },
             "Tooltip": {
-                "_disableEffect": "Disable Effect",
-                "_enableEffect": "Enable Effect",
-                "_openItemWorld": "Open Item World",
-                "_openActorWorld": "Open Actor World",
-                "_sendToChat": "Send to Chat",
-                "_maxEvasionClassBound": "Your Evasion base is set on your class. This is the increase ontop of that.",
-                "_maxHPClassBound": "Your max HP base is set on your class. This is the increase ontop of that.",
-                "_moreOptions": "More Options",
-                "_equip": "Equipar",
-                "_unequip": "Unequip",
-                "_sendToVault": "Send to Vault",
-                "_sendToLoadout": "Send to Loadout",
-                "_makeDeathMove": "Make a Death Move",
-                "_rangeAndTarget": "Range & Target",
-                "_dragApplyEffect": "Drag effect to apply it to an actor",
-                "_appliedEvenIfSuccessful": "Applied even if save succeeded",
-                "_diceIsRerolled": "The dice has been rerolled (x{times})",
-                "_pendingSaves": "Pending Reaction Rolls",
-                "_openSheetSettings": "Open Settings",
-                "_compendiumBrowser": "Compendium Browser",
-                "_rulesOn": "Rules On",
-                "_rulesOff": "Rules Off",
-                "_remainingUses": "Uses refresh on {type}",
-                "_rightClickExtand": "Right-Click to extand",
-                "_companionPartnerLevelBlock": "The companion needs an assigned partner to level up."
+                "disableEffect": "Deshabilitar Efecto",
+                "enableEffect": "Habilitar Efecto",
+                "openItemWorld": "Abrir mundo de objeto",
+                "openActorWorld": "Abrir mundo de actor",
+                "sendToChat": "Mandar al chat",
+                "maxEvasionClassBound": "Tu Evasión base está especificada en tu clase. Este es el incremento sobre esa base.",
+                "maxHPClassBound": "Tus PG base están especificados en tu clase. Este es el incremento sobre esa base.",
+                "moreOptions": "Más opciones",
+                "equip": "Equipar",
+                "unequip": "Desequiar",
+                "sendToVault": "Devolver al mazo",
+                "sendToLoadout": "Mandar a la mano",
+                "makeDeathMove": "Hacer un movimiento de muerte",
+                "rangeAndTarget": "Alcance y objetivo",
+                "dragApplyEffect": "Arrastra el efecto para aplicarlo a un actor",
+                "appliedEvenIfSuccessful": "Aplicado incluso si la salvación tuvo éxito",
+                "diceIsRerolled": "El dado ha sido tirado de nuevo (x{times})",
+                "pendingSaves": "Tiradas de reacción pendientes",
+                "openSheetSettings": "Abrir ajustes",
+                "compendiumBrowser": "Navegador de compendio",
+                "rulesOn": "Reglas activas",
+                "rulesOff": "Reglas inactivas",
+                "remainingUses": "Usa refresco en {type}",
+                "rightClickExtand": "Click derecho para expandir",
+                "companionPartnerLevelBlock": "El compañero necesita que el personaje asociado suba de nivel."
             }
         }
     }

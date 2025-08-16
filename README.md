@@ -25,7 +25,7 @@ To update the spanish translation you can to the following:
 Download the latest `en.json` language file from the Foundryborne Daggerheart system.
 
 ```
-npm run dowload
+npm run update
 ```
 
 Sync the keys in the `en.json` file with `es.json`.
