@@ -1114,346 +1114,346 @@
             },
             "WeaponFeature": {
                 "barrier": {
-                    "_name": "Barrier",
-                    "_description": "Gain Weapon Tier + 1 to Armor Score; -1 to Evasion",
+                    "name": "Barrera",
+                    "description": "Ganas Rango del Arma + 1 al Valor de Armadura; -1 a Evasión",
                     "effects": {
                         "barrier": {
-                            "_name": "Barrier",
-                            "_description": "Gain Weapon Tier + 1 to Armor Score; -1 to Evasion"
+                            "name": "Barrera",
+                            "description": "Ganas Rango del Arma + 1 al Valor de Armadura; -1 a Evasión"
                         }
                     }
                 },
                 "bonded": {
-                    "_name": "Bonded",
-                    "_description": "Gain a bonus to your damage rolls equal to your level.",
+                    "name": "Vinculada",
+                    "description": "Gana un bonificador a las tiradas de daño igual a tu nivel.",
                     "effects": {
                         "damage": {
-                            "_name": "Weapon Bond",
-                            "_description": "Gain a bonus to your damage rolls equal to your level."
+                            "name": "Vínculo",
+                            "description": "Gana un bonificador a las tiradas de daño igual a tu nivel."
                         }
                     }
                 },
                 "bouncing": {
-                    "_name": "Bouncing",
-                    "_description": "Mark 1 or more Stress to hit that many targets in range of the attack.",
+                    "name": "Rebotante",
+                    "description": "Marca 1 o más Estrés para golpear a ese mismo número de objetivos dentro del alcance del ataque.",
                     "actions": {
                         "bounce": {
-                            "_name": "Bounce",
-                            "_description": "Mark 1 or more Stress to hit that many targets in range of the attack."
+                            "name": "Rebotar",
+                            "description": "Marca 1 o más Estrés para golpear a ese mismo número de objetivos dentro del alcance del ataque."
                         }
                     }
                 },
                 "brave": {
-                    "_name": "Brave",
-                    "_description": "-1 to Evasion; + Weapon Tier to Severe damage threshold",
+                    "name": "Valiente",
+                    "description": "-1 a Evasión; + Rango del Arma al límite de daño severo",
                     "effects": {
                         "brave": {
-                            "_name": "Brave",
-                            "_description": "-1 to Evasion; + Weapon Tier to Severe damage threshold"
+                            "name": "Valiente",
+                            "description": "-1 a Evasión; + Rango del Arma al límite de daño severo"
                         }
                     }
                 },
                 "brutal": {
-                    "_name": "Brutal",
-                    "_description": "When you roll the maximum value on a damage die, roll an additional damage die.",
+                    "name": "Brutal",
+                    "description": "Cuando obtienes el máximo valor en el dado de daño tira un dado de daño adicional.",
                     "actions": {
                         "addDamage": {
-                            "_name": "Brutal",
-                            "_description": "When you roll the maximum value on a damage die, roll an additional damage die."
+                            "name": "Brutal",
+                            "description": "Cuando obtienes el máximo valor en el dado de daño tira un dado de daño adicional."
                         }
                     }
                 },
                 "burning": {
-                    "_name": "Burning",
-                    "_description": "When you roll the maximum value on a damage die, roll an additional damage die.",
+                    "name": "Ardiente",
+                    "description": "Cuando obtienes un 6 en el dado de daño el objetivo marca un Estrés.",
                     "actions": {
                         "burn": {
-                            "_name": "Burn",
-                            "_description": "When you roll a 6 on a damage die, the target must mark a Stress."
+                            "name": "Quemar",
+                            "description": "Cuando obtienes un 6 en el dado de daño el objetivo marca un Estrés."
                         }
                     }
                 },
                 "charged": {
-                    "_name": "Charged",
-                    "_description": "Mark a Stress to gain a +1 bonus to your Proficiency on a primary weapon attack.",
+                    "name": "Cargada",
+                    "description": "Marca un Estrés para ganar un +1 a tu Competencia en un ataque con un arma principal.",
                     "actions": {
                         "markStress": {
-                            "_name": "Charge",
-                            "_description": "Mark a Stress to gain a +1 bonus to your Proficiency on a primary weapon attack."
+                            "name": "Carga",
+                            "description": "Marca un Estrés para ganar un +1 a tu Competencia en un ataque con un arma principal."
                         }
                     },
                     "effects": {
                         "charged": {
-                            "_name": "Charged",
-                            "_description": "Gain a +1 bonus to your Proficiency on a primary weapon attack."
+                            "name": "Cargada",
+                            "description": "Gana un +1 a tu Competencia en un ataque con un arma principal."
                         }
                     }
                 },
                 "concussive": {
-                    "_name": "Concussive",
-                    "_description": "On a successful attack, you can spend a Hope to knock the target back to Far range.",
+                    "name": "Conmocionante",
+                    "description": "Con un ataque exitoso puedes gastar 1 punto de Esperanza para repeler a un enemigo hasta una distancia Lejos.",
                     "actions": {
                         "attack": {
-                            "_name": "Concuss",
-                            "_description": "On a successful attack, you can spend a Hope to knock the target back to Far range."
+                            "name": "Conmocionar",
+                            "description": "Con un ataque exitoso puedes gastar 1 punto de Esperanza para repeler a un enemigo hasta una distancia Lejos."
                         }
                     }
                 },
                 "cumbersome": {
-                    "_name": "Cumbersome",
-                    "_description": "-1 to Finesse",
+                    "name": "Incómoda",
+                    "description": "-1 a Destreza",
                     "effects": {
                         "cumbersome": {
-                            "_name": "Cumbersome",
-                            "_description": "-1 to Finesse"
+                            "name": "Incómoda",
+                            "description": "-1 a Destreza"
                         }
                     }
                 },
                 "deadly": {
-                    "_name": "Deadly",
-                    "_description": "When you deal Severe damage, the target must mark an additional HP.",
+                    "name": "Mortal",
+                    "description": "Cuado haces daño severo el objetivo debe marcar un PG adicional.",
                     "actions": {
                         "extraDamage": {
-                            "_name": "Deadly",
-                            "_description": "When you deal Severe damage, the target must mark an additional HP."
+                            "name": "Mortal",
+                            "description": "Cuado haces daño severo el objetivo debe marcar un PG adicional."
                         }
                     }
                 },
                 "deflecting": {
-                    "_name": "Deflecting",
-                    "_description": "When you are attacked, you can mark an Armor Slot to gain a bonus to your Evasion equal to your Armor Score against the attack.",
+                    "name": "Desviante",
+                    "description": "Cuando eres atacado puedes marcar un espacio de armadura para ganar un bonificador a tu Evasión igual a tu valor de armadura contra el ataque.",
                     "actions": {
                         "deflect": {
-                            "_name": "Deflect",
-                            "_description": "When you are attacked, you can mark an Armor Slot to gain a bonus to your Evasion equal to your Armor Score against the attack."
+                            "name": "Desviar",
+                            "description": "Cuando eres atacado puedes marcar un espacio de armadura para ganar un bonificador a tu Evasión igual a tu valor de armadura contra el ataque."
                         }
                     },
                     "effects": {
                         "deflecting": {
-                            "_name": "Deflecting",
-                            "_description": "Gain a bonus to your Evasion equal to your Armor Score against the attack"
+                            "name": "Desviante",
+                            "description": "Gana un bonificador a tu Evasión igual a tu Valor de Armadura contra el ataque"
                         }
                     }
                 },
                 "destructive": {
-                    "_name": "Destructive",
-                    "_description": "-1 to Agility; on a successful attack, all adversaries within Very Close range must mark a Stress.",
+                    "name": "Destructiva",
+                    "description": "-1 a Agilidad; con un ataque exitoso todos los adversarios a alcance Muy Cerca deben marcar estrés.",
                     "actions": {
                         "attack": {
-                            "_name": "Destruction",
-                            "_description": "On a successful attack, all adversaries within Very Close range must mark a Stress."
+                            "name": "Destrucción",
+                            "description": "Con un ataque exitoso todos los adversarios a alcance Muy Cerca deben marcar estrés."
                         }
                     },
                     "effects": {
                         "agility": {
-                            "_name": "Destructive",
-                            "_description": "-1 to Agility"
+                            "name": "Destructiva",
+                            "description": "-1 a Agilidad"
                         }
                     }
                 },
                 "devastating": {
-                    "_name": "Devastating",
-                    "_description": "Before you make an attack roll, you can mark a Stress to use a d20 as your damage die.",
+                    "name": "Devastadora",
+                    "description": "Antes de hacer la tirada de ataque puedes marcar Estrés para usar un d20 en como dado de daño.",
                     "actions": {
                         "devastate": {
-                            "_name": "Devastate",
-                            "_description": "Before you make an attack roll, you can mark a Stress to use a d20 as your damage die."
+                            "name": "Devastar",
+                            "description": "Antes de hacer la tirada de ataque puedes marcar Estrés para usar un d20 en como dado de daño."
                         }
                     }
                 },
                 "doubleDuty": {
-                    "_name": "Double Duty",
-                    "_description": "+1 to Armor Score; +1 to primary weapon damage within Melee range",
+                    "name": "Doble Función",
+                    "description": "+1 a la puntuación de Armadura; +1 al daño en melé con un arma principal",
                     "effects": {
                         "doubleDuty": {
-                            "_name": "Double Duty",
-                            "_description": "+1 to Armor Score; +1 to primary weapon damage within Melee range"
+                            "name": "Doble Función",
+                            "description": "+1 a la puntuación de Armadura; +1 al daño en melé con un arma principal"
                         }
                     }
                 },
                 "doubledUp": {
-                    "_name": "Doubled Up",
-                    "_description": "When you make an attack with your primary weapon, you can deal damage to another target within Melee range.",
+                    "name": "Duplicada",
+                    "description": "Cuando haces un ataque con un arma principal puedes hacer daño a otro objetivo a rango de melé.",
                     "actions": {
                         "doubleUp": {
-                            "_name": "Double Up",
-                            "_description": "When you make an attack with your primary weapon, you can deal damage to another target within Melee range."
+                            "name": "Duplicar",
+                            "description": "Cuando haces un ataque con un arma principal puedes hacer daño a otro objetivo a rango de melé."
                         }
                     }
                 },
                 "dueling": {
-                    "_name": "Dueling",
-                    "_description": "When there are no other creatures within Close range of the target, gain advantage on your attack roll against them.",
+                    "name": "Duelista",
+                    "description": "Cuando no hay otras criaturas Cerca del objetivo obtienes ventaja en tu tirada de ataque contra dicho objetivo.",
                     "actions": {
                         "duel": {
-                            "_name": "Duel",
-                            "_description": "When there are no other creatures within Close range of the target, gain advantage on your attack roll against them."
+                            "name": "Duelo",
+                            "description": "Cuando no hay otras criaturas Cerca del objetivo obtienes ventaja en tu tirada de ataque contra dicho objetivo."
                         }
                     }
                 },
                 "eruptive": {
-                    "_name": "Eruptive",
-                    "_description": "On a successful attack against a target within Melee range, all other adversaries within Very Close range must succeed on a reaction roll (14) or take half damage.",
+                    "name": "Eruptiva",
+                    "description": "Con un ataque exitoso contra un objetivo a rango de melé todos los demás adversarios que estén Muy Cerca deben tener éxito en una tirada de reacción (14) o recibir la mitad del daño.",
                     "actions": {
                         "erupt": {
-                            "_name": "Erupt",
-                            "_description": "On a successful attack against a target within Melee range, all other adversaries within Very Close range must succeed on a reaction roll (14) or take half damage."
+                            "name": "Erupcionar",
+                            "description": "Con un ataque exitoso contra un objetivo a rango de melé todos los demás adversarios que estén Muy Cerca deben tener éxito en una tirada de reacción (14) o recibir la mitad del dañoe."
                         }
                     }
                 },
                 "grappling": {
-                    "_name": "Grappling",
-                    "_description": "On a successful attack, you can spend a Hope to Restrain the target or pull them into Melee range with you.",
+                    "name": "Apresadora",
+                    "description": "Con un ataque exitoso puedes gastar 1 punto de Esperanza para Apresar al objetivo o acercarlo a rango de Melé.",
                     "actions": {
                         "grapple": {
-                            "_name": "Grapple",
-                            "_description": "On a successful attack, you can spend a Hope to Restrain the target or pull them into Melee range with you."
+                            "name": "Apresar",
+                            "description": "Con un ataque exitoso puedes gastar 1 punto de Esperanza para Apresar al objetivo o acercarlo a rango de Melé."
                         }
                     }
                 },
                 "greedy": {
-                    "_name": "Greedy",
-                    "_description": "Spend a handful of gold to gain a +1 bonus to your Proficiency on a damage roll.",
+                    "name": "Codiciosa",
+                    "description": "Gasta un puñado de oro para ganar un bonificador de +1 a tu Competencia en la tirada de daño.",
                     "actions": {
                         "greed": {
-                            "_name": "Greed",
-                            "_description": "Spend a handful of gold to gain a +1 bonus to your Proficiency on a damage roll."
+                            "name": "Codicia",
+                            "description": "Gasta un puñado de oro para ganar un bonificador de +1 a tu Competencia en la tirada de daño."
                         }
                     }
                 },
                 "healing": {
-                    "_name": "Healing",
-                    "_description": "During downtime, automatically clear a Hit Point.",
+                    "name": "Curativa",
+                    "description": "Durante el tiempo de descanso automáticamente eliminas un punto de golpe.",
                     "actions": {
                         "heal": {
-                            "_name": "Heal",
-                            "_description": "During downtime, automatically clear a Hit Point."
+                            "name": "Curar",
+                            "description": "Durante el tiempo de descanso automáticamente eliminas un punto de golpe."
                         }
                     }
                 },
                 "heavy": {
-                    "_name": "Heavy",
-                    "_description": "-1 to Evasion",
+                    "name": "Pesada",
+                    "description": "-1 a Evasión",
                     "effects": {
                         "heavy": {
-                            "_name": "Heavy",
-                            "_description": "-1 to Evasion"
+                            "name": "Pesada",
+                            "description": "-1 a Evasión"
                         }
                     }
                 },
                 "hooked": {
-                    "_name": "Hooked",
-                    "_description": "On a successful attack, you can pull the target into Melee range.",
+                    "name": "Ganchudo",
+                    "description": "Con un ataque exitoso atraes al objetivo a melé.",
                     "actions": {
                         "hook": {
-                            "_name": "Hook",
-                            "_description": "On a successful attack, you can pull the target into Melee range."
+                            "name": "Gancho",
+                            "description": "Con un ataque exitoso atraes al objetivo a melé."
                         }
                     }
                 },
                 "hot": {
-                    "_name": "Hot",
-                    "_description": "This weapon cuts through solid material.",
+                    "name": "Caliente",
+                    "description": "Esta arma corta a través de material sólido.",
                     "actions": {
                         "hot": {
-                            "_name": "Hot",
-                            "_description": "This weapon cuts through solid material."
+                            "name": "Caliente",
+                            "description": "Esta arma corta a través de material sólido."
                         }
                     }
                 },
                 "invigorating": {
-                    "_name": "Invigorating",
-                    "_description": "On a successful attack, roll a d4. On a result of 4, clear a Stress.",
+                    "name": "Vigorizante",
+                    "description": "Con un ataque exitoso tira un d4. Si obtienes un 4 elimina un Estrés.",
                     "actions": {
                         "invigorate": {
-                            "_name": "Invigorate",
-                            "_description": "On a successful attack, roll a d4. On a result of 4, clear a Stress."
+                            "name": "Vigorizar",
+                            "description": "Con un ataque exitoso tira un d4. Si obtienes un 4 elimina un Estrés."
                         }
                     }
                 },
                 "lifestealing": {
-                    "_name": "Lifestealing",
-                    "_description": "On a successful attack, roll a d6. On a result of 6, clear a Hit Point or clear a Stress.",
+                    "name": "Robavidas",
+                    "description": "Con un ataque exitoso tira un d6. Si sacas un 6 elimina un Punto de Golpe o Estrés.",
                     "actions": {
                         "lifesteal": {
-                            "_name": "Lifesteal",
-                            "_description": "On a successful attack, roll a d6. On a result of 6, clear a Hit Point or clear a Stress."
+                            "name": "Robar vida",
+                            "description": "Con un ataque exitoso tira un d6. Si sacas un 6 elimina un Punto de Golpe o Estrés."
                         }
                     }
                 },
                 "lockedOn": {
-                    "_name": "Locked On",
-                    "_description": "On a successful attack, your next attack against the same target with your primary weapon automatically succeeds.",
+                    "name": "Fijada",
+                    "description": "Con un ataque exitoso tu próximo ataque contra el mismo objetivo con tu arma principal tiene éxito automáticamente.",
                     "actions": {
                         "lockOn": {
-                            "_name": "Lock On",
-                            "_description": "On a successful attack, your next attack against the same target with your primary weapon automatically succeeds."
+                            "name": "Fijar",
+                            "description": "Con un ataque exitoso tu próximo ataque contra el mismo objetivo con tu arma principal tiene éxito automáticamente."
                         }
                     }
                 },
                 "long": {
-                    "_name": "Long",
-                    "_description": "This weapon's attack targets all adversaries in a line within range.",
+                    "name": "Larga",
+                    "description": "El ataque de esta arma está dirigido a todos los adversarios en una línea dentro del alcance.",
                     "actions": {
                         "long": {
-                            "_name": "Long",
-                            "_description": "This weapon's attack targets all adversaries in a line within range."
+                            "name": "Larga",
+                            "description": "El ataque de esta arma está dirigido a todos los adversarios en una línea dentro del alcance."
                         }
                     }
                 },
                 "lucky": {
-                    "_name": "Lucky",
-                    "_description": "On a failed attack, you can mark a Stress to reroll your attack.",
+                    "name": "Suertuda",
+                    "description": "Cuando fallas un ataque puedes marcar un Estrés para volver a tirar el ataque.",
                     "actions": {
                         "luck": {
-                            "_name": "Luck",
-                            "_description": "On a failed attack, you can mark a Stress to reroll your attack."
+                            "name": "Suerte",
+                            "description": "Cuando fallas un ataque puedes marcar un Estrés para volver a tirar el ataque."
                         }
                     }
                 },
                 "massive": {
-                    "_name": "Massive",
-                    "_description": "-1 to Evasion; on a successful attack, roll an additional damage die and discard the lowest result.",
+                    "name": "Masiva",
+                    "description": "-1 a Evasión; cuando tienes éxito en el ataque tira un dado de daño adicional y descarta el resultado más bajo.",
                     "effects": {
                         "massive": {
-                            "_name": "Massive",
-                            "_description": "-1 to Evasion; on a successful attack, roll an additional damage die and discard the lowest result."
+                            "name": "Masiva",
+                            "description": "-1 a Evasión; cuando tienes éxito en el ataque tira un dado de daño adicional y descarta el resultado más bajo."
                         }
                     }
                 },
                 "painful": {
-                    "_name": "Painful",
-                    "_description": "Each time you make a successful attack, you must mark a Stress.",
+                    "name": "Dolorosa",
+                    "description": "Cada vez que realizas un ataque exitoso debes marcar Estrés.",
                     "actions": {
                         "pain": {
-                            "_name": "Pain",
-                            "_description": "Each time you make a successful attack, you must mark a Stress."
+                            "name": "Dolor",
+                            "description": "Cada vez que realizas un ataque exitoso debes marcar Estrés."
                         }
                     }
                 },
                 "paired": {
-                    "_name": "Paired",
-                    "_description": "Add this Secondary Weapon's tier + 1 to your primary weapon damage against targets within Melee range",
+                    "name": "Emparejada",
+                    "description": "Añade el Rango de este arma secundaria + 1 al daño de tu arma principal contra objetivos a distancia de melé",
                     "actions": {
                         "paired": {
-                            "_name": "Paired",
-                            "_description": "Add this Secondary Weapon's tier + 1 to your primary weapon against targets within Melee range"
+                            "name": "Emparejada",
+                            "description": "Añade el Rango de este arma secundaria + 1 al daño de tu arma principal contra objetivos a distancia de melé"
                         }
                     },
                     "effects": {
                         "paired": {
-                            "_name": "Paired",
-                            "_description": "Add this Secondary Weapon's tier + 1 to your primary weapon against targets within Melee range"
+                            "name": "Emparejada",
+                            "description": "Añade el Rango de este arma secundaria + 1 al daño de tu arma principal contra objetivos a distancia de melé"
                         }
                     }
                 },
                 "parry": {
-                    "_name": "Parry",
-                    "_description": "When you are attacked, roll this weapon's damage dice. If any of the attacker's damage dice rolled the same value as your dice, the matching results are discarded from the attacker's damage dice before the damage you take is totaled.",
+                    "name": "Parada",
+                    "description": "Cuando eres atacado tira el dado de daño de esta arma. Si alguno de los dados de daño del atacante tiene el mismo valor que tu dado dicho dado es descartado del total del daño que recibes.",
                     "actions": {
                         "parry": {
-                            "_name": "Parry",
-                            "_description": "When you are attacked, roll this weapon's damage dice. If any of the attacker's damage dice rolled the same value as your dice, the matching results are discarded from the attacker's damage dice before the damage you take is totaled."
+                            "name": "Parada",
+                            "description": "Cuando eres atacado tira el dado de daño de esta arma. Si alguno de los dados de daño del atacante tiene el mismo valor que tu dado dicho dado es descartado del total del daño que recibes."
                         }
                     }
                 },
@@ -2056,7 +2056,8 @@
             "used": "Usado",
             "uses": "Usos",
             "value": "Valor",
-            "withThing": "Con {thing}"
+            "withThing": "Con {thing}",
+            "_unarmedAttack": "Unarmed Attack"
         },
         "ITEMS": {
             "FIELDS": {
