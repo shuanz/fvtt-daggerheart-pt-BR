@@ -231,7 +231,9 @@
                 "companionLevelup": {
                     "confirmTitle": "Subida de nivel de compañero",
                     "confirmText": "¿Quieres subir de nivel a tu compañero {name} {levelChange} niveles ahora? (Puedes hacerlo manualmente después)"
-                }
+                },
+                "InvalidOldCharacterImportTitle": "Importar personaje antiguo",
+                "InvalidOldCharacterImportText": "Los datos de personaje exportados antes de la versión 1.1 no generarán un personaje completo. ¿Quieres continuar?"
             },
             "Companion": {
                 "FIELDS": {
