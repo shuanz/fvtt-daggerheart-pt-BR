@@ -11,10 +11,10 @@
             "loot": "Botín",
             "weapon": "Arma",
             "armor": "Armadura",
-            "beastform": "Forma animal"
+            "beastform": "Forma bestial"
         },
         "ActiveEffect": {
-            "beastform": "Forma animal"
+            "beastform": "Forma bestial"
         },
         "Actor": {
             "character": "Personaje",
@@ -34,7 +34,7 @@
                     "tooltip": "Acción ofensiva como atacar con un arma, lanzar un conjuro, etc."
                 },
                 "beastform": {
-                    "name": "Forma animal",
+                    "name": "Forma bestial",
                     "tooltip": "Transformar al usuario en otra forma."
                 },
                 "damage": {
@@ -60,9 +60,9 @@
             },
             "Config": {
                 "beastform": {
-                    "exact": "Máximo rango de forma animal",
+                    "exact": "Máximo rango de forma bestial",
                     "exactHint": "Se usará el rango del personaje si está vacío",
-                    "label": "Forma animal"
+                    "label": "Forma bestial"
                 },
                 "displayInChat": "Mostrar en el chat"
             },
