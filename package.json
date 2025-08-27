@@ -2,13 +2,13 @@
   "name": "fvtt-daggerheart-pt-BR",
   "version": "1.0.0",
   "description": "Tradução não oficial em português brasileiro do sistema Foundryborne Daggerheart para FoundryVTT",
-  "homepage": "https://github.com/erizocosmico/fvtt-daggerheart-pt-BR#readme",
+  "homepage": "https://github.com/shuanz/fvtt-daggerheart-pt-BR#readme",
   "bugs": {
-    "url": "https://github.com/erizocosmico/fvtt-daggerheart-pt-BR/issues"
+    "url": "https://github.com/shuanz/fvtt-daggerheart-pt-BR/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/erizocosmico/fvtt-daggerheart-pt-BR.git"
+    "url": "git+https://github.com/shuanz/fvtt-daggerheart-pt-BR.git"
   },
   "license": "MIT",
   "author": "Miguel Molina <miguel@erizocosmi.co>",

@@ -48,7 +48,7 @@
       "flags": {}
     }
   ],
-  "url": "https://github.com/erizocosmico/fvtt-daggerheart-pt-BR",
-  "manifest": "https://raw.githubusercontent.com/erizocosmico/fvtt-daggerheart-pt-BR/main/module.json",
-  "download": "https://github.com/erizocosmico/fvtt-daggerheart-pt-BR/archive/refs/heads/main.zip"
+  "url": "https://github.com/shuanz/fvtt-daggerheart-pt-BR",
+  "manifest": "https://raw.githubusercontent.com/shuanz/fvtt-daggerheart-pt-BR/main/module.json",
+  "download": "https://github.com/shuanz/fvtt-daggerheart-pt-BR/archive/refs/heads/main.zip"
 }
