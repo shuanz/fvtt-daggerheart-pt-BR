@@ -1,115 +1,115 @@
 {
 	"label": "Armaduras",
-	"folders": {
-		"Special": "Especial",
-		"Tier 1": "Rango 1",
-		"Tier 2": "Rango 2",
-		"Tier 3": "Rango 3",
-		"Tier 4": "Rango 4"
-	},
-	"entries": {
-		"Bare Bones": {
-			"name": "Sin armadura",
-			"description": "<p></p><p class=\"Body-Foundation\">Cuando eliges no llevar armadura tu Valor de Armadura base es 3 + tu Fuerza y usas los siguientes como tus límites de daño base:</p><ul><li class=\"vertical-card-list-found\"><em><strong>Rango 1:</strong></em> 9/19</li><li class=\"vertical-card-list-found\"><em><strong>Rango 2:</strong></em> 11/24</li><li class=\"vertical-card-list-found\"><em><strong>Rango 3:</strong></em> 13/31</li><li class=\"vertical-card-list-found\"><em><strong>Rango 4:</strong></em> 15/38</li></ul>"
-		},
-		"Chaimail Armor": {
-			"name": "Cota de malla"
-		},
-		"Full Plate Armor": {
-			"name": "Armadura de placas"
-		},
-		"Gambeson Armor": {
-			"name": "Gambesón"
-		},
-		"Leather Armor": {
-			"name": "Armadura de cuero"
-		},
-		"Elundrian Chain Mail": {
-			"name": "Cota de malla Elundriana"
-		},
-		"Harrowbone Armor": {
-			"name": "Armadura de hueso labrado"
-		},
-		"Improved Chainmail Armor": {
-			"name": "Cota de malla mejorada"
-		},
-		"Improved Full Plate Armor": {
-			"name": "Armadura de placas mejorada"
-		},
-		"Improved Gambeson Armor": {
-			"name": "Gambesón mejorado"
-		},
-		"Improved Leather Armor": {
-			"name": "Armadura de cuero mejorada"
-		},
-		"Irontree Breastplate Armor": {
-			"name": "Coraza de Arbolférreo"
-		},
-		"Rosewild Armor": {
-			"name": "Armadura Rosasalvaje"
-		},
-		"Runetan Floating Armor": {
-			"name": "Armadura flotante de Runetan"
-		},
-		"Tyris Soft Armor": {
-			"name": "Armadura suave de Tyris"
-		},
-		"Advanced Chainmail Armor": {
-			"name": "Cota de malla avanzada"
-		},
-		"Advanced Full Plate Armor": {
-			"name": "Armadura de placas avanzada"
-		},
-		"Advanced Gambeson Armor": {
-			"name": "Gambesón Avanzado"
-		},
-		"Bellamoi Fine Armor": {
-			"name": "Armadura fina de Bellamoi"
-		},
-		"Bladefare Armor": {
-			"name": "Armadura de Bladefare"
-		},
-		"Dragonscale Armor": {
-			"name": "Armadura de escamas de dragón"
-		},
-		"Monett's Cloak": {
-			"name": "Capa de Monett"
-		},
-		"Runes of Fortification": {
-			"name": "Runas de fortificación"
-		},
-		"Spiked Plate Armor": {
-			"name": "Armadura de placas tachonada"
-		},
-		"Channeling Armor": {
-			"name": "Armadura canalizadora"
-		},
-		"Dunamis Silkchain": {
-			"name": "Cota de seda de dunamis"
-		},
-		"Full Fortified Armor": {
-			"name": "Armadura completa fortificada"
-		},
-		"Emberwoven Armor": {
-			"name": "Armadura ascuatejida"
-		},
-		"Legendary Chainmail Armor": {
-			"name": "Cota de malla legendaria"
-		},
-		"Legendary Full Plate Armor": {
-			"name": "Armadura de placas legendaria"
-		},
-		"Legendary Gambeson Armor": {
-			"name": "Gambesón legendario"
-		},
-		"Legendary Leather Armor": {
-			"name": "Armadura de cuero legendaria"
-		},
-		"Savior Chainmail": {
-			"name": "Cota de malla salvadora"
-		},
-		"Veritas Opal Armor": {
-			"name": "Armadura de Ópalo Veritas"
-		}
-	}
+        "folders": {
+                "Special": "Especial",
+                "Tier 1": "Nível 1",
+                "Tier 2": "Nível 2",
+                "Tier 3": "Nível 3",
+                "Tier 4": "Nível 4"
+        },
+        "entries": {
+                "Bare Bones": {
+                        "name": "Sem armadura",
+                        "description": "<p></p><p class=\"Body-Foundation\">Quando você escolhe não usar armadura, seu Valor de Armadura base é 3 + sua Força e você usa os seguintes como seus limites de dano base:</p><ul><li class=\"vertical-card-list-found\"><em><strong>Nível 1:</strong></em> 9/19</li><li class=\"vertical-card-list-found\"><em><strong>Nível 2:</strong></em> 11/24</li><li class=\"vertical-card-list-found\"><em><strong>Nível 3:</strong></em> 13/31</li><li class=\"vertical-card-list-found\"><em><strong>Nível 4:</strong></em> 15/38</li></ul>"
+                },
+                "Chaimail Armor": {
+                        "name": "Cota de malha"
+                },
+                "Full Plate Armor": {
+                        "name": "Armadura de placas"
+                },
+                "Gambeson Armor": {
+                        "name": "Gambesão"
+                },
+                "Leather Armor": {
+                        "name": "Armadura de couro"
+                },
+                "Elundrian Chain Mail": {
+                        "name": "Cota de malha Elundriana"
+                },
+                "Harrowbone Armor": {
+                        "name": "Armadura de osso entalhado"
+                },
+                "Improved Chainmail Armor": {
+                        "name": "Cota de malha aprimorada"
+                },
+                "Improved Full Plate Armor": {
+                        "name": "Armadura de placas aprimorada"
+                },
+                "Improved Gambeson Armor": {
+                        "name": "Gambesão aprimorado"
+                },
+                "Improved Leather Armor": {
+                        "name": "Armadura de couro aprimorada"
+                },
+                "Irontree Breastplate Armor": {
+                        "name": "Couraça de Árvore de Ferro"
+                },
+                "Rosewild Armor": {
+                        "name": "Armadura Rosa Selvagem"
+                },
+                "Runetan Floating Armor": {
+                        "name": "Armadura flutuante de Runetan"
+                },
+                "Tyris Soft Armor": {
+                        "name": "Armadura suave de Tyris"
+                },
+                "Advanced Chainmail Armor": {
+                        "name": "Cota de malha avançada"
+                },
+                "Advanced Full Plate Armor": {
+                        "name": "Armadura de placas avançada"
+                },
+                "Advanced Gambeson Armor": {
+                        "name": "Gambesão avançado"
+                },
+                "Bellamoi Fine Armor": {
+                        "name": "Armadura fina de Bellamoi"
+                },
+                "Bladefare Armor": {
+                        "name": "Armadura de Bladefare"
+                },
+                "Dragonscale Armor": {
+                        "name": "Armadura de escamas de dragão"
+                },
+                "Monett's Cloak": {
+                        "name": "Capa de Monett"
+                },
+                "Runes of Fortification": {
+                        "name": "Runas de fortificação"
+                },
+                "Spiked Plate Armor": {
+                        "name": "Armadura de placas cravejada"
+                },
+                "Channeling Armor": {
+                        "name": "Armadura canalizadora"
+                },
+                "Dunamis Silkchain": {
+                        "name": "Cota de seda de dunamis"
+                },
+                "Full Fortified Armor": {
+                        "name": "Armadura completa fortificada"
+                },
+                "Emberwoven Armor": {
+                        "name": "Armadura brasa-tecida"
+                },
+                "Legendary Chainmail Armor": {
+                        "name": "Cota de malha lendária"
+                },
+                "Legendary Full Plate Armor": {
+                        "name": "Armadura de placas lendária"
+                },
+                "Legendary Gambeson Armor": {
+                        "name": "Gambesão lendário"
+                },
+                "Legendary Leather Armor": {
+                        "name": "Armadura de couro lendária"
+                },
+                "Savior Chainmail": {
+                        "name": "Cota de malha salvadora"
+                },
+                "Veritas Opal Armor": {
+                        "name": "Armadura de Opala Veritas"
+                }
+        }
 }
