@@ -1,0 +1,43 @@
+{
+  "label": "Consumíveis",
+  "folders": {
+    "Consumable Types": "Tipos de Consumíveis"
+  },
+  "mapping": {
+    "description": "system.description"
+  },
+  "entries": {
+    "Healing Potion": {
+      "name": "Poção de Cura",
+      "description": "<p>Uma poção mágica que restaura pontos de vida quando consumida.</p>"
+    },
+    "Antidote": {
+      "name": "Antídoto",
+      "description": "<p>Uma substância que neutraliza venenos e toxinas no corpo.</p>"
+    },
+    "Elixir of Strength": {
+      "name": "Elixir da Força",
+      "description": "<p>Uma bebida mágica que aumenta temporariamente a força física.</p>"
+    },
+    "Scroll of Protection": {
+      "name": "Pergaminho de Proteção",
+      "description": "<p>Um pergaminho mágico que pode ser usado para criar uma barreira protetora.</p>"
+    },
+    "Fire Bomb": {
+      "name": "Bomba de Fogo",
+      "description": "<p>Um dispositivo explosivo que causa dano por fogo em uma área.</p>"
+    },
+    "Smoke Bomb": {
+      "name": "Bomba de Fumaça",
+      "description": "<p>Um dispositivo que cria uma nuvem de fumaça para obscurecer a visão.</p>"
+    },
+    "Ration": {
+      "name": "Ração",
+      "description": "<p>Comida preservada para viagens longas e situações de emergência.</p>"
+    },
+    "Waterskin": {
+      "name": "Odre de Água",
+      "description": "<p>Um recipiente para carregar água potável durante viagens.</p>"
+    }
+  }
+}
