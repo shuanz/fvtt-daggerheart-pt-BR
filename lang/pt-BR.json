@@ -913,7 +913,7 @@
       "DamageType": {
         "physical": {
           "name": "Físico",
-          "abbreviation": "Phy"
+          "abbreviation": "Fis"
         },
         "magical": {
           "name": "Mágico",
@@ -967,23 +967,23 @@
       "HealingType": {
         "hitPoints": {
           "name": "Pontos de Vida",
-          "abbreviation": "HP"
+          "abbreviation": "PV"
         },
         "stress": {
-          "name": "Estresse",
-          "abbreviation": "STR"
+          "name": "Força",
+          "abbreviation": "FOR"
         },
         "hope": {
           "name": "Esperança",
-          "abbreviation": "HO"
+          "abbreviation": "ESP"
         },
         "armor": {
           "name": "Espaço de Armadura",
-          "abbreviation": "AS"
+          "abbreviation": "EA"
         },
         "fear": {
           "name": "Medo",
-          "abbreviation": "FR"
+          "abbreviation": "MD"
         }
       },
       "ItemResourceProgression": {
