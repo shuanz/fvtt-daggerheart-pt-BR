@@ -1536,92 +1536,92 @@
           }
         },
         "retractable": {
-          "name": "Retractable",
-          "description": "The blade can be hidden in the hilt to avoid detection.",
+          "name": "Retrátil",
+          "description": "A lâmina pode ser escondida no punho para evitar detecção.",
           "actions": {
             "retract": {
-              "name": "Retract",
-              "description": "The blade can be hidden in the hilt to avoid detection."
+              "name": "Retrair",
+              "description": "A lâmina pode ser escondida no punho para evitar detecção."
             }
           }
         },
         "returning": {
-          "name": "Returning",
-          "description": "When this arma(s) is thrown within its range, it appears in seu hand immediately after the ataque.",
+          "name": "Retornante",
+          "description": "Quando esta arma é arremessada dentro de seu alcance, ela aparece em sua mão imediatamente após o ataque.",
           "actions": {
             "return": {
-              "name": "Return",
-              "description": "When this arma(s) is thrown within its range, it appears in seu hand immediately after the ataque."
+              "name": "Retornar",
+              "description": "Quando esta arma é arremessada dentro de seu alcance, ela aparece em sua mão imediatamente após o ataque."
             }
           }
         },
         "scary": {
-          "name": "Scary",
-          "description": "On a successful attack, the target must mark a Estresse.",
+          "name": "Assustador",
+          "description": "Em um ataque bem-sucedido, o alvo deve marcar um Estresse.",
           "actions": {
             "scare": {
-              "name": "Scare",
-              "description": "On a successful attack, the target must mark a Estresse."
+              "name": "Assustar",
+              "description": "Em um ataque bem-sucedido, o alvo deve marcar um Estresse."
             }
           }
         },
         "selfCorrecting": {
-          "name": "Self Correcting",
-          "description": "When Você roll a 1 on a dano die, it deals 6 dano instead.",
+          "name": "Auto-Corretivo",
+          "description": "Quando você rolar um 1 em um dado de dano, ele causa 6 de dano em vez disso.",
           "effects": {
             "selfCorrecting": {
-              "name": "Self Correcting",
-              "description": "When Você roll a 1 on a dano die, it deals 6 dano instead."
+              "name": "Auto-Corretivo",
+              "description": "Quando você rolar um 1 em um dado de dano, ele causa 6 de dano em vez disso."
             }
           }
         },
         "serrated": {
-          "name": "Serrated",
-          "description": "When Você roll a 1 on a dano die, it deals 8 dano instead.",
+          "name": "Serrilhado",
+          "description": "Quando você rolar um 1 em um dado de dano, ele causa 8 de dano em vez disso.",
           "effects": {
             "serrated": {
-              "name": "Serrated",
-              "description": "When Você roll a 1 on a dano die, it deals 8 dano instead."
+              "name": "Serrilhado",
+              "description": "Quando você rolar um 1 em um dado de dano, ele causa 8 de dano em vez disso."
             }
           }
         },
         "sharpwing": {
-          "name": "Sharpwing",
-          "description": "Gain a bonus to your damage rolls equal to your Agility.",
+          "name": "Asa Afiada",
+          "description": "Ganhe um bônus nas suas rolagens de dano igual à sua Agilidade.",
           "effects": {
             "sharpwing": {
-              "name": "Sharpwing",
-              "description": "Gain a bonus to your damage rolls equal to your Agility."
+              "name": "Asa Afiada",
+              "description": "Ganhe um bônus nas suas rolagens de dano igual à sua Agilidade."
             }
           }
         },
         "sheltering": {
-          "name": "Sheltering",
-          "description": "When you mark an Armadura Slot, it reduces damage for you and all allies within Corpo-a-Corpo range of you who took the same damage.",
+          "name": "Abrigador",
+          "description": "Quando você marca um Espaço de Armadura, ele reduz o dano para você e todos os aliados dentro do alcance Corpo-a-Corpo que receberam o mesmo dano.",
           "actions": {
             "shelter": {
-              "name": "Shelter",
-              "description": "When you mark an Armadura Slot, it reduces damage for you and all allies within Corpo-a-Corpo range of you who took the same damage."
+              "name": "Abrigar",
+              "description": "Quando você marca um Espaço de Armadura, ele reduz o dano para você e todos os aliados dentro do alcance Corpo-a-Corpo que receberam o mesmo dano."
             }
           }
         },
         "startling": {
-          "name": "Startling",
-          "description": "Mark a Estresse to crack the whip and force all adversaries within Corpo-a-Corpo range back to Corpo-a-Corpo range.",
+          "name": "Surpreendente",
+          "description": "Marque um Estresse para estalar o chicote e forçar todos os adversários dentro do alcance Corpo-a-Corpo de volta ao alcance Corpo-a-Corpo.",
           "actions": {
             "startle": {
-              "name": "Startle",
-              "description": "Mark a Estresse to crack the whip and force all adversaries within Corpo-a-Corpo range back to Corpo-a-Corpo range."
+              "name": "Surpreender",
+              "description": "Marque um Estresse para estalar o chicote e forçar todos os adversários dentro do alcance Corpo-a-Corpo de volta ao alcance Corpo-a-Corpo."
             }
           }
         },
         "timebending": {
-          "name": "Timebending",
-          "description": "Você can choose the target of seu ataque after making seu ataque roll.",
+          "name": "Dobra Temporal",
+          "description": "Você pode escolher o alvo do seu ataque após fazer sua rolagem de ataque.",
           "actions": {
             "bendTime": {
-              "name": "Bend Time",
-              "description": "Você can choose the target of seu ataque after making seu ataque roll."
+              "name": "Dobrar o Tempo",
+              "description": "Você pode escolher o alvo do seu ataque após fazer sua rolagem de ataque."
             }
           }
         }
@@ -1630,13 +1630,13 @@
     "EFFECTS": {
       "ApplyLocations": {
         "attackRoll": {
-          "name": "Ataque Roll"
+          "name": "Rolagem de Ataque"
         },
         "damageRoll": {
-          "name": "Dano Roll"
+          "name": "Rolagem de Dano"
         },
         "healingRoll": {
-          "name": "Healing Roll"
+          "name": "Rolagem de Cura"
         }
       },
       "Duration": {
@@ -1665,89 +1665,89 @@
     "GENERAL": {
       "Action": {
         "single": "Ação",
-        "plural": "Actions"
+        "plural": "Ações"
       },
       "Advantage": {
-        "full": "Advantage",
-        "plural": "Advantages",
-        "short": "Adv"
+        "full": "Vantagem",
+        "plural": "Vantagens",
+        "short": "Vant"
       },
       "Adversary": {
         "singular": "Adversário",
-        "plural": "Adversaries"
+        "plural": "Adversários"
       },
       "Bonuses": {
         "rest": {
-          "downtimeAction": "Downtime Action",
+          "downtimeAction": "Ação de Intervalo",
           "shortRest": {
             "shortRestMoves": {
-              "label": "Short Rest: Bonus Short Rest Moves",
-              "hint": "The number of extra Short Rest Moves the personagem can take during a Short Rest."
+              "label": "Descanso Curto: Movimentos Extras de Descanso Curto",
+              "hint": "O número de movimentos de descanso curto extras que o personagem pode realizar durante um descanso curto."
             },
             "longRestMoves": {
-              "label": "Short Rest: Bonus Long Rest Moves",
-              "hint": "The number of extra Long Rest Moves the personagem can take during a Short Rest."
+              "label": "Descanso Curto: Movimentos Extras de Descanso Longo",
+              "hint": "O número de movimentos de descanso longo extras que o personagem pode realizar durante um descanso curto."
             }
           },
           "longRest": {
             "shortRestMoves": {
-              "label": "Long Rest: Bonus Short Rest Moves",
-              "hint": "The number of extra Short Rest Moves the personagem can take during a Long Rest."
+              "label": "Descanso Longo: Movimentos Extras de Descanso Curto",
+              "hint": "O número de movimentos de descanso curto extras que o personagem pode realizar durante um descanso longo."
             },
             "longRestMoves": {
-              "label": "Long Rest: Bonus Long Rest Moves",
-              "hint": "The number of extra Long Rest Moves the personagem can take during a Long Rest."
+              "label": "Descanso Longo: Movimentos Extras de Descanso Longo",
+              "hint": "O número de movimentos de descanso longo extras que o personagem pode realizar durante um descanso longo."
             }
           }
         },
         "maxLoadout": {
-          "label": "Max Loadout Cards Bonus"
+          "label": "Bônus de Cartas Máximas no Arsenal"
         }
       },
       "Character": {
         "singular": "Personagem",
-        "plural": "Characters"
+        "plural": "Personagens"
       },
       "Cost": {
-        "single": "Cost",
-        "plural": "Costs"
+        "single": "Custo",
+        "plural": "Custos"
       },
       "Damage": {
         "severe": "Severo",
         "major": "Maior",
         "minor": "Menor",
-        "none": "None",
-        "allDamage": "All Dano",
-        "physicalDamage": "Physical Dano",
-        "magicalDamage": "Magical Dano",
-        "primaryWeapon": "Primary Arma Dano",
-        "secondaryWeapon": "Secondary Arma Dano"
+        "none": "Nenhum",
+        "allDamage": "Todo Dano",
+        "physicalDamage": "Dano Físico",
+        "magicalDamage": "Dano Mágico",
+        "primaryWeapon": "Dano da Arma Primária",
+        "secondaryWeapon": "Dano da Arma Secundária"
       },
       "DamageResistance": {
-        "none": "None",
+        "none": "Nenhuma",
         "physicalResistance": {
-          "label": "Dano Resistance: Physical",
-          "hint": "Physical Dano is halved if this is set to 1"
+          "label": "Resistência a Dano: Físico",
+          "hint": "Dano físico é reduzido à metade se definido como 1"
         },
         "magicalResistance": {
-          "label": "Dano Resistance: Magical",
-          "hint": "Magical Dano is halved if this is set to 1"
+          "label": "Resistência a Dano: Mágico",
+          "hint": "Dano mágico é reduzido à metade se definido como 1"
         },
         "physicalImmunity": {
-          "label": "Dano Immunity: Physical",
-          "hint": "Immune to Physical Dano if this is set to 1"
+          "label": "Imunidade a Dano: Físico",
+          "hint": "Imune a dano físico se definido como 1"
         },
         "magicalImmunity": {
-          "label": "Dano Immunity: Magical",
-          "hint": "Immune to Magical Dano if this is set to 1"
+          "label": "Imunidade a Dano: Mágico",
+          "hint": "Imune a dano mágico se definido como 1"
         },
         "physicalReduction": {
-          "label": "Dano Reduction: Physical",
-          "hint": "Physical Dano is reduced by the amount set here"
+          "label": "Redução de Dano: Físico",
+          "hint": "O dano físico é reduzido pela quantidade definida aqui"
         },
         "magicalReduction": {
-          "label": "Dano Reduction: Magical",
-          "hint": "Magical Dano is reduced by the amount set here"
+          "label": "Redução de Dano: Mágica",
+          "hint": "O dano mágico é reduzido pela quantidade definida aqui"
         }
       },
       "DamageThresholds": {
@@ -1755,13 +1755,13 @@
         "minor": "Menor",
         "major": "Maior",
         "severe": "Severo",
-        "majorThreshold": "Maior Dano Threshold",
-        "severeThreshold": "Severo Dano Threshold",
-        "with": "{threshold} Dano Threshold"
+        "majorThreshold": "Limite de Dano Maior",
+        "severeThreshold": "Limite de Dano Severo",
+        "with": "Limite de Dano {threshold}"
       },
       "Dice": {
-        "single": "Die",
-        "plural": "Dice"
+        "single": "Dado",
+        "plural": "Dados"
       },
       "Difficulty": {
         "all": "Difficulty: all",
