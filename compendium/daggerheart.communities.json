@@ -1,35 +1,35 @@
 {
 	"label": "Comunidades",
-	"folders": {
-		"Community Features": "Rasgos de comunidad"
-	},
+        "folders": {
+                "Community Features": "Características de comunidade"
+        },
 	"entries": {
-		"Highborne": {
-			"name": "Noble"
-		},
+                "Highborne": {
+                        "name": "Nobre"
+                },
 		"Loreborne": {
 			"name": "Erudita"
 		},
 		"Orderborne": {
 			"name": "Disciplinada"
 		},
-		"Ridgeborne": {
-			"name": "Montañesa"
-		},
+                "Ridgeborne": {
+                        "name": "Montanhesa"
+                },
 		"Seaborne": {
 			"name": "Marítima"
 		},
-		"Slyborne": {
-			"name": "Granuja"
-		},
-		"Underborne": {
-			"name": "Subterránea"
-		},
+                "Slyborne": {
+                        "name": "Malandra"
+                },
+                "Underborne": {
+                        "name": "Subterrânea"
+                },
 		"Wanderborne": {
 			"name": "Errante"
 		},
-		"Wildborne": {
-			"name": "Salvaje"
-		}
-	}
+                "Wildborne": {
+                        "name": "Selvagem"
+                }
+        }
 }
