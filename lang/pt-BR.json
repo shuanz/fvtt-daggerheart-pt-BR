@@ -183,7 +183,7 @@
           }
         },
         "hordeDamage": "Dano da Horda",
-        "horderHp": "Horda/HP"
+        "horderHp": "Horda/PV"
       },
       "Character": {
         "advantageSources": {
@@ -208,7 +208,7 @@
         "faith": "Fé",
         "levelUp": "Você pode subir de nível",
         "maxEvasionBonus": "Aumento Máximo de Evasão",
-        "maxHPBonus": "Aumento Máximo de HP",
+        "maxHPBonus": "Aumento Máximo de PV",
         "pronouns": "Pronomes",
         "story": {
           "backgroundTitle": "Histórico",
@@ -1106,7 +1106,7 @@
           },
           "knowledge": {
             "name": "Conhecimento",
-            "short": "KNO",
+            "short": "CON",
             "verb": {
               "recall": "Recordar",
               "analyze": "Analisar",
@@ -2001,7 +2001,7 @@
       "HitPoints": {
         "single": "Ponto de Vida",
         "plural": "Pontos de Vida",
-        "short": "HP"
+        "short": "PV"
       },
       "hope": "Esperança",
       "hordeHp": "PV da Horda",
@@ -2299,18 +2299,18 @@
           }
         },
         "defeated": {
-          "title": "Defeated Handling"
+          "title": "Tratamento de Derrota"
         }
       },
       "Homebrew": {
-        "newDowntimeMove": "Downtime Move",
-        "downtimeMoves": "Downtime Moves",
-        "nrChoices": "# Moves Per Rest",
-        "resetMovesTitle": "Reset {type} Downtime Moves",
+        "newDowntimeMove": "Movimento de Tempo Livre",
+        "downtimeMoves": "Movimentos de Tempo Livre",
+        "nrChoices": "# Movimentos por Descanso",
+        "resetMovesTitle": "Resetar Movimentos de Tempo Livre {type}",
         "resetMovesText": "Tem certeza de que deseja redefinir?",
         "FIELDS": {
           "maxFear": {
-            "label": "Max Medo"
+            "label": "Max. Medo"
           },
           "traitArray": {
             "label": "Modificadores Iniciais de Traço"
@@ -2534,7 +2534,7 @@
         "openActorWorld": "Abrir Ator no Mundo",
         "sendToChat": "Enviar para o Chat",
         "maxEvasionClassBound": "Sua Evasão base é definida pela sua classe. Este é o aumento acima disso.",
-        "maxHPClassBound": "Seu HP base é definido pela sua classe. Este é o aumento acima disso.",
+        "maxHPClassBound": "Seu PV base é definido pela sua classe. Este é o aumento acima disso.",
         "moreOptions": "Mais Opções",
         "equip": "Equipar",
         "unequip": "Desequipar",
