@@ -1,7 +1,7 @@
 import fs from 'fs';
 
 const SRC = './lang/en.json';
-const DST = './lang/es.json';
+const DST = './lang/pt-BR.json';
 
 const original = JSON.parse(fs.readFileSync(SRC, {encoding: 'utf8', flag: 'r'}));
 const translation = JSON.parse(fs.readFileSync(DST, {encoding: 'utf8', flag: 'r'}));

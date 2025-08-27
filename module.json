@@ -1,7 +1,7 @@
 {
-  "id": "daggerheart-es",
-  "title": "Translation: Español [Daggerheart]",
-  "description": "Unofficial spanish translation of the Foundryborne Daggerheart system for FoundryVTT",
+  "id": "daggerheart-pt-BR",
+  "title": "Tradução: Português Brasileiro [Daggerheart]",
+  "description": "Tradução não oficial em português brasileiro do sistema Foundryborne Daggerheart para FoundryVTT",
   "version": "0.0.1",
   "compatibility": {
     "minimum": "13",
@@ -42,13 +42,13 @@
   },
   "languages": [
     {
-      "lang": "es",
-      "name": "Español",
-      "path": "lang/es.json",
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "lang/pt-BR.json",
       "flags": {}
     }
   ],
-  "url": "https://github.com/erizocosmico/fvtt-daggerheart-es",
-  "manifest": "https://raw.githubusercontent.com/erizocosmico/fvtt-daggerheart-es/main/module.json",
-  "download": "https://github.com/erizocosmico/fvtt-daggerheart-es/archive/refs/heads/main.zip"
+  "url": "https://github.com/erizocosmico/fvtt-daggerheart-pt-BR",
+  "manifest": "https://raw.githubusercontent.com/erizocosmico/fvtt-daggerheart-pt-BR/main/module.json",
+  "download": "https://github.com/erizocosmico/fvtt-daggerheart-pt-BR/archive/refs/heads/main.zip"
 }
