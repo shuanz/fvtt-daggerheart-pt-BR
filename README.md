@@ -11,7 +11,7 @@ Este é um trabalho em andamento. Sinta-se à vontade para contribuir.
 Por enquanto, manualmente através do link:
 
 ```
-https://github.com/shuanz/fvtt-daggerheart-pt-BR
+https://raw.githubusercontent.com/shuanz/fvtt-daggerheart-pt-BR/main/module.json
 ```
 
 ### Como contribuir
