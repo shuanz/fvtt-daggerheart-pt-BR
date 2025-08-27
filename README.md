@@ -1,43 +1,47 @@
-# fvtt-daggerheart-es
+# fvtt-daggerheart-ptbr
 
-Unofficial spanish translation of the Foundryborne Daggerheart system for FoundryVTT
+Tradução não oficial para o português do sistema **Foundryborne Daggerheart** no FoundryVTT
 
-### Project status
+### Status do projeto
 
-This is a work in progress. Feel free to contribute.
+Este é um trabalho em andamento. Sinta-se à vontade para contribuir.
 
-### Install
+### Instalação
 
-For now, manually using the following link:
+Por enquanto, manualmente através do link:
 
 ```
-https://raw.githubusercontent.com/erizocosmico/fvtt-daggerheart-es/main/module.json
+https://raw.githubusercontent.com/erizocosmico/fvtt-daggerheart-pt-BR/main/module.json
 ```
 
-### How to contribute
+### Como contribuir
 
-The keys in `es.json` that start with `_` are untranslated. When you translate its content, remove the leading `_`.
+As chaves no arquivo `pt-BR.json` que começam com `_` ainda não foram traduzidas.  
+Ao traduzir o conteúdo, remova o `_` inicial.
 
-### Update translation
+### Atualizar a tradução
 
-To update the spanish translation you can to the following:
+Para atualizar a tradução em português:
 
-Download the latest `en.json` language file from the Foundryborne Daggerheart system.
+Baixe o arquivo mais recente `pt-BR.json` do sistema Foundryborne Daggerheart.
 
 ```
 npm run update
 ```
 
-Sync the keys in the `en.json` file with `es.json`.
+Sincronize as chaves do arquivo `pt-BR.json` com o `pt-BR.json`:
 
 ```
 npm run sync
 ```
 
-## Disclaimer
 
-**Daggerheart** is a trademark of Darrington Press LLC. All original content, mechanics, and intellectual property related to the Daggerheart roleplaying game are © Darrington Press LLC.
+## Aviso Legal
 
-This project is intended for personal or non-commercial use. All rights to Daggerheart’s original materials remain with their respective owners.
+**Daggerheart** é uma marca registrada da Darrington Press LLC.  
+Todo o conteúdo original, mecânicas e propriedade intelectual relacionadas ao jogo de RPG Daggerheart são © Darrington Press LLC.  
 
-This project is an unofficial fan creation and is not affiliated with or endorsed by Darrington Press or Critical Role.
+Este projeto é destinado apenas para uso pessoal e não comercial.  
+Todos os direitos sobre os materiais originais de Daggerheart permanecem com seus respectivos proprietários.  
+
+Este é um projeto de fãs, não oficial, sem afiliação ou endosso da Darrington Press ou Critical Role.
