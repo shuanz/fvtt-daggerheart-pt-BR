@@ -1017,8 +1017,8 @@
                     }
                 },
                 "finesse": {
-                    "name": "Finesse",
-                    "short": "FIN",
+                    "name": "Sutilza",
+                    "short": "SUT",
                     "verb": {
                         "control": "Control",
                         "hide": "Hide",
@@ -1142,11 +1142,11 @@
                 },
                 "cumbersome": {
                     "name": "Cumbersome",
-                    "description": "-1 to Finesse",
+                    "description": "-1 to Sutilza",
                     "effects": {
                         "cumbersome": {
                             "name": "Cumbersome",
-                            "description": "-1 to Finesse"
+                            "description": "-1 to Sutilza"
                         }
                     }
                 },

@@ -1078,8 +1078,8 @@
             }
           },
           "finesse": {
-            "name": "Finesse",
-            "short": "FIN",
+            "name": "Sutilza",
+            "short": "SUT",
             "verb": {
               "control": "Controlar",
               "hide": "Esconder",
@@ -1203,11 +1203,11 @@
         },
         "cumbersome": {
           "name": "Desajeitado",
-          "description": "-1 em Finesse",
+          "description": "-1 em Sutilza",
           "effects": {
             "cumbersome": {
               "name": "Desajeitado",
-              "description": "-1 em Finesse"
+              "description": "-1 em Sutilza"
             }
           }
         },
