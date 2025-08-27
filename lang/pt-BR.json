@@ -475,11 +475,11 @@
           "hitPointSlots": "Ganhe permanentemente um espaço de Ponto de Vida.",
           "stressSlots": "Ganhe permanentemente um espaço de Estresse.",
           "experiences": "Ganhe permanentemente um bônus de +1 em duas experiências.",
-          "domainCard": "Choose an additional domain card of seu level or lower from a domain Você have access to (up to level {maxLevel})",
-          "evasion": "Permanently gain a +1 bonus to your Evasão.",
+          "domainCard": "Escolha uma carta de domínio adicional do seu nível ou inferior de um domínio ao qual você tenha acesso (até o nível {maxLevel})",
+          "evasion": "Ganhe permanentemente um bônus de +1 na sua Evasão.",
           "proficiency": "Aumente sua Proficiência em +1.",
-          "subclass": "Take an upgraded subclass card. Then cross out the multiclass option for this tier.",
-          "multiclass": "Multiclass: Choose an additional class for seu personagem, then cross out an unused “Take an upgraded subclass card” and the other multiclass option on this sheet."
+          "subclass": "Pegue uma carta de subclasse aprimorada. Em seguida, risque a opção de multiclasse para este nível.",
+          "multiclass": "Multiclasse: Escolha uma classe adicional para seu personagem, depois risque uma opção não utilizada de ‘Pegar uma carta de subclasse aprimorada’ e a outra opção de multiclasse nesta folha."
         },
         "delevel": {
           "content": "Voltar para a seleção de nível anterior removerá todas as seleções feitas para este nível. Você quer continuar?",
@@ -493,11 +493,11 @@
           "hitPoint": "Ganhe permanentemente um espaço de Ponto de Vida.",
           "stress": "Ganhe permanentemente um espaço de Estresse.",
           "experience": "Ganhe permanentemente um bônus de +1 em duas experiências.",
-          "domainCard": "Choose an additional domain card of seu level or lower from a domain Você have access to (up to level {maxLevel})",
-          "evasion": "Permanently gain a +1 bonus to your Evasão.",
-          "subclass": "Take an upgraded subclass card. Then cross out the multiclass option for this tier.",
+          "domainCard": "Escolha uma carta de domínio adicional do seu nível ou inferior de um domínio ao qual você tenha acesso (até o nível {maxLevel})",
+          "evasion": "Ganhe permanentemente um bônus de +1 na sua Evasão.",
+          "subclass": "Pegue uma carta de subclasse aprimorada. Em seguida, risque a opção de multiclasse para este nível.",
           "proficiency": "Aumente sua Proficiência em +1.",
-          "multiclass": "Multiclass: Choose an additional class for seu personagem, then cross out an unused “Take an upgraded subclass card” and the other multiclass option on this sheet.",
+          "multiclass": "Multiclasse: Escolha uma classe adicional para seu personagem, depois risque uma opção não utilizada de ‘Pegar uma carta de subclasse aprimorada’ e a outra opção de multiclasse nesta folha.",
           "intelligent": "Seu companheiro ganha um bônus permanente de +1 em uma Experiência de Companheiro de sua escolha.",
           "lightInTheDark": "Ganhe um espaço adicional de Esperança para seu personagem.",
           "creatureComfort": "Uma vez por descanso, quando você dedica tempo durante um momento tranquilo para dar amor e atenção ao seu companheiro, você pode ganhar uma Esperança ou ambos podem limpar um Estresse.",
@@ -561,28 +561,28 @@
         "selectDomainPrompt": "Selecione seu novo domínio"
       },
       "OwnershipSelection": {
-        "title": "Ownership Selection - {name}",
+        "title": "Seleção de Propriedade - {name}",
         "default": "Propriedade Padrão"
       },
       "ReactionRoll": {
-        "title": "Reaction Roll: {trait}"
+        "title": "Rolagem de Reação: {trait}"
       },
       "RerollDialog": {
         "title": "Rerrolar",
-        "deselectDiceNotification": "Deselect one of the selected dice first",
+        "deselectDiceNotification": "Deselecione primeiro um dos dados selecionados",
         "acceptCurrentRolls": "Aceitar Rolagens Atuais"
       },
       "ResourceDice": {
-        "title": "{name} Resource",
+        "title": "Recurso de {name}",
         "rerollDice": "Rerrolar Dados"
       }
     },
-    "CLASS": {
-      "Feature": {
-        "rallyDice": "Bardic Rally Dice",
-        "short": "Rally"
-      }
-    },
+      "CLASS": {
+        "Feature": {
+          "rallyDice": "Dados de Incentivo Bárdico",
+          "short": "Incentivo"
+        }
+      },
     "CONFIG": {
       "ActionType": {
         "passive": "Passiva",
@@ -602,8 +602,8 @@
         },
         "minion": {
           "name": "Lacaio",
-          "description": "For every X dano a PC deals to this adversary, they also deal 1 HP to an additional minion within their ataque’s range.",
-          "tip": "The Minion move is useful when Você want to drop lots of small enemies into the battlefield, knowing the party can swing through them very easily. This move means that if a PC hits one minion and they do enough dano, they also hit a number of others that are in range for them. Because of this, it’s often best to have minions crowd a PC–it will feel overwhelming and dangerous until they’re able to make an ataque against them. If Você want that cinematic feeling of the PCs taking out waves of enemies with a single ataque roll, minions are a great tool to make that happen."
+          "description": "Para cada X de dano que um PJ causar a este adversário, ele também causa 1 PV a um lacaio adicional dentro do alcance do ataque.",
+          "tip": "O movimento Lacaio é útil quando você quer colocar vários inimigos pequenos no campo de batalha, sabendo que o grupo pode varrê-los com facilidade. Esse movimento significa que, se um PJ acertar um lacaio e causar dano suficiente, ele também atingirá outros que estiverem ao alcance. Por isso, é comum manter lacaios aglomerados em um PJ — parecerá opressor e perigoso até que ele consiga fazer um ataque contra eles. Se você quer aquela sensação cinematográfica dos PJs derrubando ondas de inimigos com uma única rolagem de ataque, lacaios são uma ótima ferramenta para isso."
         }
       },
       "AdversaryType": {
@@ -882,27 +882,27 @@
       "Condition": {
         "dead": {
           "name": "Morto",
-          "description": "The character is dead"
+          "description": "O personagem está morto"
         },
         "defeated": {
           "name": "Derrotado",
-          "description": "This adversary is defeated."
+          "description": "Este adversário está derrotado."
         },
         "hidden": {
           "name": "Escondido",
-          "description": "While Hidden, ataques cannot be made directly targeting them nd any rolls against them are at desvantagem.\nWhen a Hidden creature moves or ataques, they are no longer Hidden. However, if a creature is Hidden when they begin making an ataque, the roll has vantagem; the Hidden condition isn’t cleared until after the ataque is resolved."
+          "description": "Enquanto estiver Escondida, uma criatura não pode ser alvo direto de ataques e qualquer rolagem contra ela é feita com desvantagem.\nQuando uma criatura Escondida se move ou ataca, ela deixa de estar Escondida. Entretanto, se uma criatura estiver Escondida ao iniciar um ataque, a rolagem tem vantagem; a condição Escondido só é removida após o ataque ser resolvido."
         },
         "restrained": {
           "name": "Contido",
-          "description": "When an effect makes a creature Restrained, it means they cannot move until this condition is cleared.\nThey can still take actions from their current position."
+          "description": "Quando um efeito deixa uma criatura Contida, significa que ela não pode se mover até que essa condição seja removida.\nEla ainda pode realizar ações a partir de sua posição atual."
         },
         "unconscious": {
           "name": "Inconsciente",
-          "description": "seu personagem can’t move or act while unconscious, they can’t be targeted by an ataque."
+          "description": "Seu personagem não pode se mover nem agir enquanto estiver inconsciente e não pode ser alvo de um ataque."
         },
         "vulnerable": {
           "name": "Vulnerável",
-          "description": "While a creature is Vulnerable, all rolls targeting them have vantagem.\nA creature who is already Vulnerable can’t be made to take the condition again."
+          "description": "Enquanto uma criatura estiver Vulnerável, todas as rolagens contra ela têm vantagem.\nUma criatura que já esteja Vulnerável não pode receber essa condição novamente."
         }
       },
       "CountdownType": {
@@ -922,16 +922,16 @@
       },
       "DeathMoves": {
         "avoidDeath": {
-          "name": "Avoid Death",
-          "description": "You drop unconscious temporarily and work with the GM to describe how the situation gets much worse because of it. Then roll your Medo die; if its value is equal to or under your Nível, take a Scar."
+          "name": "Evitar a Morte",
+          "description": "Você cai inconsciente temporariamente e trabalha com o GM para descrever como a situação piora muito por causa disso. Então role seu dado de Medo; se o valor for igual ou inferior ao seu Nível, receba uma Cicatriz."
         },
         "riskItAll": {
-          "name": "Risk It All",
-          "description": "Roll your Duality Dice. If Esperança is higher, you stay on your feet and clear an amount of Pontos de Vida and/or Estresse equal to the value of the Esperança die (divide the Esperança die value up between these however you’d prefer). If your Medo die is higher, you cross through the veil of death. If the Duality Dice are tied, you stay on your feet and clear all Pontos de Vida and Estresse."
+          "name": "Arriscar Tudo",
+          "description": "Role seus Dados de Dualidade. Se Esperança for maior, você permanece de pé e limpa uma quantidade de Pontos de Vida e/ou Estresse igual ao valor do dado de Esperança (divida como preferir). Se seu dado de Medo for maior, você atravessa o véu da morte. Se os Dados de Dualidade empatarem, você permanece de pé e limpa todos os Pontos de Vida e Estresse."
         },
         "blazeOfGlory": {
-          "name": "Blaze Of Glory",
-          "description": "With Blaze of Glory, the player is accepting death for the personagem. Take one action (at GM discretion), which becomes an automatic critical success, then cross through the veil of death."
+          "name": "Brilho de Glória",
+          "description": "Com Brilho de Glória, o jogador aceita a morte do personagem. Faça uma ação (a critério do GM), que se torna um sucesso crítico automático, e então atravesse o véu da morte."
         }
       },
       "DomainCardTypes": {
@@ -996,34 +996,34 @@
       },
       "Range": {
         "self": {
-          "name": "Self",
-          "description": "means yourself.",
-          "short": "Self"
+          "name": "Pessoal",
+          "description": "significa você mesmo.",
+          "short": "Pessoal"
         },
         "melee": {
           "name": "Corpo-a-Corpo",
-          "description": "means a personagem is within touching distance of the target. PCs can generally touch targets up to a few feet away from them, but melee range may be greater for especially large NPCs.",
+          "description": "significa que o personagem está ao alcance de tocar o alvo. PJs geralmente podem tocar alvos a alguns passos de distância, mas o alcance corpo-a-corpo pode ser maior para NPCs especialmente grandes.",
           "short": "Corpo-a-Corpo"
         },
         "veryClose": {
-          "name": "Very Corpo-a-Corpo",
-          "description": "means a distance where one can see fine details of a target- within moments of reaching, if need be. This is usually anywhere from about 5-10 feet away. While in danger, a PC can usually get to anything that’s very close as part of any other action they take. Anything on a battle map that is within the shortest length of a game card (~2-3 inches) can usually be considered very close.",
-          "short": "V. Corpo-a-Corpo"
+          "name": "Muito Perto",
+          "description": "significa uma distância em que se pode ver detalhes finos de um alvo — a poucos instantes de alcançá-lo, se necessário. Geralmente entre 1,5 e 3 metros. Em perigo, um PJ normalmente alcança algo muito perto como parte de qualquer outra ação que fizer. Em um mapa de batalha, qualquer coisa dentro do menor lado de uma carta de jogo (~5 cm) pode ser considerada muito perto.",
+          "short": "M. Perto"
         },
         "close": {
-          "name": "Corpo-a-Corpo",
-          "description": "means a distance where one can see prominent details of a target-- across a room or to a neighboring market stall, generally about 10-30 feet away. While in danger, a PC can usually get to anything that’s close as part of any other action they take. Anything on a battle map that is within the length of a standard pen or pencil (~5-6 inches) can usually be considered close.",
-          "short": "Corpo-a-Corpo"
+          "name": "Perto",
+          "description": "significa uma distância em que se pode ver detalhes proeminentes de um alvo — do outro lado de uma sala ou até uma banca próxima, geralmente entre 3 e 9 metros. Em perigo, um PJ normalmente alcança qualquer coisa que esteja perto como parte de outra ação. Em um mapa de batalha, qualquer coisa dentro do comprimento de uma caneta padrão (~15 cm) pode ser considerada perto.",
+          "short": "Perto"
         },
         "far": {
           "name": "Longe",
-          "description": "means a distance where one can see the appearance of a person or object, but probably not in great detail-- across a small battlefield or down a large corridor. This is usually about 30-100 feet away. While under danger, a PC will likely have to make an Agility check to get here safely. Anything on a battle map that is within the length of a standard piece of paper (~10-11 inches) can usually be considered far.",
+          "description": "significa uma distância em que se pode ver a aparência de uma pessoa ou objeto, mas provavelmente sem muitos detalhes — através de um pequeno campo de batalha ou por um grande corredor. Geralmente entre 9 e 30 metros. Em perigo, um PJ provavelmente precisará fazer um teste de Agilidade para chegar aqui com segurança. Em um mapa de batalha, qualquer coisa dentro do comprimento de uma folha de papel padrão (~28 cm) pode ser considerada longe.",
           "short": "Longe"
         },
         "veryFar": {
-          "name": "Very Longe",
-          "description": "means a distance where Você can see the shape of a person or object, but probably not make outany details-- across a large battlefield or down a long street, generally about 100-300 feet away. While under danger, a PC likely has to make an Agility check to get here safely. Anything on a battle map that is beyond far distance, but still within sight of the personagens can usually be considered very far.",
-          "short": "V. Longe"
+          "name": "Muito Longe",
+          "description": "significa uma distância em que você pode ver a forma de uma pessoa ou objeto, mas provavelmente sem distinguir detalhes — através de um grande campo de batalha ou ao longo de uma rua longa, geralmente entre 30 e 90 metros. Em perigo, um PJ provavelmente precisa fazer um teste de Agilidade para chegar aqui em segurança. Em um mapa de batalha, qualquer coisa além da distância longe, mas ainda à vista dos personagens, pode ser considerada muito longe.",
+          "short": "M. Longe"
         }
       },
       "RollTypes": {
@@ -1034,86 +1034,86 @@
           "name": "Ataque"
         },
         "spellcast": {
-          "name": "SpellCast"
+          "name": "Conjuração"
         },
         "diceSet": {
-          "name": "Dice Set"
+          "name": "Conjunto de Dados"
         }
       },
       "RuleChoice": {
-        "off": "Off",
-        "offWithToggle": "Off With Toggle",
-        "on": "On",
-        "onWithToggle": "On With Toggle"
+        "off": "Desligado",
+        "offWithToggle": "Desligado com Alternância",
+        "on": "Ligado",
+        "onWithToggle": "Ligado com Alternância"
       },
       "SelectAction": {
-        "selectType": "Selecionar Action Tipo",
-        "selectAction": "Action Selection"
+        "selectType": "Selecionar Tipo de Ação",
+        "selectAction": "Seleção de Ação"
       },
       "TemplateTypes": {
-        "circle": "Circle",
+        "circle": "Círculo",
         "cone": "Cone",
-        "emanation": "Emanation",
+        "emanation": "Emanação",
         "inFront": "À Frente",
-        "rect": "Rectangle",
-        "ray": "Ray"
+        "rect": "Retângulo",
+        "ray": "Raio"
       },
-      "Traits": {
-        "agility": {
-          "name": "Agility",
-          "short": "AGI",
-          "verb": {
-            "sprint": "Sprint",
-            "leap": "Leap",
-            "maneuver": "Maneuver"
+        "Traits": {
+          "agility": {
+            "name": "Agilidade",
+            "short": "AGI",
+            "verb": {
+              "sprint": "Correr",
+              "leap": "Saltar",
+              "maneuver": "Manobrar"
+            }
+          },
+          "strength": {
+            "name": "Força",
+            "short": "FOR",
+            "verb": {
+              "lift": "Erguer",
+              "smash": "Esmagar",
+              "grapple": "Agarrar"
+            }
+          },
+          "finesse": {
+            "name": "Finesse",
+            "short": "FIN",
+            "verb": {
+              "control": "Controlar",
+              "hide": "Esconder",
+              "tinker": "Manipular"
+            }
+          },
+          "instinct": {
+            "name": "Instinto",
+            "short": "INS",
+            "verb": {
+              "perceive": "Perceber",
+              "sense": "Sentir",
+              "navigate": "Navegar"
+            }
+          },
+          "presence": {
+            "name": "Presença",
+            "short": "PRE",
+            "verb": {
+              "charm": "Encantar",
+              "perform": "Apresentar",
+              "deceive": "Enganar"
+            }
+          },
+          "knowledge": {
+            "name": "Conhecimento",
+            "short": "KNO",
+            "verb": {
+              "recall": "Recordar",
+              "analyze": "Analisar",
+              "comprehend": "Compreender"
+            }
           }
         },
-        "strength": {
-          "name": "Strength",
-          "short": "STR",
-          "verb": {
-            "lift": "Lift",
-            "smash": "Smash",
-            "grapple": "Grapple"
-          }
-        },
-        "finesse": {
-          "name": "Finesse",
-          "short": "FIN",
-          "verb": {
-            "control": "Control",
-            "hide": "Hide",
-            "tinker": "Tinker"
-          }
-        },
-        "instinct": {
-          "name": "Instinct",
-          "short": "INS",
-          "verb": {
-            "perceive": "Perceive",
-            "sense": "Sense",
-            "navigate": "Navigate"
-          }
-        },
-        "presence": {
-          "name": "Presence",
-          "short": "PRE",
-          "verb": {
-            "charm": "Charm",
-            "perform": "Perform",
-            "deceive": "Deceive"
-          }
-        },
-        "knowledge": {
-          "name": "Knowledge",
-          "short": "KNO",
-          "verb": {
-            "recall": "Recall",
-            "analyze": "Analyze",
-            "comprehend": "Comprehend"
-          }
-        }
-      },
       "WeaponFeature": {
         "barrier": {
           "name": "Barreira",
@@ -1176,322 +1176,322 @@
           }
         },
         "charged": {
-          "name": "Charged",
-          "description": "Mark a Estresse to gain a +1 bonus to your Proficiência on a primary weapon attack.",
+          "name": "Carregado",
+          "description": "Marque um Estresse para ganhar +1 de bônus em sua Proficiência em um ataque com arma primária.",
           "actions": {
             "markStress": {
-              "name": "Charge",
-              "description": "Mark a Estresse to gain a +1 bonus to your Proficiência on a primary weapon attack."
+              "name": "Carregar",
+              "description": "Marque um Estresse para ganhar +1 de bônus em sua Proficiência em um ataque com arma primária."
             }
           },
           "effects": {
             "charged": {
-              "name": "Charged",
-              "description": "Gain a +1 bonus to your Proficiência on a primary weapon attack."
+              "name": "Carregado",
+              "description": "Ganhe +1 de bônus em sua Proficiência em um ataque com arma primária."
             }
           }
         },
         "concussive": {
-          "name": "Concussive",
-          "description": "On a successful attack, you can spend a Esperança to knock the target back to Longe range.",
+          "name": "Concussivo",
+          "description": "Em um ataque bem-sucedido, você pode gastar uma Esperança para empurrar o alvo para o alcance Longe.",
           "actions": {
             "attack": {
-              "name": "Concuss",
-              "description": "On a successful attack, you can spend a Esperança to knock the target back to Longe range."
+              "name": "Atordoar",
+              "description": "Em um ataque bem-sucedido, você pode gastar uma Esperança para empurrar o alvo para o alcance Longe."
             }
           }
         },
         "cumbersome": {
-          "name": "Cumbersome",
-          "description": "-1 to Finesse",
+          "name": "Desajeitado",
+          "description": "-1 em Finesse",
           "effects": {
             "cumbersome": {
-              "name": "Cumbersome",
-              "description": "-1 to Finesse"
+              "name": "Desajeitado",
+              "description": "-1 em Finesse"
             }
           }
         },
         "deadly": {
-          "name": "Deadly",
-          "description": "When you deal Severo damage, the target must mark an additional HP.",
+          "name": "Letal",
+          "description": "Quando você causar dano Severo, o alvo deve marcar um Ponto de Vida adicional.",
           "actions": {
             "extraDamage": {
-              "name": "Deadly",
-              "description": "When you deal Severo damage, the target must mark an additional HP."
+              "name": "Letal",
+              "description": "Quando você causar dano Severo, o alvo deve marcar um Ponto de Vida adicional."
             }
           }
         },
         "deflecting": {
-          "name": "Deflecting",
-          "description": "When you are attacked, you can mark an Armadura Slot to gain a bonus to your Evasão equal to your Armadura Score against the attack.",
+          "name": "Desviador",
+          "description": "Quando for atacado, você pode marcar um Espaço de Armadura para ganhar um bônus em sua Evasão igual ao seu Valor de Armadura contra o ataque.",
           "actions": {
             "deflect": {
-              "name": "Deflect",
-              "description": "When you are attacked, you can mark an Armadura Slot to gain a bonus to your Evasão equal to your Armadura Score against the attack."
+              "name": "Desviar",
+              "description": "Quando for atacado, você pode marcar um Espaço de Armadura para ganhar um bônus em sua Evasão igual ao seu Valor de Armadura contra o ataque."
             }
           },
           "effects": {
             "deflecting": {
-              "name": "Deflecting",
-              "description": "Gain a bonus to your Evasão equal to your Armadura Score against the attack"
+              "name": "Desviador",
+              "description": "Ganhe um bônus em sua Evasão igual ao seu Valor de Armadura contra o ataque"
             }
           }
         },
         "destructive": {
-          "name": "Destructive",
-          "description": "-1 to Agility; on a successful attack, all adversaries within Very Corpo-a-Corpo range must mark a Estresse.",
+          "name": "Destrutivo",
+          "description": "-1 em Agilidade; em um ataque bem-sucedido, todos os adversários dentro do alcance Muito Perto devem marcar um Estresse.",
           "actions": {
             "attack": {
-              "name": "Destruction",
-              "description": "On a successful attack, all adversaries within Very Corpo-a-Corpo range must mark a Estresse."
+              "name": "Destruição",
+              "description": "Em um ataque bem-sucedido, todos os adversários dentro do alcance Muito Perto devem marcar um Estresse."
             }
           },
           "effects": {
             "agility": {
-              "name": "Destructive",
-              "description": "-1 to Agility"
+              "name": "Destrutivo",
+              "description": "-1 em Agilidade"
             }
           }
         },
         "devastating": {
-          "name": "Devastating",
-          "description": "Before you make an attack roll, you can mark a Estresse to use a d20 as your damage die.",
+          "name": "Devastador",
+          "description": "Antes de fazer uma rolagem de ataque, você pode marcar um Estresse para usar um d20 como seu dado de dano.",
           "actions": {
             "devastate": {
-              "name": "Devastate",
-              "description": "Before you make an attack roll, you can mark a Estresse to use a d20 as your damage die."
+              "name": "Devastar",
+              "description": "Antes de fazer uma rolagem de ataque, você pode marcar um Estresse para usar um d20 como seu dado de dano."
             }
           }
         },
         "doubleDuty": {
-          "name": "Double Duty",
-          "description": "+1 to Armadura Score; +1 to primary weapon damage within Corpo-a-Corpo range",
+          "name": "Dupla Função",
+          "description": "+1 no Valor de Armadura; +1 ao dano da arma primária dentro do alcance Corpo-a-Corpo",
           "effects": {
             "doubleDuty": {
-              "name": "Double Duty",
-              "description": "+1 to Armadura Score; +1 to primary weapon damage within Corpo-a-Corpo range"
+              "name": "Dupla Função",
+              "description": "+1 no Valor de Armadura; +1 ao dano da arma primária dentro do alcance Corpo-a-Corpo"
             }
           }
         },
         "doubledUp": {
-          "name": "Doubled Up",
-          "description": "When you make an attack with your primary weapon, you can deal damage to another target within Corpo-a-Corpo range.",
+          "name": "Duplicado",
+          "description": "Quando você faz um ataque com sua arma primária, pode causar dano a outro alvo dentro do alcance Corpo-a-Corpo.",
           "actions": {
             "doubleUp": {
-              "name": "Double Up",
-              "description": "When you make an attack with your primary weapon, you can deal damage to another target within Corpo-a-Corpo range."
+              "name": "Duplicar",
+              "description": "Quando você faz um ataque com sua arma primária, pode causar dano a outro alvo dentro do alcance Corpo-a-Corpo."
             }
           }
         },
         "dueling": {
-          "name": "Dueling",
-          "description": "When there are no other creatures within Corpo-a-Corpo range of the target, gain advantage on your attack roll against them.",
+          "name": "Duelista",
+          "description": "Quando não houver outras criaturas dentro do alcance Corpo-a-Corpo do alvo, você ganha vantagem na sua rolagem de ataque contra ele.",
           "actions": {
             "duel": {
-              "name": "Duel",
-              "description": "When there are no other creatures within Corpo-a-Corpo range of the target, gain advantage on your attack roll against them."
+              "name": "Duelo",
+              "description": "Quando não houver outras criaturas dentro do alcance Corpo-a-Corpo do alvo, você ganha vantagem na sua rolagem de ataque contra ele."
             }
           }
         },
         "eruptive": {
-          "name": "Eruptive",
-          "description": "On a successful attack against a target within Corpo-a-Corpo range, all other adversaries within Very Corpo-a-Corpo range must succeed on a reaction roll (14) or take half damage.",
+          "name": "Eruptivo",
+          "description": "Em um ataque bem-sucedido contra um alvo dentro do alcance Corpo-a-Corpo, todos os outros adversários dentro do alcance Muito Perto devem ser bem-sucedidos em uma rolagem de reação (14) ou sofrer metade do dano.",
           "actions": {
             "erupt": {
-              "name": "Erupt",
-              "description": "On a successful attack against a target within Corpo-a-Corpo range, all other adversaries within Very Corpo-a-Corpo range must succeed on a reaction roll (14) or take half damage."
+              "name": "Erupção",
+              "description": "Em um ataque bem-sucedido contra um alvo dentro do alcance Corpo-a-Corpo, todos os outros adversários dentro do alcance Muito Perto devem ser bem-sucedidos em uma rolagem de reação (14) ou sofrer metade do dano."
             }
           }
         },
         "grappling": {
-          "name": "Grappling",
-          "description": "On a successful attack, you can spend a Esperança to Restrain the target or pull them into Corpo-a-Corpo range with you.",
+          "name": "Agarrador",
+          "description": "Em um ataque bem-sucedido, você pode gastar uma Esperança para Conter o alvo ou puxá-lo para o alcance Corpo-a-Corpo com você.",
           "actions": {
             "grapple": {
-              "name": "Grapple",
-              "description": "On a successful attack, you can spend a Esperança to Restrain the target or pull them into Corpo-a-Corpo range with you."
+              "name": "Agarrar",
+              "description": "Em um ataque bem-sucedido, você pode gastar uma Esperança para Conter o alvo ou puxá-lo para o alcance Corpo-a-Corpo com você."
             }
           }
         },
         "greedy": {
-          "name": "Greedy",
-          "description": "Spend a handful of gold to gain a +1 bonus to your Proficiência on a damage roll.",
+          "name": "Ganancioso",
+          "description": "Gaste um punhado de ouro para ganhar +1 de bônus em sua Proficiência em uma rolagem de dano.",
           "actions": {
             "greed": {
-              "name": "Greed",
-              "description": "Spend a handful of gold to gain a +1 bonus to your Proficiência on a damage roll."
+              "name": "Ganância",
+              "description": "Gaste um punhado de ouro para ganhar +1 de bônus em sua Proficiência em uma rolagem de dano."
             }
           }
         },
         "healing": {
           "name": "Cura",
-          "description": "During downtime, automatically clear a Hit Point.",
+          "description": "Durante o tempo de descanso, limpe automaticamente um Ponto de Vida.",
           "actions": {
             "heal": {
-              "name": "Heal",
-              "description": "During downtime, automatically clear a Hit Point."
+              "name": "Curar",
+              "description": "Durante o tempo de descanso, limpe automaticamente um Ponto de Vida."
             }
           }
         },
         "heavy": {
-          "name": "Heavy",
-          "description": "-1 to Evasão",
+          "name": "Pesada",
+          "description": "-1 em Evasão",
           "effects": {
             "heavy": {
-              "name": "Heavy",
-              "description": "-1 to Evasão"
+              "name": "Pesada",
+              "description": "-1 em Evasão"
             }
           }
         },
         "hooked": {
-          "name": "Hooked",
-          "description": "On a successful attack, you can pull the target into Corpo-a-Corpo range.",
+          "name": "Com Gancho",
+          "description": "Em um ataque bem-sucedido, você pode puxar o alvo para o alcance Corpo-a-Corpo.",
           "actions": {
             "hook": {
-              "name": "Hook",
-              "description": "On a successful attack, you can pull the target into Corpo-a-Corpo range."
+              "name": "Fisgar",
+              "description": "Em um ataque bem-sucedido, você pode puxar o alvo para o alcance Corpo-a-Corpo."
             }
           }
         },
         "hot": {
-          "name": "Hot",
-          "description": "This weapon cuts through solid material.",
+          "name": "Quente",
+          "description": "Esta arma corta através de material sólido.",
           "actions": {
             "hot": {
-              "name": "Hot",
-              "description": "This weapon cuts through solid material."
+              "name": "Quente",
+              "description": "Esta arma corta através de material sólido."
             }
           }
         },
         "invigorating": {
-          "name": "Invigorating",
-          "description": "On a successful attack, roll a d4. On a result of 4, clear a Estresse.",
+          "name": "Revigorante",
+          "description": "Em um ataque bem-sucedido, role um d4. Em um resultado 4, limpe um Estresse.",
           "actions": {
             "invigorate": {
-              "name": "Invigorate",
-              "description": "On a successful attack, roll a d4. On a result of 4, clear a Estresse."
+              "name": "Revigorar",
+              "description": "Em um ataque bem-sucedido, role um d4. Em um resultado 4, limpe um Estresse."
             }
           }
         },
         "lifestealing": {
-          "name": "Lifestealing",
-          "description": "On a successful attack, roll a d6. On a result of 6, clear a Hit Point or clear a Estresse.",
+          "name": "Dreno de Vida",
+          "description": "Em um ataque bem-sucedido, role um d6. Em um resultado 6, limpe um Ponto de Vida ou limpe um Estresse.",
           "actions": {
             "lifesteal": {
-              "name": "Lifesteal",
-              "description": "On a successful attack, roll a d6. On a result of 6, clear a Hit Point or clear a Estresse."
+              "name": "Drenar Vida",
+              "description": "Em um ataque bem-sucedido, role um d6. Em um resultado 6, limpe um Ponto de Vida ou limpe um Estresse."
             }
           }
         },
         "lockedOn": {
-          "name": "Locked On",
-          "description": "On a successful ataque, seu next ataque against the same target with seu primary arma(s) automatically succeeds.",
+          "name": "Mira Travada",
+          "description": "Em um ataque bem-sucedido, seu próximo ataque contra o mesmo alvo com sua arma primária é automaticamente bem-sucedido.",
           "actions": {
             "lockOn": {
-              "name": "Lock On",
-              "description": "On a successful ataque, seu next ataque against the same target with seu primary arma(s) automatically succeeds."
+              "name": "Travar Mira",
+              "description": "Em um ataque bem-sucedido, seu próximo ataque contra o mesmo alvo com sua arma primária é automaticamente bem-sucedido."
             }
           }
         },
         "long": {
-          "name": "Long",
-          "description": "This arma(s)'s ataque targets all adversaries in a line within range.",
+          "name": "Longa",
+          "description": "O ataque desta arma atinge todos os adversários em uma linha dentro do alcance.",
           "actions": {
             "long": {
-              "name": "Long",
-              "description": "This arma(s)'s ataque targets all adversaries in a line within range."
+              "name": "Longa",
+              "description": "O ataque desta arma atinge todos os adversários em uma linha dentro do alcance."
             }
           }
         },
         "lucky": {
-          "name": "Lucky",
-          "description": "On a failed attack, you can mark a Estresse to reroll your attack.",
+          "name": "Sortuda",
+          "description": "Em um ataque mal-sucedido, você pode marcar um Estresse para rolar novamente seu ataque.",
           "actions": {
             "luck": {
-              "name": "Luck",
-              "description": "On a failed attack, you can mark a Estresse to reroll your attack."
+              "name": "Sorte",
+              "description": "Em um ataque mal-sucedido, você pode marcar um Estresse para rolar novamente seu ataque."
             }
           }
         },
         "massive": {
-          "name": "Massive",
-          "description": "-1 to Evasão; on a successful attack, roll an additional damage die and discard the lowest result.",
+          "name": "Maciça",
+          "description": "-1 em Evasão; em um ataque bem-sucedido, role um dado de dano adicional e descarte o menor resultado.",
           "effects": {
             "massive": {
-              "name": "Massive",
-              "description": "-1 to Evasão; on a successful attack, roll an additional damage die and discard the lowest result."
+              "name": "Maciça",
+              "description": "-1 em Evasão; em um ataque bem-sucedido, role um dado de dano adicional e descarte o menor resultado."
             }
           }
         },
         "painful": {
-          "name": "Painful",
-          "description": "Each time you make a successful attack, you must mark a Estresse.",
+          "name": "Dolorosa",
+          "description": "Cada vez que você fizer um ataque bem-sucedido, deve marcar um Estresse.",
           "actions": {
             "pain": {
-              "name": "Pain",
-              "description": "Each time you make a successful attack, you must mark a Estresse."
+              "name": "Dor",
+              "description": "Cada vez que você fizer um ataque bem-sucedido, deve marcar um Estresse."
             }
           }
         },
         "paired": {
-          "name": "Paired",
-          "description": "Adicionar this Secondary Arma's tier + 1 to your primary weapon damage against targets within Corpo-a-Corpo range",
+          "name": "Pareada",
+          "description": "Adicione o nível desta arma secundária + 1 ao dano da sua arma primária contra alvos dentro do alcance Corpo-a-Corpo",
           "actions": {
             "paired": {
-              "name": "Paired",
-              "description": "Adicionar this Secondary Arma's tier + 1 to your primary weapon against targets within Corpo-a-Corpo range"
+              "name": "Parear",
+              "description": "Adicione o nível desta arma secundária + 1 ao dano da sua arma primária contra alvos dentro do alcance Corpo-a-Corpo"
             }
           },
           "effects": {
             "paired": {
-              "name": "Paired",
-              "description": "Adicionar this Secondary Arma's tier + 1 to your primary weapon against targets within Corpo-a-Corpo range"
+              "name": "Pareada",
+              "description": "Adicione o nível desta arma secundária + 1 ao dano da sua arma primária contra alvos dentro do alcance Corpo-a-Corpo"
             }
           }
         },
         "parry": {
-          "name": "Parry",
-          "description": "When Você are attacked, roll this arma(s)'s dano dice. If any of the attacker's dano dice rolled the same value as seu dice, the matching results are discarded from the attacker's dano dice before the dano Você take is totaled.",
+          "name": "Aparar",
+          "description": "Quando você for atacado, role os dados de dano desta arma. Se algum dos dados de dano do atacante mostrar o mesmo valor que o seu, os resultados correspondentes são descartados antes de somar o dano que você sofre.",
           "actions": {
             "parry": {
-              "name": "Parry",
-              "description": "When Você are attacked, roll this arma(s)'s dano dice. If any of the attacker's dano dice rolled the same value as seu dice, the matching results are discarded from the attacker's dano dice before the dano Você take is totaled."
+              "name": "Aparar",
+              "description": "Quando você for atacado, role os dados de dano desta arma. Se algum dos dados de dano do atacante mostrar o mesmo valor que o seu, os resultados correspondentes são descartados antes de somar o dano que você sofre."
             }
           }
         },
         "persuasive": {
-          "name": "Persuasive",
-          "description": "Before you make a Presence Roll, you can mark a Estresse to gain a +2 bonus to the result.",
+          "name": "Persuasivo",
+          "description": "Antes de fazer uma Rolagem de Presença, você pode marcar um Estresse para ganhar +2 de bônus no resultado.",
           "actions": {
             "persuade": {
-              "name": "Persuade",
-              "description": "Before you make a Presence Roll, you can mark a Estresse to gain a +2 bonus to the result."
+              "name": "Persuadir",
+              "description": "Antes de fazer uma Rolagem de Presença, você pode marcar um Estresse para ganhar +2 de bônus no resultado."
             }
           },
           "effects": {
             "persuasive": {
-              "name": "Persuasive",
-              "description": "Gain a +2 bonus to the Presence roll"
+              "name": "Persuasivo",
+              "description": "Ganhe +2 de bônus na rolagem de Presença"
             }
           }
         },
         "pompous": {
-          "name": "Pompous",
-          "description": "You must have a Presence of 0 or lower to use this weapon.",
+          "name": "Pomposo",
+          "description": "Você deve ter Presença 0 ou menor para usar esta arma.",
           "actions": {
             "pompous": {
-              "name": "Pompous",
-              "description": "You must have a Presence of 0 or lower to use this weapon."
+              "name": "Pomposo",
+              "description": "Você deve ter Presença 0 ou menor para usar esta arma."
             }
           }
         },
         "powerful": {
-          "name": "Powerful",
-          "description": "On a successful ataque, roll an additional dano die and discard the lowest result.",
+          "name": "Poderoso",
+          "description": "Em um ataque bem-sucedido, role um dado de dano adicional e descarte o menor resultado.",
           "effects": {
             "powerful": {
-              "name": "Powerful",
-              "description": "On a successful ataque, roll an additional dano die and discard the lowest result."
+              "name": "Poderoso",
+              "description": "Em um ataque bem-sucedido, role um dado de dano adicional e descarte o menor resultado."
             }
           }
         },
