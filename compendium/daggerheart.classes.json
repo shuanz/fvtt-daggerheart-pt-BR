@@ -84,6 +84,38 @@
                         "evasion": "10",
                         "hitPoints": "6",
                         "domains": "Arcana, Meia-noite"
+                },
+                "Life Support": {
+                        "name": "Suporte Vital",
+                        "description": "<p><strong>Gaste 3 Esperança</strong> para limpar um Ponto de Vida em um aliado dentro do alcance Próximo.</p>"
+                },
+                "Prayer Dice": {
+                        "name": "Dados de Oração",
+                        "description": "<p>No início de cada sessão, role um número de d4s igual ao traço Conjuração da sua subclasse e coloque-os na sua ficha de personagem no espaço fornecido. Estes são seus Dados de Oração. Você pode gastar qualquer número de Dados de Oração para ajudar a si mesmo ou um aliado dentro do alcance Distante. Você pode usar o valor de um dado gasto para reduzir dano recebido, adicionar ao resultado de uma rolagem após a rolagem ser feita, ou ganhar Esperança igual ao resultado. No final de cada sessão, limpe todos os Dados de Oração não gastos.</p>"
+                },
+                "Make a Scene": {
+                        "name": "Fazer uma Cena",
+                        "description": "<p>Gaste <strong>3 Esperança</strong> para temporariamente <strong>Distrair um alvo</strong> dentro do alcance <strong>Próximo</strong>, dando a eles uma <strong>penalidade de -2</strong> à sua Dificuldade.</p>"
+                },
+                "Rally": {
+                        "name": "Animar",
+                        "description": "<p>Uma vez por sessão, descreva como você anima o grupo e dê a si mesmo e a cada um de seus aliados um Dado de Animar. No nível 1, seu Dado de Animar é um d6. Um PJ pode gastar seu Dado de Animar para rolá-lo, adicionando o resultado à sua rolagem de ação, rolagem de reação, rolagem de dano, ou para limpar um número de Estresse igual ao resultado. No final de cada sessão, limpe todos os Dados de Animar não gastos. No nível 5, seu Dado de Animar aumenta para um d8.</p>"
+                },
+                "Rally (Level 5)": {
+                        "name": "Animar (Nível 5)",
+                        "description": "<p>Uma vez por sessão, descreva como você anima o grupo e dê a si mesmo e a cada um de seus aliados um Dado de Animar. No nível 5, seu Dado de Animar é um d8. Um PJ pode gastar seu Dado de Animar para rolá-lo, adicionando o resultado à sua rolagem de ação, rolagem de reação, rolagem de dano, ou para limpar um número de Estresse igual ao resultado. No final de cada sessão, limpe todos os Dados de Animar não gastos.</p>"
+                },
+                "Evolution": {
+                        "name": "Evolução",
+                        "description": "<p><strong>Gaste 3 Esperança</strong> para se transformar em uma Forma Bestial sem marcar um Estresse. Quando você fizer isso, escolha um traço para aumentar em +1 até você sair dessa Forma Bestial.<br /><br /><strong>Nota: Aumente manualmente seu traço na ficha de personagem se isso estiver em efeito.</strong></p>"
+                },
+                "Beastform": {
+                        "name": "Forma Bestial",
+                        "description": "<p>Marque um Estresse para magicamente se transformar em uma criatura do seu nível ou inferior da lista de Formas Bestiais. Você pode sair dessa forma a qualquer momento. Enquanto transformado, você não pode usar armas ou lançar feitiços de cartas de domínio, mas ainda pode usar outros traços ou habilidades que você tem acesso. Feitiços que você lançou antes de se transformar permanecem ativos e duram sua duração normal, e você pode falar e se comunicar normalmente. Além disso, você ganha os traços da Forma Bestial, adiciona seu bônus de Evasão ao seu, e usa o traço especificado em suas estatísticas para seu ataque. Enquanto você está em uma Forma Bestial, sua armadura se torna parte do seu corpo e você marca Espaços de Armadura como de costume; quando você sai de uma Forma Bestial, esses Espaços de Armadura marcados permanecem marcados. Se você marcar seu último Ponto de Vida, você automaticamente sai dessa forma.</p>"
+                },
+                "Wildtouch": {
+                        "name": "Toque Selvagem",
+                        "description": "<p>Você pode realizar efeitos inofensivos e sutis que envolvem natureza—como fazer uma flor crescer rapidamente, convocar uma leve rajada de vento, ou acender uma fogueira—à vontade.</p>"
                 }
         }
 }
