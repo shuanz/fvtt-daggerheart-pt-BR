@@ -49,6 +49,6 @@
     }
   ],
   "url": "https://github.com/shuanz/fvtt-daggerheart-pt-BR",
-  "manifest": "https://github.com/shuanz/fvtt-daggerheart-pt-BR/releases/latest/download/module.json",
+  "manifest": "https://raw.githubusercontent.com/shuanz/fvtt-daggerheart-pt-BR/main/module.json",
   "download": "https://github.com/shuanz/fvtt-daggerheart-pt-BR/releases/latest/download/daggerheart-pt-BR-v1.1.0.zip"
 }
