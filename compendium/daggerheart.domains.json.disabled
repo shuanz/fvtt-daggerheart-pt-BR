@@ -1,0 +1,35 @@
+{
+  "label": "Domínios",
+  "mapping": {
+    "name": "name"
+  },
+  "entries": {
+    "grace": {
+      "name": "Graça"
+    },
+    "codex": {
+      "name": "Códice"
+    },
+    "sage": {
+      "name": "Sábio"
+    },
+    "arcana": {
+      "name": "Arcana"
+    },
+    "blade": {
+      "name": "Lâmina"
+    },
+    "bone": {
+      "name": "Osso"
+    },
+    "midnight": {
+      "name": "Meia-Noite"
+    },
+    "splendor": {
+      "name": "Esplendor"
+    },
+    "valor": {
+      "name": "Coragem"
+    }
+  }
+}
