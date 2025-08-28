@@ -15,31 +15,40 @@
         },
         "entries": {
                 "Seraph": {
-                        "name": "Serafim"
+                        "name": "Serafim",
+                        "description": "<p>Os Serafins são guardiões celestiais que protegem os reinos mortais. Eles são conhecidos por sua conexão divina e habilidades de cura e proteção.</p>"
                 },
                 "Bard": {
-                        "name": "Bardo"
+                        "name": "Bardo",
+                        "description": "<p>Os Bardos são as pessoas mais carismáticas de todos os reinos. Membros desta classe são mestres da captivação e se especializam em uma variedade de tipos de performance, incluindo canto, tocar instrumentos musicais, tecer contos ou contar piadas. Seja se apresentando para uma audiência ou falando com um indivíduo, os bardos prosperam em situações sociais.</p>"
                 },
                 "Druid": {
-                        "name": "Druida"
+                        "name": "Druida",
+                        "description": "<p>Os Druidas são guardiões da natureza, conectados profundamente com o mundo natural. Eles podem se transformar em animais e controlar os elementos da natureza.</p>"
                 },
                 "Guardian": {
-                        "name": "Guardião"
+                        "name": "Guardião",
+                        "description": "<p>Os Guardiões são protetores dedicados que defendem outros com escudos e armaduras pesadas. Eles são especialistas em proteção e controle de combate.</p>"
                 },
                 "Ranger": {
-                        "name": "Patrulheiro"
+                        "name": "Patrulheiro",
+                        "description": "<p>Os Patrulheiros são especialistas em sobrevivência e combate à distância. Eles são mestres do ambiente natural e podem se mover silenciosamente pela selva.</p>"
                 },
                 "Rogue": {
-                        "name": "Ladino"
+                        "name": "Ladino",
+                        "description": "<p>Os Ladinos são especialistas em furtividade, engano e ataques precisos. Eles prosperam em situações que requerem sutileza e astúcia.</p>"
                 },
                 "Warrior": {
-                        "name": "Guerreiro"
+                        "name": "Guerreiro",
+                        "description": "<p>Os Guerreiros são especialistas em combate corpo a corpo e táticas militares. Eles são mestres de uma ampla variedade de armas e armaduras.</p>"
                 },
                 "Wizard": {
-                        "name": "Mago"
+                        "name": "Mago",
+                        "description": "<p>Os Magos são estudiosos da magia que aprendem feitiços através de estudo e pesquisa. Eles são especialistas em magia arcana e podem lançar uma ampla variedade de feitiços.</p>"
                 },
                 "Sorcerer": {
-                        "name": "Feiticeiro"
-                },
+                        "name": "Feiticeiro",
+                        "description": "<p>Os Feiticeiros são usuários de magia natural que canalizam poder mágico inato. Eles podem usar metamagia para modificar seus feitiços de maneiras únicas.</p>"
+                }
         }
 }
