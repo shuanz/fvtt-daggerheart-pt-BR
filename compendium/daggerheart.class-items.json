@@ -1,0 +1,111 @@
+{
+        "label": "Itens de Classe",
+        "mapping": {
+                "description": "system.description",
+                "name": "name",
+                "quantity": "system.quantity",
+                "actions": "system.actions"
+        },
+        "folders": {
+                "Class Items": "Itens de classe",
+                "Standard Items": "Itens Padrão",
+                "Bard Items": "Itens do Bardo",
+                "Druid Items": "Itens do Druida",
+                "Guardian Items": "Itens do Guardião",
+                "Ranger Items": "Itens do Patrulheiro",
+                "Rogue Items": "Itens do Ladino",
+                "Warrior Items": "Itens do Guerreiro",
+                "Wizard Items": "Itens do Mago",
+                "Seraph Items": "Itens do Serafim"
+        },
+        "entries": {
+                "50ft of Rope": {
+                        "name": "50 pés de Corda",
+                        "description": "<p>Uma corda resistente de 50 pés de comprimento, útil para escalar, amarrar, ou criar armadilhas.</p>"
+                },
+                "Basic Supplies": {
+                        "name": "Suprimentos Básicos",
+                        "description": "<p>Um saco contendo itens essenciais para viagem: comida, água, cobertores e ferramentas básicas.</p>"
+                },
+                "Torch": {
+                        "name": "Tocha",
+                        "description": "<p>Uma tocha acesa que fornece luz e pode ser usada para iluminar áreas escuras ou como arma improvisada.</p>"
+                },
+                "A Romance Novel": {
+                        "name": "Um Romance",
+                        "description": "<p>Um livro de romance que pode ser usado para entretenimento, como presente, ou para estabelecer conexões sociais.</p>"
+                },
+                "Letter Never Opened": {
+                        "name": "Carta Nunca Aberta",
+                        "description": "<p>Uma carta selada que nunca foi aberta, contendo possivelmente segredos, informações importantes, ou mensagens pessoais.</p>"
+                },
+                "A Sharpening Stone": {
+                        "name": "Uma Pedra de Amolar",
+                        "description": "<p>Uma pedra para afiar lâminas, essencial para manter armas em boas condições de combate.</p>"
+                },
+                "Broken Compass": {
+                        "name": "Bússola Quebrada",
+                        "description": "<p>Uma bússola quebrada que pode ser consertada ou usada como símbolo de orientação perdida.</p>"
+                },
+                "Bundle of Offerings": {
+                        "name": "Pacote de Ofertas",
+                        "description": "<p>Um conjunto de ofertas rituais, incluindo incenso, velas e outros itens sagrados para cerimônias religiosas.</p>"
+                },
+                "Drawing Of A Lover": {
+                        "name": "Desenho de um Amante",
+                        "description": "<p>Um retrato desenhado de alguém especial, representando memórias afetivas e conexões emocionais.</p>"
+                },
+                "Family Heirloom": {
+                        "name": "Relíquia de Família",
+                        "description": "<p>Um objeto valioso passado de geração em geração, carregando história familiar e significado sentimental.</p>"
+                },
+                "Grappling Hook": {
+                        "name": "Gancho de Escalada",
+                        "description": "<p>Um gancho de metal com corda, usado para escalar paredes, atravessar obstáculos ou criar pontos de ancoragem.</p>"
+                },
+                "Secret Key": {
+                        "name": "Chave Secreta",
+                        "description": "<p>Uma chave misteriosa que pode abrir portas secretas, baús trancados ou revelar passagens ocultas.</p>"
+                },
+                "Set of Forgery Tools": {
+                        "name": "Conjunto de Ferramentas de Falsificação",
+                        "description": "<p>Ferramentas especializadas para criar documentos falsos, assinaturas ou outros itens que requerem habilidade de falsificação.</p>"
+                },
+                "Sigil of Your God": {
+                        "name": "Sigilo do Seu Deus",
+                        "description": "<p>Um símbolo sagrado representando a divindade que você segue, usado em rituais e para canalizar poder divino.</p>"
+                },
+                "Small Bag (Rocks & Bones)": {
+                        "name": "Pequena Bolsa (Pedras e Ossos)",
+                        "description": "<p>Uma bolsa contendo pedras e ossos coletados, possivelmente para rituais, estudos ou como lembranças de aventuras.</p>"
+                },
+                "Strange Dirty Pendant": {
+                        "name": "Pingente Estranho e Sujo",
+                        "description": "<p>Um pingente misterioso e sujo que pode conter poderes ocultos ou revelar segredos antigos.</p>"
+                },
+                "Tiny Elemental Pet": {
+                        "name": "Animal de Estimação Elemental Minúsculo",
+                        "description": "<p>Uma criatura elementar pequena que pode ser treinada como companheira ou usada para tarefas mágicas.</p>"
+                },
+                "Trophy from your First Kill": {
+                        "name": "Troféu da Sua Primeira Morte",
+                        "description": "<p>Um objeto coletado de sua primeira vítima em combate, servindo como lembrança de sua jornada como guerreiro.</p>"
+                },
+                "Whispering Orb": {
+                        "name": "Orbe Sussurrante",
+                        "description": "<p>Uma esfera mágica que emite sussurros misteriosos, possivelmente contendo mensagens ou revelando segredos ocultos.</p>"
+                },
+                "Untranslated Book": {
+                        "name": "Livro Não Traduzido",
+                        "description": "<p>Um livro escrito em uma língua antiga ou desconhecida, contendo conhecimento perdido ou magia esquecida.</p>"
+                },
+                "Healing Potion": {
+                        "name": "Poção de Cura",
+                        "description": "<p>Uma poção mágica que restaura pontos de vida quando consumida.</p>"
+                },
+                "Antidote": {
+                        "name": "Antídoto",
+                        "description": "<p>Uma substância que neutraliza venenos e toxinas no corpo.</p>"
+                }
+        }
+}
