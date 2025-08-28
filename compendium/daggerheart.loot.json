@@ -1,0 +1,43 @@
+{
+  "label": "Saque",
+  "folders": {
+    "Loot Categories": "Categorias de Saque"
+  },
+  "mapping": {
+    "description": "system.description"
+  },
+  "entries": {
+    "Common Gem": {
+      "name": "Gema Comum",
+      "description": "<p>Uma pedra preciosa de qualidade comum, valiosa para comerciantes e artesãos.</p>"
+    },
+    "Rare Gem": {
+      "name": "Gema Rara",
+      "description": "<p>Uma pedra preciosa de qualidade rara, muito valiosa e procurada por colecionadores.</p>"
+    },
+    "Gold Coins": {
+      "name": "Moedas de Ouro",
+      "description": "<p>Moedas de ouro puro, a forma mais comum de moeda em terras civilizadas.</p>"
+    },
+    "Silver Coins": {
+      "name": "Moedas de Prata",
+      "description": "<p>Moedas de prata, usadas para transações menores e do dia a dia.</p>"
+    },
+    "Copper Coins": {
+      "name": "Moedas de Cobre",
+      "description": "<p>Moedas de cobre, a moeda de menor valor, usada para pequenas compras.</p>"
+    },
+    "Ancient Artifact": {
+      "name": "Artefato Antigo",
+      "description": "<p>Um objeto de poder antigo, possivelmente de uma civilização perdida.</p>"
+    },
+    "Magical Scroll": {
+      "name": "Pergaminho Mágico",
+      "description": "<p>Um pergaminho contendo magia antiga e poderosa.</p>"
+    },
+    "Enchanted Weapon": {
+      "name": "Arma Encantada",
+      "description": "<p>Uma arma que foi infundida com magia, tornando-a mais poderosa que o normal.</p>"
+    }
+  }
+}

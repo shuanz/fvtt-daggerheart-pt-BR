@@ -1,0 +1,47 @@
+{
+  "label": "Domínios",
+  "folders": {
+    "Domain Features": "Recursos de Domínio"
+  },
+  "mapping": {
+    "description": "system.description"
+  },
+  "entries": {
+    "War": {
+      "name": "Guerra",
+      "description": "<p>O domínio da Guerra representa conflito, estratégia e força bruta. Aqueles que seguem este domínio são especialistas em combate e táticas militares.</p>"
+    },
+    "Nature": {
+      "name": "Natureza",
+      "description": "<p>O domínio da Natureza representa a força vital do mundo natural, incluindo plantas, animais e os elementos.</p>"
+    },
+    "Knowledge": {
+      "name": "Conhecimento",
+      "description": "<p>O domínio do Conhecimento representa sabedoria, aprendizado e descoberta. Aqueles que seguem este domínio buscam entender os mistérios do universo.</p>"
+    },
+    "Life": {
+      "name": "Vida",
+      "description": "<p>O domínio da Vida representa cura, proteção e vitalidade. Aqueles que seguem este domínio dedicam-se a preservar e restaurar a vida.</p>"
+    },
+    "Death": {
+      "name": "Morte",
+      "description": "<p>O domínio da Morte representa o fim da vida, mas também a transição e o que está além. Aqueles que seguem este domínio entendem o ciclo natural da existência.</p>"
+    },
+    "Light": {
+      "name": "Luz",
+      "description": "<p>O domínio da Luz representa iluminação, verdade e pureza. Aqueles que seguem este domínio trazem clareza e esperança ao mundo.</p>"
+    },
+    "Darkness": {
+      "name": "Escuridão",
+      "description": "<p>O domínio da Escuridão representa mistério, proteção e o desconhecido. Aqueles que seguem este domínio encontram força nas sombras.</p>"
+    },
+    "Tempest": {
+      "name": "Tempestade",
+      "description": "<p>O domínio da Tempestade representa o poder dos elementos naturais, incluindo vento, chuva e trovão.</p>"
+    },
+    "Trickery": {
+      "name": "Trapaça",
+      "description": "<p>O domínio da Trapaça representa engano, ilusão e astúcia. Aqueles que seguem este domínio são mestres da sutileza e da manipulação.</p>"
+    }
+  }
+}
