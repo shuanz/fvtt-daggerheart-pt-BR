@@ -4,7 +4,6 @@
                 "description": "system.description",
                 "evasion": "system.evasion",
                 "hitPoints": "system.hitPoints",
-                "domains": "system.domains",
                 "classFeatures": "system.classFeatures",
                 "notes": "system.notes"
         },
