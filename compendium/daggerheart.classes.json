@@ -1,5 +1,13 @@
 {
         "label": "Classes",
+        "mapping": {
+                "description": "system.description",
+                "evasion": "system.evasion",
+                "hitPoints": "system.hitPoints",
+                "domains": "system.domains",
+                "classFeatures": "system.classFeatures",
+                "notes": "system.notes"
+        },
         "folders": {
                 "Class Features": "Traços de classe",
                 "Class Items": "Itens de classe",
@@ -16,39 +24,66 @@
         "entries": {
                 "Seraph": {
                         "name": "Serafim",
-                        "description": "<p>Os Serafins são guardiões celestiais que protegem os reinos mortais. Eles são conhecidos por sua conexão divina e habilidades de cura e proteção.</p>"
+                        "description": "<p>Os Serafins são lutadores e curandeiros divinos imbuídos de propósito sagrado. Uma ampla variedade de divindades existe dentro dos reinos, e assim numerosos tipos de serafins são nomeados por esses deuses. Sua ética tradicionalmente se alinha com o domínio ou objetivos de seu deus, como defender os fracos, executar vingança, proteger uma terra ou artefato, ou defender uma fé particular. Alguns serafins se aliam a um exército ou local, muito para a satisfação de seus governantes, mas outros cruzados lutam em oposição às loucuras do Reino Mortal. É melhor ser aliado de um serafim do que seu inimigo, pois eles são inimigos aterrorizantes para aqueles que desafiam seu propósito.</p>",
+                        "evasion": "9",
+                        "hitPoints": "7",
+                        "domains": "Valor, Esplendor"
                 },
                 "Bard": {
                         "name": "Bardo",
-                        "description": "<p>Os Bardos são as pessoas mais carismáticas de todos os reinos. Membros desta classe são mestres da captivação e se especializam em uma variedade de tipos de performance, incluindo canto, tocar instrumentos musicais, tecer contos ou contar piadas. Seja se apresentando para uma audiência ou falando com um indivíduo, os bardos prosperam em situações sociais.</p>"
+                        "description": "<p><strong>Nota: No nível 5 use Rally (Nível 5) em vez de Rally sob características de classe. (Automação será implementada em uma versão futura)</strong></p><p><br />Os Bardos são as pessoas mais carismáticas de todos os reinos. Membros desta classe são mestres da captivação e se especializam em uma variedade de tipos de performance, incluindo canto, tocar instrumentos musicais, tecer contos, ou contar piadas. Seja se apresentando para uma audiência ou falando com um indivíduo, os bardos prosperam em situações sociais. Membros desta profissão se unem e treinam em escolas ou guildas, mas uma corrente de egotismo percorre aqueles da persuasão bárdica. Embora possam ser a classe mais provável de unir as pessoas, um bardo de mau humor pode facilmente destruir um grupo.</p>",
+                        "evasion": "10",
+                        "hitPoints": "5",
+                        "domains": "Graça, Códice"
                 },
                 "Druid": {
                         "name": "Druida",
-                        "description": "<p>Os Druidas são guardiões da natureza, conectados profundamente com o mundo natural. Eles podem se transformar em animais e controlar os elementos da natureza.</p>"
+                        "description": "<p>Tornar-se um druida é mais que uma ocupação; é uma vocação para aqueles que desejam aprender e proteger a magia da natureza selvagem. Embora se possa subestimar um druida gentil que pratica o trabalho frequentemente silencioso de cultivar flora, druidas que canalizam as forças indomadas da natureza são aterrorizantes de se contemplar. Os druidas cultivam suas habilidades em pequenos grupos, frequentemente conectados por uma ética ou local específico, mas alguns escolhem trabalhar sozinhos. Através de anos de estudo e dedicação, os druidas podem aprender a se transformar em bestas e moldar a própria natureza.</p>",
+                        "evasion": "10",
+                        "hitPoints": "6",
+                        "domains": "Sábio, Arcana"
                 },
                 "Guardian": {
                         "name": "Guardião",
-                        "description": "<p>Os Guardiões são protetores dedicados que defendem outros com escudos e armaduras pesadas. Eles são especialistas em proteção e controle de combate.</p>"
+                        "description": "<p>O título de guardião representa uma variedade de profissões marciais, falando mais sobre sua bússola moral e fortaleza inabalável do que os meios pelos quais eles lutam. Embora muitos guardiões se juntem a grupos de militantes por um país ou causa, eles são mais propensos a seguir aqueles poucos pelos quais realmente se importam, maioria seja condenada. Os guardiões são conhecidos por lutar com ferocidade notável mesmo contra probabilidades esmagadoras, defendendo sua coorte acima de tudo. Ai daqueles que prejudicam o aliado de um guardião, pois o guardião responderá a essa lesão em espécie.</p>",
+                        "evasion": "9",
+                        "hitPoints": "7",
+                        "domains": "Valor, Lâmina"
                 },
                 "Ranger": {
                         "name": "Patrulheiro",
-                        "description": "<p>Os Patrulheiros são especialistas em sobrevivência e combate à distância. Eles são mestres do ambiente natural e podem se mover silenciosamente pela selva.</p>"
+                        "description": "<p>Os Patrulheiros são caçadores altamente habilidosos que, apesar de suas habilidades marciais, raramente emprestam suas habilidades a um exército. Através do domínio do corpo e uma compreensão profunda da natureza selvagem, os patrulheiros se tornam táticos astutos, perseguindo sua presa com astúcia e paciência. Muitos patrulheiros rastreiam e lutam ao lado de um companheiro animal com quem forjaram um poderoso vínculo espiritual. Ao aperfeiçoar suas habilidades na natureza selvagem, os patrulheiros se tornam rastreadores especialistas, tão propensos a encurralar seus inimigos em uma armadilha quanto a atacá-los de frente.</p>",
+                        "evasion": "12",
+                        "hitPoints": "6",
+                        "domains": "Osso, Sábio"
                 },
                 "Rogue": {
                         "name": "Ladino",
-                        "description": "<p>Os Ladinos são especialistas em furtividade, engano e ataques precisos. Eles prosperam em situações que requerem sutileza e astúcia.</p>"
+                        "description": "<p>Os Ladinos são canalhas, frequentemente tanto em atitude quanto em prática. Amplamente conhecidos como mentirosos e ladrões, os melhores entre esta classe se movem pelo mundo anonimamente. Utilizando suas mentes afiadas e lâminas, os ladinos enganam seus inimigos através da manipulação social tão facilmente quanto quebrando fechaduras, escalando através de janelas, ou desferindo golpes traiçoeiros. Estes mestres do ofício mágico manipulam sombra e movimento, adicionando uma variedade de ferramentas úteis e mortais ao seu repertório. Os ladinos frequentemente estabelecem guildas para encontrar futuros cúmplices, contratar trabalhos e aperfeiçoar habilidades secretas, provando que há honra entre ladrões para aqueles que sabem onde procurar.</p>",
+                        "evasion": "12",
+                        "hitPoints": "6",
+                        "domains": "Meia-noite, Graça"
                 },
                 "Warrior": {
                         "name": "Guerreiro",
-                        "description": "<p>Os Guerreiros são especialistas em combate corpo a corpo e táticas militares. Eles são mestres de uma ampla variedade de armas e armaduras.</p>"
+                        "description": "<p>Tornar-se um guerreiro requer anos, frequentemente uma vida inteira, de treinamento e dedicação ao domínio de armas e violência. Embora muitos que buscam lutar aperfeiçoem apenas sua força, os guerreiros entendem a importância de um corpo e mente ágeis, tornando-os alguns dos lutadores mais procurados através dos reinos. Frequentemente, os guerreiros encontram emprego dentro de um exército, uma banda de mercenários, ou mesmo uma guarda real, mas seu potencial é desperdiçado em qualquer posição onde eles não podem continuar a melhorar e expandir suas habilidades. Os guerreiros são conhecidos por terem uma arma favorita; vir entre eles e sua lâmina seria um erro grave.</p>",
+                        "evasion": "11",
+                        "hitPoints": "6",
+                        "domains": "Lâmina, Osso"
                 },
                 "Wizard": {
                         "name": "Mago",
-                        "description": "<p>Os Magos são estudiosos da magia que aprendem feitiços através de estudo e pesquisa. Eles são especialistas em magia arcana e podem lançar uma ampla variedade de feitiços.</p>"
+                        "description": "<p>Quer através de uma instituição ou estudo individual, aqueles conhecidos como magos adquirem e aperfeiçoam imenso poder mágico ao longo de anos de aprendizado usando uma variedade de ferramentas, incluindo livros, pedras, poções e ervas. Alguns magos dedicam suas vidas a dominar uma escola particular de magia, enquanto outros aprendem de uma ampla variedade de disciplinas. Muitos magos se tornam figuras sábias e poderosas em suas comunidades, aconselhando governantes, fornecendo medicamentos e cura, e até mesmo liderando conselhos de guerra. Embora estes magos todos trabalhem para o objetivo comum de coletar conhecimento mágico, os magos frequentemente têm o maior conflito dentro de suas próprias fileiras, pois a aquisição, manutenção e compartilhamento de segredos poderosos é um tópico de intenso debate que resultou em inúmeras mortes.</p>",
+                        "evasion": "11",
+                        "hitPoints": "5",
+                        "domains": "Códice, Esplendor"
                 },
                 "Sorcerer": {
                         "name": "Feiticeiro",
-                        "description": "<p>Os Feiticeiros são usuários de magia natural que canalizam poder mágico inato. Eles podem usar metamagia para modificar seus feitiços de maneiras únicas.</p>"
+                        "description": "<p>Nem todos os usuários de magia inata escolhem aperfeiçoar seu ofício, mas aqueles que o fazem podem se tornar feiticeiros poderosos. Os dons destes usuários são passados através de famílias, mesmo se a família não estiver ciente ou relutante em praticá-los. As habilidades de um feiticeiro podem variar do elemental ao ilusório e além, e muitos praticantes se unem em coletivos baseados em seus talentos. O ato de se tornar um feiticeiro formidável não é a prática de adquirir poder, mas aprender a cultivar e controlar o poder que já se possui. A magia de um feiticeiro mal orientado ou indisciplinado é uma força perigosa de fato.</p>",
+                        "evasion": "10",
+                        "hitPoints": "6",
+                        "domains": "Arcana, Meia-noite"
                 }
         }
 }
