@@ -116,6 +116,74 @@
                 "Wildtouch": {
                         "name": "Toque Selvagem",
                         "description": "<p>Você pode realizar efeitos inofensivos e sutis que envolvem natureza—como fazer uma flor crescer rapidamente, convocar uma leve rajada de vento, ou acender uma fogueira—à vontade.</p>"
+                },
+                "Frontline Tank": {
+                        "name": "Tanque da Linha de Frente",
+                        "description": "<p>Quando você está engajado em combate corpo a corpo com um inimigo, você pode usar uma reação para reduzir o dano que esse inimigo causa a um aliado em 1d6. Você pode usar esta habilidade uma vez por rodada.</p>"
+                },
+                "Unstoppable": {
+                        "name": "Imparável",
+                        "description": "<p>Quando você marca seu último Ponto de Vida, você pode gastar 3 Esperança para permanecer consciente e ativo por uma rodada adicional. Durante essa rodada, você não pode ser derrotado por dano, mas ainda pode ser derrotado por outros meios.</p>"
+                },
+                "Attack of Opportunity": {
+                        "name": "Ataque de Oportunidade",
+                        "description": "<p>Quando um inimigo se move para fora do seu alcance corpo a corpo, você pode usar uma reação para fazer um ataque contra eles. Este ataque causa dano normal.</p>"
+                },
+                "Combat Training": {
+                        "name": "Treinamento de Combate",
+                        "description": "<p>Você é proficiente com todas as armas simples e marciais, e com armaduras leves e médias.</p>"
+                },
+                "No Mercy": {
+                        "name": "Sem Misericórdia",
+                        "description": "<p>Quando você reduz um inimigo a 0 Pontos de Vida, você pode gastar 1 Esperança para fazer um ataque adicional contra outro inimigo dentro do alcance.</p>"
+                },
+                "Ranger's Focus": {
+                        "name": "Foco do Patrulheiro",
+                        "description": "<p>Quando você faz um ataque à distância, você pode gastar 1 Esperança para adicionar 1d6 ao resultado da rolagem de ataque.</p>"
+                },
+                "Hold Them Off": {
+                        "name": "Mantenha-os Afastados",
+                        "description": "<p>Quando um inimigo tenta se mover para dentro do seu alcance corpo a corpo, você pode usar uma reação para fazer um ataque contra eles. Se o ataque acertar, o inimigo não pode se mover para dentro do seu alcance nesta rodada.</p>"
+                },
+                "Rogue's Dodge": {
+                        "name": "Esquiva do Ladino",
+                        "description": "<p>Quando você é alvo de um ataque, você pode gastar 1 Esperança para adicionar 1d6 à sua rolagem de evasão.</p>"
+                },
+                "Sneak Attack": {
+                        "name": "Ataque Furtivo",
+                        "description": "<p>Quando você faz um ataque contra um inimigo que está distraído ou não está ciente de você, você pode gastar 1 Esperança para adicionar 1d6 ao dano do ataque.</p>"
+                },
+                "Cloaked": {
+                        "name": "Encoberto",
+                        "description": "<p>Quando você não está sendo observado, você pode gastar 1 Esperança para se tornar invisível até o final da sua próxima rodada ou até você fazer uma ação que revele sua presença.</p>"
+                },
+                "Arcane Sense": {
+                        "name": "Senso Arcano",
+                        "description": "<p>Você pode detectar a presença de magia dentro do alcance Próximo. Você pode gastar 1 Esperança para identificar a escola de magia de um feitiço ativo.</p>"
+                },
+                "Channel Raw Power": {
+                        "name": "Canalizar Poder Bruto",
+                        "description": "<p>Você pode gastar 2 Esperança para adicionar 1d6 ao resultado de qualquer rolagem de magia que você fizer.</p>"
+                },
+                "Minor Illusion": {
+                        "name": "Ilusão Menor",
+                        "description": "<p>Você pode criar uma ilusão menor que pode ser de qualquer tamanho até 5 pés cúbicos. A ilusão pode fazer sons, mas não pode causar dano ou ter outros efeitos físicos.</p>"
+                },
+                "Prestidigitation": {
+                        "name": "Prestidigitação",
+                        "description": "<p>Você pode realizar truques menores de magia, como limpar um objeto, aquecer ou resfriar um objeto não-mágico, ou criar um pequeno efeito visual ou sonoro.</p>"
+                },
+                "Strange Patterns": {
+                        "name": "Padrões Estranhos",
+                        "description": "<p>Você pode gastar 1 Esperança para adicionar 1d6 ao resultado de qualquer rolagem de conhecimento ou investigação.</p>"
+                },
+                "Volatile Magic": {
+                        "name": "Magia Volátil",
+                        "description": "<p>Quando você lança um feitiço, você pode gastar 1 Esperança para adicionar 1d6 ao resultado da rolagem de magia, mas se você rolar um 1, o feitiço falha e você marca 1 Estresse.</p>"
+                },
+                "Not This Time": {
+                        "name": "Não Desta Vez",
+                        "description": "<p><strong>Gaste 3 Esperança</strong> para forçar um adversário dentro do alcance Distante a rerrolar uma rolagem de ataque ou dano.</p>"
                 }
         }
 }
