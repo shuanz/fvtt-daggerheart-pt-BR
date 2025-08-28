@@ -184,6 +184,34 @@
                 "Not This Time": {
                         "name": "Não Desta Vez",
                         "description": "<p><strong>Gaste 3 Esperança</strong> para forçar um adversário dentro do alcance Distante a rerrolar uma rolagem de ataque ou dano.</p>"
+                },
+                "50ft of Rope": {
+                        "name": "50 pés de Corda",
+                        "description": "<p>Uma corda resistente de 50 pés de comprimento, útil para escalar, amarrar, ou criar armadilhas.</p>"
+                },
+                "Basic Supplies": {
+                        "name": "Suprimentos Básicos",
+                        "description": "<p>Um saco contendo itens essenciais para viagem: comida, água, cobertores e ferramentas básicas.</p>"
+                },
+                "Torch": {
+                        "name": "Tocha",
+                        "description": "<p>Uma tocha acesa que fornece luz e pode ser usada para iluminar áreas escuras ou como arma improvisada.</p>"
+                },
+                "A Romance Novel": {
+                        "name": "Um Romance",
+                        "description": "<p>Um livro de romance que pode ser usado para entretenimento, como presente, ou para estabelecer conexões sociais.</p>"
+                },
+                "Letter Never Opened": {
+                        "name": "Carta Nunca Aberta",
+                        "description": "<p>Uma carta selada que nunca foi aberta, contendo possivelmente segredos, informações importantes, ou mensagens pessoais.</p>"
+                },
+                "Bundle of Offerings": {
+                        "name": "Pacote de Ofertas",
+                        "description": "<p>Um conjunto de ofertas rituais, incluindo incenso, velas e outros itens sagrados para cerimônias religiosas.</p>"
+                },
+                "Sigil of Your God": {
+                        "name": "Sigilo do Seu Deus",
+                        "description": "<p>Um símbolo sagrado representando a divindade que você segue, usado em rituais e para canalizar poder divino.</p>"
                 }
         }
 }
